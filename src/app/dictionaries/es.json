@@ -1,0 +1,15 @@
+{
+  "nav": {
+    "home": "HOME",
+    "about": "SOBRE NOSOTROS",
+    "rooms": "HABITACIONES",
+    "lounge": "SALONES",
+    "turism": "TURISMO",
+    "contact": "CONTACTO"
+  },
+  "home": {
+    "h1": "PRINCIPAL"
+  },
+  "title": "Hola, mi nombre es tailwindcss",
+  "button": "haz clic en mí"
+}

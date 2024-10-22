@@ -1,0 +1,14 @@
+{
+  "nav": {
+    "about": "SOBRE NÓS",
+    "rooms": "QUARTOS",
+    "lounge": "SALA",
+    "turism": "TURISMO",
+    "contact": "CONTATO"
+  },
+  "home": {
+    "h1": "CASINHIA"
+  },
+  "title": "Oi, meu nome é tailwindcss",
+  "button": "clique em mim"
+}
