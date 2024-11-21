@@ -4,7 +4,7 @@ import Link from "next/link";
 import "./menu-nav.css";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import logo from "/public/iberia-logo.png";
+import logo from "/public/logo.png";
 import LanguageSelector from "./select-languaje";
 
 const MenuNav = ({ dictionary, clima }) => {
@@ -31,7 +31,7 @@ const MenuNav = ({ dictionary, clima }) => {
     <>
       <div className="cont-nav">
         <nav className="menu-nav">
-          <Link href={`/${currentLang}`} className="">
+          <Link href={`/${currentLang}`} className="ml-10">
             <Image src={logo} height={60} width={60} alt="logo" />
           </Link>
 

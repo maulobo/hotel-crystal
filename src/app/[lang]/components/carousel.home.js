@@ -4,8 +4,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 
-const images = ["", "/iberia-logo.png"];
-
+const imagen = ["", "crys/DET-B.jpg", "crys/DET-C.jpg", "crys/DET-D.jpg"];
 export function CarouselHome() {
   return (
     <Carousel
@@ -16,14 +15,14 @@ export function CarouselHome() {
       className="z-[-10] "
     >
       <CarouselContent>
-        {images.map((src, index) => (
+        {imagen.map((src, index) => (
           <CarouselItem key={index} className="">
-            <div className="h-screen w-screen ">
+            <div className="h-screen w-screen">
               {src ? (
                 <img
                   src={src}
                   alt="alto"
-                  className="h-screen w-screen z-[-10]"
+                  className="h-full w-full object-cover z-[-10]"
                 />
               ) : (
                 ""

@@ -4,15 +4,15 @@ import { MapPin, Phone, Mail } from "lucide-react";
 
 const redes = [
   {
-    text: "Av Olascoaga 294, Q8300 Neuquén Capital, Patagonia Argentina",
+    text: "Av Olascoaga 269, Q8300 Neuquén Capital, Patagonia Argentina",
     icon: <MapPin />,
   },
   {
-    text: "299 610-4591",
+    text: "299 626-3856",
     icon: <Phone />,
   },
   {
-    text: "iberiahotelneuquen@gmail.com ",
+    text: "crystalneuquen@yahoo.com.ar",
     icon: <Mail />,
   },
   {
@@ -28,10 +28,21 @@ export default async function Home({ params: { lang } }) {
 
   return (
     <>
-      <CarouselHome />
-      <div className=" absolute  top-1/4 md:top-1/3 flex flex-col items-center w-full">
+      <CarouselHome dictionary={dictionary} />
+      <div className=" absolute  top-1/3 md:top-1/3 flex flex-col items-center w-full">
         <h1 className="hidden">{dictionary.home.h1}</h1>
-        <Image src={"/logo.png"} height={500} width={500} className="z-100" />
+        <Image
+          src={"/logo.png"}
+          height={500}
+          width={500}
+          className="z-100 hidden md:block"
+        />
+        <Image
+          src={"/logo.png"}
+          height={180}
+          width={180}
+          className="z-100 md:hidden"
+        />
       </div>
       <div
         id="contact"
