@@ -1,56 +1,17 @@
 import React from "react";
-import Container from "../components/container";
-import { ArrowBigDown, ArrowUpRight } from "lucide-react";
-import Image from "next/image";
+import TurismComp from "./components/turism-comp";
+import "../lounge/styles-lounge.css";
 
-export default function page() {
+export default async function page({ params: { lang } }) {
+  const dictionary = await import(`../../dictionaries/${lang}.json`).then(
+    (m) => m.default
+  );
   return (
-    <Container className={"gap-14 flex flex-col"}>
-      <div className="h-[30%] flex gap-8 md:flex-row  flex-col ">
-        <div className="flex flex-col md:max-w-[65%] gap-10 md:h-auto ">
-          <h2 className="">TURISMO</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis,
-            odit. Quidem, corrupti molestias quisquam laborum ad vero
-            voluptatibus in fugiat temporibus perspiciatis, harum eveniet
-            exercitationem. Deleniti minus ex ut expedita.
-          </p>
-        </div>
-        <div className="md:w-[50%] "></div>
+    <>
+      <div className="md:py-8 md:px-20 p-8 h-[400px] bg-land flex justify-center items-center">
+        <h2 className="">{dictionary.turism.h2}</h2>
       </div>
-
-      <div className="flex flex-col gap-8">
-        <div className="flex gap-10">
-          <ArrowUpRight strokeWidth={3} size={96} className="h-full w-40" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-            officia eligendi voluptate. Dolores impedit dolorum deleniti
-            pariatur recusandae voluptate, fuga necessitatibus tenetur
-            repudiandae optio exercitationem inventore molestias minima ex
-            corrupti.
-          </p>
-        </div>
-        <div className="flex gap-10">
-          <ArrowUpRight strokeWidth={3} size={96} className="h-full w-40" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-            officia eligendi voluptate. Dolores impedit dolorum deleniti
-            pariatur recusandae voluptate, fuga necessitatibus tenetur
-            repudiandae optio exercitationem inventore molestias minima ex
-            corrupti.
-          </p>
-        </div>
-        <div className="flex gap-10">
-          <ArrowUpRight strokeWidth={3} size={96} className="h-full w-40" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
-            officia eligendi voluptate. Dolores impedit dolorum deleniti
-            pariatur recusandae voluptate, fuga necessitatibus tenetur
-            repudiandae optio exercitationem inventore molestias minima ex
-            corrupti.
-          </p>
-        </div>
-      </div>
-    </Container>
+      <TurismComp dictionary={dictionary} />
+    </>
   );
 }

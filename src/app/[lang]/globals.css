@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --color-fuente: #ffffff;
-  --color-fuente-1: #7e9abf;
-  --color-fuente-2: #082640;
+  --color-fuente: #ebf2f2;
+  --color-fuente-1: #5aa9c8;
+  --color-fuente-2: #3c89ac;
   --color-fuente-2-opacity: rgba(8, 38, 64, 0.5);
   --color-fuente-3: #2175bf;
-  --color-fuente-4: #f2d5a0;
-  --color-fuente-5: #73685f;
+  --color-fuente-4: #cbc7bf;
+  --color-fuente-5: #a8a297;
 }
 
 h1 {

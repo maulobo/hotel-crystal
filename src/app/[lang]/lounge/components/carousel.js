@@ -1,4 +1,3 @@
-"use client";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -8,11 +7,9 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { RealEstateCard } from "../../components/image-swip";
+import { cards } from "../constants-rooms";
 
-import { DialogDemo } from "./dialog";
-
-export function CarouselSize({ dictionary }) {
-  const cards = dictionary.rooms.roomsCards;
+export function CarouselSize() {
   return (
     <Carousel
       opts={{
@@ -27,11 +24,16 @@ export function CarouselSize({ dictionary }) {
               <Card>
                 <CardContent className="flex aspect-square items-center justify-center p-6 bg-[var(--color-fuente-2)] border-white rounded-xl">
                   <span className="font-semibold ">
-                    <RealEstateCard images={card.images} title={card.title} />
-                    <DialogDemo card={card} dictionary={dictionary} />
+                    <RealEstateCard
+                      images={card.images}
+                      title={card.title}
+                      description={card.description}
+                      price={card.price}
+                    />
                   </span>
                 </CardContent>
               </Card>
+              ver mas
             </div>
           </CarouselItem>
         ))}

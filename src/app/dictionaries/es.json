@@ -8,8 +8,171 @@
     "contact": "CONTACTO"
   },
   "home": {
-    "h1": "PRINCIPAL"
+    "h1": "HOTEL CRYSTAL",
+    "h2": "TU HOTEL EN EL CENTRO DE LA CIUDAD",
+    "contact": "CONTACTANOS"
   },
-  "title": "Hola, mi nombre es tailwindcss",
-  "button": "haz clic en mí"
+  "about": {
+    "title": "SOBRE NOSOTROS",
+    "mision": [
+      {
+        "h3": "MISION",
+        "p": "Nuestra misión es crear un ambiente acogedor y familiar que invite a cada huésped a disfrutar de su estancia en el centro de la ciudad, donde la hospitalidad y la atención personalizada convierten cada visita en una experiencia única"
+      },
+      {
+        "h3": "VISION",
+        "p": "Nuestra visión es ser el hotel preferido de la ciudad, donde cada huésped se sienta bienvenido y valorado, y juntos construyamos lazos que nos aseguren una sólida presencia en el mercado."
+      },
+      {
+        "h3": "VALORES",
+        "p": "Nuestros valores se fundamentan en la calidez y el servicio excepcional, creando un espacio donde cada huésped se siente como en casa, respaldado por un equipo comprometido en ofrecer atención personalizada y en construir un ambiente de amistad y confianza"
+      }
+    ],
+    "ourHistoryh21": "Nuestra Historia",
+    "ourHistoryp1": "En 1913, el peluquero don Jacobo Eddi llegó a la joven ciudad de Neuquén junto a su esposa, Julia Zerahia, tras un largo viaje desde Roshpirvá, Palestina. Con apenas catorce años, la bella Julia se casó con el apuesto Jacobo, quien recién había cumplido dieciocho. Decidieron establecerse en la capital del territorio, donde Jacobo abrió su primera tienda, Baratillo Eddi, en la calle Sarmiento 36, en noviembre de 1918. Este local había sido antes la Joyería Rosenblat, una de las primeras de la ciudad. Hoy, su legado continúa en la comercial calle Sarmiento bajo el nombre de Tienda Eddi, aunque con otro propietario",
+    "ourHistoryp2": "Jacobo y Julia formaron una gran familia, teniendo seis hijos: Raquel, Fortunata, Esther, Felisa, Rafael y Víctor. Sin embargo, la crisis de los años 30 los obligó a trasladarse a Buenos Aires. Allí, Víctor estudió en el colegio Mariano Moreno y luego se unió al servicio militar, donde forjó una amistad duradera con el neuquino Jorge Wilfredo Celoria.",
+    "ourHistoryp3": "En 1948, Víctor se casó con Elena, hija de la familia Darmún, quien estaba en camino de convertirse en maestra. En Buenos Aires nacieron sus hijos mayores, Roberto y Ricardo. Con ellos regresaron a Neuquén, donde Víctor asumió el comercio familiar, la recordada Casa Darmún. En esta ciudad, nació su hija menor, Julita.",
+    "ourHistoryp4": "Elena Lela Darmún trabajó como maestra en varias escuelas de Neuquén, incluyendo la Escuela Nº 61, la Nº 2, la Nº 121 y la Nº 118, siendo una de las primeras docentes efectivas. Mientras tanto, Víctor desarrolló una activa vida social y profesional, siendo presidente del Club Independiente y miembro de la comisión directiva desde 1960. También formó parte del Rotary Club, fue director asesor del Banco Los Andes de Mendoza, miembro de la Asociación Hotelera de Neuquén, de ACIPAN, socio vitalicio del Club Biguá y cofundador de Canal 7 Neuquén.",
+    "ourHistoryp5": "En 1964, Víctor se independizó de las tiendas familiares y adquirió una propiedad en la avenida Olascoaga al 200, donde abrió 'El Rey de los Pantalones'. Posteriormente, inauguró otro local en Olascoaga 219, llamado 'Lencería Juli', seguido de 'Ella, Medias'. Mientras tanto, se construyó el Hotel Crystal, que fue inaugurado el 14 de enero de 1966 con diez habitaciones. Años después, se compró un terreno a Remigio Bosch para continuar con las ampliaciones.",
+    "ourHistoryp6": "Los tres hijos de Víctor continuaron su vida en la ciudad a la que sus abuelos habían llegado en tiempos en que la población no supera los dos mil habitantes: Roberto se convirtió en contador, Ricardo en arquitecto y Julia en licenciada en sistemas.",
+    "ourHistoryp7": "Actualmente el hotel cuenta con 45 habitaciones y 99 plazas. Estas habitaciones se clasifican en individuales, dobles, triples y cuádruples. Asimismo, dispone de una cantidad suficiente de habitaciones superiores. Las superiores se diferencian de las estándar por el desayuno de cortesía y por contar con algunas facilidades extras, como la heladera, una pava eléctrica y un escritorio más amplio.Desde el 1 de julio de 2018, el Sr. Rodrigo Fernández adquirió la razón social del hotel y lo administra con su equipo, continuando así la tradición de hospitalidad y servicio que ha caracterizado al Hotel Crystal a lo largo de los años.",
+    "ourHistoryp8": "El Hotel Crystal es la culminación de esta rica historia familiar, un lugar que refleja el compromiso con la hospitalidad y el servicio excepcional. Cada huésped es recibido con el mismo calor que caracterizó a la familia Darmún/Eddi, asegurando que todos se sientan como en casa. Esta historia de amor, esfuerzo y unión es la esencia del Hotel Crystal, donde el pasado se encuentra con el presente y cada visita contribuye a la continuidad de esta hermosa tradición familiar"
+  },
+  "turism": {
+    "h2": "TURISMO",
+    "h3": "Links de interes",
+    "activities": [
+      {
+        "description": "Instagram de la SUBSECRETARÍA DE CULTURA: En este perfil de instagram pueden encontrar toda la información sobre la agenda cultural de Neuquén. Cada semana, se actualizan las actividades destacadas, diferenciando entre eventos gratuitos y de pago. También incluyen una grilla con horarios y direcciones, para que puedas planificar tu visita y disfrutar de la oferta cultural de la región.",
+        "link": "https://www.instagram.com/subseculturanqn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+      },
+      {
+        "description": "Página web oficial de la Subsecretaría de cultura: En esta página además de poder ver la agenda cultural. Se suben todas las convocatorias para artistas y participantes de la Subsecretaría de Cultura de Neuquén. Actualizando regularmente las actividades programadas, que incluyen eventos, festivales y talleres.",
+        "link": "https://www.neuquencapital.gov.ar/cultura/?fbclid=PAZXh0bgNhZW0CMTEAAabKXFHz8YBDWJdyZDH_Esjw2_kfLypYh-AwwglJn493N_a5q94C0AtcI4M_aem_N6M6INIYNwqH-dP7d09DKQ"
+      },
+      {
+        "description": "Instagram de Turismo Neuquen Capital oficial: En este perfil pueden encontrar toda la información sobre la agenda cultural de Neuquén Capital. A través del Instagram oficial de turismo, se actualizan semanalmente las actividades destacadas, que incluyen festivales, eventos y propuestas diversas, tanto gratuitas como de pago. ¡No te pierdas la oportunidad de disfrutar de todo lo que la ciudad tiene para ofrecer!",
+        "link": "https://www.instagram.com/turismo.neuquen.capital?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+      },
+      {
+        "description": "Página web oficial de Turismo Neuquén: En esta página pueden encontrar el enlace para descargar la aplicación de turismo de Neuquén Capital. Además, podrán acceder a la agenda cultural, así como a información sobre los shows y artistas que se presentarán en la ciudad. La página ofrece amplia información sobre las opciones turísticas, perfectas para explorar y disfrutar de lo mejor que Neuquén Capital!",
+        "link": "https://www.neuquencapital.gov.ar/turismo/?fbclid=PAZXh0bgNhZW0CMTEAAaZDudr4d8RRfPVZbtuGHAxLIjiH5AFcIsAHhBpmapdy7wuaVE8tzO4LnGk_aem_W2X3qdBsemPhw4WgcUJAVQ"
+      },
+      {
+        "description": "Enlace para descargar la aplicación de colectivos COLE: Con COLE vas a poder planificar tus viajes en Neuquén Capital con toda la información sobre paradas y rutas. Al escribir tu destino, esta app arroja todas las líneas que te llevan y posibles conexiones con otras, la frecuencia y horario de cada una.",
+        "link": "https://play.google.com/store/apps/details?id=com.visionblo.apps.onewaraway.neuquen&hl=es_AR&pli=1"
+      }
+    ],
+
+    "p6": "Mapa interactivo de la ciudad: En este mapa turístico interactivo de Neuquén Capital, puedes explorar una variedad de opciones para disfrutar de la ciudad, incluyendo senderos, miradores, circuitos autoguiados en MP3, un circuito autoguiado de identidad, información sobre gastronomía, opciones de transporte, alojamientos, bicisendas y ciclovías, actividades culturales, edificios históricos, murales, monumentos y otros sitios de interés."
+  },
+  "rooms": {
+    "titleRooms": "HABITACIONES",
+    "intro": "Descubre la comodidad y el estilo de nuestras habitaciones. Ofrecemos opciones de alojamiento que van desde habitaciones individuales hasta cuádruples, perfectas para parejas, familias o viajeros solitarios.",
+    "sub1": "Alojamientos Estándares",
+    "sub2": "Alojamientos Superiores",
+    "text1": "Nuestras habitaciones estándar son el refugio perfecto para quienes buscan un espacio acogedor al final del día. Equipadas con cómodas camas, un amplio guardarropa y un baño privado, su diseño simple y funcional crea un ambiente relajante para descansar y recargar energías",
+    "text2": "Si deseas una experiencia más completa, nuestras habitaciones superiores son la elección ideal. Estas habitaciones cuentan con camas confortables, un guardarropa, un baño privado y un escritorio. El elegante piso flotante añade un toque distintivo, mientras que el desayuno de cortesía y la heladera privada garantizan que tu estancia sea aún más placentera y conveniente.",
+    "roomServices": [
+      {
+        "category": "INCLUIDOS",
+        "services": [
+          {
+            "name": "Desayuno",
+            "description": "Nuestro desayuno express se sirve en Confitería Azúcar, ubicada al lado del hotel. Incluido con tu tarifa, está disponible de lunes a sábado de 7:30 a 10:00 y los domingos y feriados de 8:00 a 11:00. Disfruta de café y medialunas en un ambiente cercano y cómodo para comenzar el día.",
+            "icon": "Coffee"
+          },
+          {
+            "name": "Wifi",
+            "description": "Poseemos conectividad de wifi en diferentes puntos del hotel.",
+            "icon": "Wifi"
+          },
+          {
+            "name": "Conserjería",
+            "description": "Nuestro servicio de conserjería está disponible con atención las 24 horas. Nuestro amable equipo está siempre listo para ayudarte con cualquier solicitud, responder a tus preguntas y ofrecer recomendaciones personalizadas.",
+            "icon": "ConciergeBell"
+          },
+          {
+            "name": "Recepción de Paquetería",
+            "description": "Ofrecemos un servicio seguro para la recepción de paquetería y correo. Si necesitas que recibamos algo en tu nombre, nuestro personal se asegurará de que tus paquetes estén a buen recaudo durante tu estancia.",
+            "icon": "Package"
+          },
+          {
+            "name": "Mucamas",
+            "description": "Nuestro servicio de mucamas incluye limpieza diaria de tu habitación. Nuestro personal se encargará de mantener tu espacio impecable.",
+            "icon": "Hotel"
+          },
+          {
+            "name": "Guarda diurno de equipaje",
+            "description": "Brindamos un servicio de custodia para tu equipaje. Aunque no contamos con lockers, nuestro conserje se encargará de cuidar tus pertenencias una vez desocupada la habitación o bien antes del ingreso.",
+            "icon": "Luggage"
+          }
+        ]
+      },
+      {
+        "category": "ADICIONAL",
+        "services": [
+          {
+            "name": "Estacionamiento",
+            "description": "Contamos con un convenio de estacionamiento cercano al hotel por orden de llegada, sujeto a disponibilidad.",
+            "icon": "ParkingCircle"
+          },
+          {
+            "name": "Servicio de Bebidas",
+            "description": "En la recepción, tenemos a la venta diferentes bebidas frescas.",
+            "icon": "Martini"
+          },
+          {
+            "name": "Late Check-Out",
+            "description": "Si deseas aprovechar un tiempo extra de descanso, ofrecemos la opción de late check-out hasta las 18:00 hs. Esta opción te permite relajarte sin prisas y disfrutar al máximo de tu tiempo con nosotros.",
+            "icon": "ClockArrowDown"
+          }
+        ]
+      }
+    ],
+    "standardRooms": "Alojamientos Estándares: Con camas cómodas, un guardarropa y baño privado, nuestras habitaciones estándar son prácticas y funcionales.",
+    "superiorRooms": "Alojamientos Superiores: Con detalles adicionales como desayuno de cortesía, heladera y escritorio más amplio, nuestras habitaciones superiores ofrecen un toque extra de confort.",
+    "roomsCards": [
+      {
+        "images": ["/foto1.jpeg", "/iberia-logo.png"],
+        "title": "Single",
+        "description": "Relájate en nuestra habitación simple, equipada con una cama individual de medidas estándar. Con un baño privado y ducha, es el espacio ideal para quienes buscan un refugio acogedor.",
+        "price": "Standard: Consultar / Superior: Consultar"
+      },
+      {
+        "images": ["/foto1.jpeg", "/iberia-logo.png"],
+        "title": "Doble",
+        "description": "Disfruta de nuestra habitación doble, que puede contar con dos camas individuales o una cama matrimonial. También incluye un baño privado con ducha, brindándote la comodidad que necesitas.",
+        "price": "Standard: Consultar / Superior: Consultar"
+      },
+      {
+        "images": ["/foto1.jpeg", "/iberia-logo.png"],
+        "title": "Triple",
+        "description": "Nuestra habitación triple es perfecta para grupos pequeños, con la opción de tres camas individuales o una cama matrimonial junto a una cama individual. También contarás con un baño privado y ducha, garantizando un espacio cómodo para todos.",
+        "price": " Standard: Consultar / Superior: Consultar"
+      },
+      {
+        "images": ["/foto1.jpeg", "/iberia-logo.png"],
+        "title": "Cuadruple",
+        "description": "Para familias o grupos más grandes, nuestra habitación cuádruple ofrece tres camas individuales o una cama matrimonial junto a una cama individual. Además, incluye un baño privado con ducha, asegurando que todos tengan su propio espacio.",
+        "price": "Standard: Consultar"
+      }
+    ],
+    "additionalInfo": {
+      "checkInTime": "Check-in: 12:00 PM",
+      "checkOutTime": "Check-out: 10:00 AM",
+      "breakfastHours": "Desayuno: Todos los días de 7:00 AM a 10:00 AM"
+    }
+  },
+  "lounge": {
+    "title": "SALONES"
+  },
+  "eventSpaces": {
+    "eventSpacesh21": "Salones",
+    "eventSpacesp1": "Ofrecemos espacios versátiles para reuniones, capacitaciones y eventos. Nuestros salones están diseñados para crear un ambiente cómodo y funcional.",
+    "salonDeltah22": "Salón Multiusos - Salón Delta",
+    "salonDeltap1": "Un salón moderno con capacidad para 25 personas sentadas. Equipado con mesas estilo industrial, pizarra, dispenser de agua, aire acondicionado y la opción de coffee break.",
+    "salaAlfah22": "Oficina de Trabajo y Reuniones - Sala Alfa",
+    "salaAlfap1": "Un espacio íntimo para reuniones pequeñas, con capacidad para 6 personas. Incluye pizarra, pava eléctrica, televisor y aire acondicionado, ideal para sesiones de brainstorming y trabajo."
+  }
 }

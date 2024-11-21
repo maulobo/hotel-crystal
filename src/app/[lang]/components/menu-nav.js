@@ -18,17 +18,16 @@ const MenuNav = ({ dictionary, clima }) => {
     { id: 3, nombre: `${dictionary.nav.rooms}`, deruta: "/rooms" },
     { id: 4, nombre: `${dictionary.nav.lounge}`, deruta: "/lounge" },
     { id: 5, nombre: `${dictionary.nav.turism}`, deruta: "/turism" },
-    { id: 6, nombre: `${dictionary.nav.contact}`, deruta: "/contact" },
+    { id: 6, nombre: `${dictionary.nav.contact}`, deruta: "/#contact" },
   ];
   const urlCondition = clima.current.condition.icon;
   const cleanUrl = urlCondition.replace("//", "https://");
-  console.log(cleanUrl);
 
   const handleClick = () => {
     setIsNavOpen(!isNavOpen);
   };
 
-  https: return (
+  return (
     <>
       <div className="cont-nav">
         <nav className="menu-nav">
@@ -50,10 +49,15 @@ const MenuNav = ({ dictionary, clima }) => {
                 </Link>
               </li>
             ))}
-            <li className="list-none flex items-center">
-              {clima.current.temp_c} |{" "}
-              <Image src={cleanUrl} height={40} width={40} />
-            </li>
+            {clima.current ? (
+              <li className="list-none flex items-center">
+                {clima.current.temp_c}
+                <Image src={cleanUrl} height={40} width={40} />
+              </li>
+            ) : (
+              ""
+            )}
+
             <LanguageSelector languaje={currentLang} />
           </ul>
         </nav>
@@ -61,7 +65,7 @@ const MenuNav = ({ dictionary, clima }) => {
 
       {/* menu burger */}
       <section
-        className={`nav-bar-position ${isNavOpen ? "nav-bar-active" : ""}`}
+        className={`nav-bar-position ${isNavOpen ? "nav-bar-active nav-bar-position2" : ""}`}
       >
         <div
           className={`burger ${isNavOpen ? "burger-open" : ""}`}

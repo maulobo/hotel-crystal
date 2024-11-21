@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import Nav from "./components/nav";
+import Footer from "./components/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -14,7 +15,7 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Hotel Iberia",
+  title: "Hotel Crystal",
   description: "Descripcion ",
 };
 
@@ -27,6 +28,7 @@ export default async function RootLayout({ children, params }) {
       >
         <Nav lang={lang} />
         {children}
+        <Footer />
       </body>
     </html>
   );
