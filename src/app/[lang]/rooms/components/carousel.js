@@ -25,7 +25,7 @@ export function CarouselSize({ dictionary }) {
           <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
             <div className="p-1 ">
               <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6 bg-[var(--color-fuente-2)] border-white rounded-xl">
+                <CardContent className="flex aspect-square items-center justify-center p-6 bg-[var(--color-fuente-5)] rounded-xl">
                   <span className="font-semibold ">
                     <RealEstateCard images={card.images} title={card.title} />
                     <DialogDemo card={card} dictionary={dictionary} />

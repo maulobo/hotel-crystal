@@ -1,0 +1,20 @@
+.bg-turism {
+  background-image: url("../image/land.jpg");
+  background-clip: border-box;
+  background-position: 0%;
+  background-size: cover;
+}
+.bg-turism::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Negro semitransparente */
+  z-index: 1; /* Debajo del texto pero encima del fondo */
+}
+
+.bg-turism h2 {
+  z-index: 2; /* Asegura que el texto esté encima del overlay */
+}

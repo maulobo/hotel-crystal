@@ -3,7 +3,6 @@
     "home": "HOME",
     "about": "SOBRE NOSOTROS",
     "rooms": "HABITACIONES",
-    "lounge": "SALONES",
     "turism": "TURISMO",
     "contact": "CONTACTO"
   },
@@ -43,24 +42,34 @@
     "h3": "Links de interes",
     "activities": [
       {
-        "description": "Instagram de la SUBSECRETARÍA DE CULTURA: En este perfil de instagram pueden encontrar toda la información sobre la agenda cultural de Neuquén. Cada semana, se actualizan las actividades destacadas, diferenciando entre eventos gratuitos y de pago. También incluyen una grilla con horarios y direcciones, para que puedas planificar tu visita y disfrutar de la oferta cultural de la región.",
-        "link": "https://www.instagram.com/subseculturanqn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+        "title": "Instagram Subsecreteria de Cultura",
+        "description": "Información actualizada sobre la agenda cultural de Neuquén, con horarios y direcciones.",
+        "link": "https://www.instagram.com/subseculturanqn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",
+        "Ico": "Instagram"
       },
       {
-        "description": "Página web oficial de la Subsecretaría de cultura: En esta página además de poder ver la agenda cultural. Se suben todas las convocatorias para artistas y participantes de la Subsecretaría de Cultura de Neuquén. Actualizando regularmente las actividades programadas, que incluyen eventos, festivales y talleres.",
-        "link": "https://www.neuquencapital.gov.ar/cultura/?fbclid=PAZXh0bgNhZW0CMTEAAabKXFHz8YBDWJdyZDH_Esjw2_kfLypYh-AwwglJn493N_a5q94C0AtcI4M_aem_N6M6INIYNwqH-dP7d09DKQ"
+        "title": "Web oficial Subsecretaría de Cultura",
+        "description": "Agenda cultural, convocatorias y actividades destacadas de Neuquén.",
+        "link": "https://www.neuquencapital.gov.ar/cultura/?fbclid=PAZXh0bgNhZW0CMTEAAabKXFHz8YBDWJdyZDH_Esjw2_kfLypYh-AwwglJn493N_a5q94C0AtcI4M_aem_N6M6INIYNwqH-dP7d09DKQ",
+        "Ico": "Globe"
       },
       {
-        "description": "Instagram de Turismo Neuquen Capital oficial: En este perfil pueden encontrar toda la información sobre la agenda cultural de Neuquén Capital. A través del Instagram oficial de turismo, se actualizan semanalmente las actividades destacadas, que incluyen festivales, eventos y propuestas diversas, tanto gratuitas como de pago. ¡No te pierdas la oportunidad de disfrutar de todo lo que la ciudad tiene para ofrecer!",
-        "link": "https://www.instagram.com/turismo.neuquen.capital?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D"
+        "title": "Instagram de Turismo Neuquén Capital",
+        "description": "Actualizaciones semanales sobre actividades, eventos y propuestas culturales.",
+        "link": "https://www.instagram.com/turismo.neuquen.capital?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",
+        "Ico": "Instagram"
       },
       {
-        "description": "Página web oficial de Turismo Neuquén: En esta página pueden encontrar el enlace para descargar la aplicación de turismo de Neuquén Capital. Además, podrán acceder a la agenda cultural, así como a información sobre los shows y artistas que se presentarán en la ciudad. La página ofrece amplia información sobre las opciones turísticas, perfectas para explorar y disfrutar de lo mejor que Neuquén Capital!",
-        "link": "https://www.neuquencapital.gov.ar/turismo/?fbclid=PAZXh0bgNhZW0CMTEAAaZDudr4d8RRfPVZbtuGHAxLIjiH5AFcIsAHhBpmapdy7wuaVE8tzO4LnGk_aem_W2X3qdBsemPhw4WgcUJAVQ"
+        "title": "Página web oficial de Turismo Neuquén",
+        "description": "Agenda cultural y opciones turísticas para explorar Neuquén Capital.",
+        "link": "https://www.neuquencapital.gov.ar/turismo/?fbclid=PAZXh0bgNhZW0CMTEAAaZDudr4d8RRfPVZbtuGHAxLIjiH5AFcIsAHhBpmapdy7wuaVE8tzO4LnGk_aem_W2X3qdBsemPhw4WgcUJAVQ",
+        "Ico": "Globe"
       },
       {
-        "description": "Enlace para descargar la aplicación de colectivos COLE: Con COLE vas a poder planificar tus viajes en Neuquén Capital con toda la información sobre paradas y rutas. Al escribir tu destino, esta app arroja todas las líneas que te llevan y posibles conexiones con otras, la frecuencia y horario de cada una.",
-        "link": "https://play.google.com/store/apps/details?id=com.visionblo.apps.onewaraway.neuquen&hl=es_AR&pli=1"
+        "title": "Aplicación de colectivos COLE",
+        "description": "Planifica tus viajes en Neuquén con información de rutas, paradas y horarios.",
+        "link": "https://play.google.com/store/apps/details?id=com.visionblo.apps.onewaraway.neuquen&hl=es_AR&pli=1",
+        "Ico": "Bus"
       }
     ],
 
@@ -134,25 +143,36 @@
     "superiorRooms": "Alojamientos Superiores: Con detalles adicionales como desayuno de cortesía, heladera y escritorio más amplio, nuestras habitaciones superiores ofrecen un toque extra de confort.",
     "roomsCards": [
       {
-        "images": ["/foto1.jpeg", "/iberia-logo.png"],
+        "images": ["/crys/SINGLE-A.jpg"],
         "title": "Single",
         "description": "Relájate en nuestra habitación simple, equipada con una cama individual de medidas estándar. Con un baño privado y ducha, es el espacio ideal para quienes buscan un refugio acogedor.",
         "price": "Standard: Consultar / Superior: Consultar"
       },
       {
-        "images": ["/foto1.jpeg", "/iberia-logo.png"],
+        "images": [
+          "/crys/DOBLE-A.jpg",
+          "/crys/DOBLE-B.jpg",
+          "/crys/DOBLE-C.jpg",
+          "/crys/DOBLE-D.jpg"
+        ],
         "title": "Doble",
         "description": "Disfruta de nuestra habitación doble, que puede contar con dos camas individuales o una cama matrimonial. También incluye un baño privado con ducha, brindándote la comodidad que necesitas.",
         "price": "Standard: Consultar / Superior: Consultar"
       },
       {
-        "images": ["/foto1.jpeg", "/iberia-logo.png"],
+        "images": [
+          "/crys/TRIPLE-A.jpg",
+          "/crys/TRIPLE-B.jpg",
+          "/crys/TRIPLE-C.jpg",
+          "/crys/TRIPLE-D.jpg",
+          "/crys/TRIPLE-E.jpg"
+        ],
         "title": "Triple",
         "description": "Nuestra habitación triple es perfecta para grupos pequeños, con la opción de tres camas individuales o una cama matrimonial junto a una cama individual. También contarás con un baño privado y ducha, garantizando un espacio cómodo para todos.",
         "price": " Standard: Consultar / Superior: Consultar"
       },
       {
-        "images": ["/foto1.jpeg", "/iberia-logo.png"],
+        "images": ["/crys/CUADRUPLE-A.jpg", "/crys/CUADRUPLE-B.jpg"],
         "title": "Cuadruple",
         "description": "Para familias o grupos más grandes, nuestra habitación cuádruple ofrece tres camas individuales o una cama matrimonial junto a una cama individual. Además, incluye un baño privado con ducha, asegurando que todos tengan su propio espacio.",
         "price": "Standard: Consultar"
@@ -163,16 +183,5 @@
       "checkOutTime": "Check-out: 10:00 AM",
       "breakfastHours": "Desayuno: Todos los días de 7:00 AM a 10:00 AM"
     }
-  },
-  "lounge": {
-    "title": "SALONES"
-  },
-  "eventSpaces": {
-    "eventSpacesh21": "Salones",
-    "eventSpacesp1": "Ofrecemos espacios versátiles para reuniones, capacitaciones y eventos. Nuestros salones están diseñados para crear un ambiente cómodo y funcional.",
-    "salonDeltah22": "Salón Multiusos - Salón Delta",
-    "salonDeltap1": "Un salón moderno con capacidad para 25 personas sentadas. Equipado con mesas estilo industrial, pizarra, dispenser de agua, aire acondicionado y la opción de coffee break.",
-    "salaAlfah22": "Oficina de Trabajo y Reuniones - Sala Alfa",
-    "salaAlfap1": "Un espacio íntimo para reuniones pequeñas, con capacidad para 6 personas. Incluye pizarra, pava eléctrica, televisor y aire acondicionado, ideal para sesiones de brainstorming y trabajo."
   }
 }

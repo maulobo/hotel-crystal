@@ -17,22 +17,21 @@ export function DialogDemo({ card }) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="secondary">+</Button>
+        <Button className="w-full" variant="">
+          info
+        </Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px] bg-[var(--color-fuente-2)] border-black color-white">
+      <DialogContent className="sm:max-w-[425px] bg-[var(--color-fuente-4)] border-black color-white text-black">
         <DialogHeader>
           <DialogTitle>{card.title}</DialogTitle>
-          <DialogDescription className="text-white">
+          <DialogDescription className="text-black">
             {card.description}
           </DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 py-4">
           <ImageSwiper images={card.images} />
         </div>
-        <DialogFooter>
-          <Wifi />
-          <AirVentIcon />
-        </DialogFooter>
+        <DialogFooter></DialogFooter>
       </DialogContent>
     </Dialog>
   );

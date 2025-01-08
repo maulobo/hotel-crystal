@@ -24,7 +24,7 @@ export default async function RootLayout({ children, params }) {
   return (
     <html lang="es">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[var(--color-fuente-2)] text-[var(--color-fuente)]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[var(--color-fuente-2-opacity)] text-[var(--color-fuente)]`}
       >
         <Nav lang={lang} />
         {children}

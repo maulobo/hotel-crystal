@@ -24,7 +24,7 @@ export const ImageSwiper = ({ images, className }) => {
   return (
     <div
       className={cn(
-        "group/hover relative aspect-square h-full w-full overflow-hidden rounded-lg ",
+        "group/hover relative aspect-square h-full w-full overflow-hidden rounded-lg",
         className
       )}
     >
@@ -52,8 +52,8 @@ export const ImageSwiper = ({ images, className }) => {
           <IconChevronRight className="stroke-neutral-600" size={20} />
         </button>
       </div>
-      <div className="pointer-events-none absolute bottom-2 z-10 flex w-full items-center justify-center ">
-        <div className="flex w-9 items-center justify-center rounded-md bg-black/80 p-0.5 text-xs text-white opacity-0 transition-all group-hover/hover:opacity-100 ">
+      <div className="pointer-events-none absolute bottom-2 z-10 flex w-full items-center justify-center">
+        <div className="flex w-9 items-center justify-center rounded-md bg-black/80 p-0.5 text-xs opacity-0 transition-all group-hover/hover:opacity-100">
           <div>
             {imgIndex + 1}/{images.length}
           </div>
@@ -79,19 +79,19 @@ export const ImageSwiper = ({ images, className }) => {
           type: "spring",
           duration: 0.2,
         }}
-        className=" flex h-full cursor-grab items-center rounded-[inherit] active:cursor-grabbing rounded-t-full"
+        className=" flex h-full cursor-grab items-center rounded-[inherit] active:cursor-grabbing"
       >
         {images.map((src, i) => {
           return (
             <motion.div
               key={i}
-              className="h-full w-full shrink-0 overflow-hidden bg-neutral-800 object-cover first:rounded-l-[inherit] last:rounded-r-[inherit] rounded-t-full"
+              className="h-full w-full shrink-0 overflow-hidden bg-neutral-800 object-cover first:rounded-l-[inherit] last:rounded-r-[inherit]"
             >
               <img
                 width={80}
                 height={80}
                 src={src}
-                className="pointer-events-none h-full w-full object-cover rounded-t-full"
+                className="pointer-events-none h-full w-full object-cover"
               />
             </motion.div>
           );
