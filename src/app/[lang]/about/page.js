@@ -1,7 +1,5 @@
 import React from "react";
-import Container from "../components/container";
 import OurHistory from "./components/our-history";
-import Image from "next/image";
 import MisionVision from "./components/mision-vision";
 import "./styles-about.css";
 
@@ -11,7 +9,7 @@ export default async function page({ params: { lang } }) {
   );
   return (
     <>
-      <div className="md:py-8 md:px-20 p-8 h-[400px] bg-about flex justify-center items-center">
+      <div className="md:py-8 md:px-20 p-8 h-[400px] bg-about flex justify-center items-center relative">
         <h2>{dictionary.about.title}</h2>
       </div>
       <div className="bg-[var(--color-fuente)] text-[var(--color-fuente-2)]">

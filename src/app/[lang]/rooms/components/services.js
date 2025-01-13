@@ -86,47 +86,29 @@ function Services({ services, dictionary }) {
       <div className="md:py-8 md:px-20 p-8 h-[400px] bg-rooms flex justify-center items-center triger1 relative">
         <h2>{dictionary.rooms.titleRooms}</h2>
       </div>
-      <section className="flex flex-col justify-center align-middle items-center md:py-20 md:px-20  trigger2 p-8">
-        <div className="flex flex-col gap-10 justify-center align-middle items-center">
-          <Image src={logo} className="" height={400} width={300} alt="logo" />
+      <div className="flex flex-col justify-center align-middle items-center bg-[var(--color-fuente)] w-full md:p-16">
+        <Image src={logo} className="" height={200} width={200} alt="logo" />
 
-          <p className="md:w-[50%] text-center ">
-            {dictionary.rooms.introText}
-          </p>
-        </div>
+        <p className="md:w-[50%] text-center ">{dictionary.rooms.introText}</p>
+      </div>
+      <section className="flex flex-col justify-center align-middle items-center  md:px-20  trigger2 p-8">
         {/* intro */}
 
-        <section className=" text-center md:justify-center md:w-[700px] md:py-8 md:px-20">
+        <section className="text-center md:justify-center md:w-[700px] md:py-8 md:px-20">
           {dictionary.rooms.intro}
         </section>
-        <div className="flex p-8 md:flex-col gap-10 md:w-[80%] py-10">
+        <div className="flex p-8 md:flex-col gap-10 md:w-[80%] py-8 ">
           <div className="flex flex-col md:flex-row items-center justify-center align-middle gap-10">
-            <div className="flex-1 items-center justify-center align-middle  flex flex-col gap-10">
-              <h3 className="self-start">{dictionary.rooms.sub1}</h3>
+            <div className=" items-center justify-center align-middle  flex flex-col gap-10 text-center">
+              <h3 className="">{dictionary.rooms.sub1}</h3>
               <p>{dictionary.rooms.text1}</p>
-            </div>
-            <div className="flex-2 items-center justify-center align-middle">
-              <Image
-                src={"/crys/DET-A.jpg"}
-                height={200}
-                width={200}
-                className="w-full rounded-t-full"
-              />
             </div>
           </div>
         </div>
-        <div className="flex p-8 md:flex-col gap-10 md:w-[80%] py-10">
+        <div className="flex p-8 md:flex-col gap-10 md:w-[80%] py-8">
           <div className="flex flex-col md:flex-row items-center justify-center align-middle gap-10">
-            <div className="flex-2 items-center justify-center align-middle">
-              <Image
-                src={"/crys/DET-A.jpg"}
-                height={200}
-                width={200}
-                className="w-full rounded-t-full"
-              />
-            </div>
-            <div className="flex-1 items-center justify-center align-middle  flex flex-col gap-10">
-              <h3 className="self-start">{dictionary.rooms.sub2}</h3>
+            <div className=" items-center justify-center align-middle  flex flex-col gap-10 text-center">
+              <h3 className="">{dictionary.rooms.sub2}</h3>
               <p>{dictionary.rooms.text2}</p>
             </div>
           </div>

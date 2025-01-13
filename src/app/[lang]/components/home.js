@@ -20,6 +20,20 @@ const redes = [
   },
 ];
 
+export function VideoBackground() {
+  return (
+    <video
+      className="hidden md:absolute md:block top-0 left-0 w-full h-full object-cover -z-10"
+      autoPlay
+      loop
+      muted
+      playsInline
+    >
+      <source src="/vid.mp4" type="video/mp4" />
+    </video>
+  );
+}
+
 const HomeMain = ({ dictionary }) => {
   useGSAP(() => {
     gsap.to(".logo-animation", {
@@ -32,21 +46,22 @@ const HomeMain = ({ dictionary }) => {
 
   return (
     <>
+      <VideoBackground />
       <div className="relative md:h-screen md:w-screen aspect-square "></div>
       <div className="absolute left-3 top-40 md:top-1/3 flex flex-col items-center w-full">
         <h1 className="hidden">{dictionary.home.h1}</h1>
         <Image
-          src={"/logoo.png"}
+          src={"/logo-blanco.png"}
           className="logo-animation opacity-0 translate-x-[-100px] md:hidden"
           width={150}
           height={150}
         />
 
         <Image
-          src={"/logoo.png"}
-          className="logo-animation opacity-0 translate-x-[-100px] hidden md:block"
-          width={400}
-          height={400}
+          src={"/logo-blanco.png"}
+          className="logo-animation opacity-0 translate-x-[-100px] translate-y-[-100px] hidden md:block"
+          width={500}
+          height={500}
         />
       </div>
       <div

@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "HOME",
-    "about": "SOBRE NOSOTROS",
+    "about": "NOSOTROS",
     "rooms": "HABITACIONES",
     "turism": "TURISMO",
     "contact": "CONTACTO"
@@ -142,6 +142,43 @@
     "standardRooms": "Alojamientos Estándares: Con camas cómodas, un guardarropa y baño privado, nuestras habitaciones estándar son prácticas y funcionales.",
     "superiorRooms": "Alojamientos Superiores: Con detalles adicionales como desayuno de cortesía, heladera y escritorio más amplio, nuestras habitaciones superiores ofrecen un toque extra de confort.",
     "roomsCards": [
+      {
+        "images": ["/crys/SINGLE-A.jpg"],
+        "title": "Single",
+        "description": "Relájate en nuestra habitación simple, equipada con una cama individual de medidas estándar. Con un baño privado y ducha, es el espacio ideal para quienes buscan un refugio acogedor.",
+        "price": "Standard: Consultar / Superior: Consultar"
+      },
+      {
+        "images": [
+          "/crys/DOBLE-A.jpg",
+          "/crys/DOBLE-B.jpg",
+          "/crys/DOBLE-C.jpg",
+          "/crys/DOBLE-D.jpg"
+        ],
+        "title": "Doble",
+        "description": "Disfruta de nuestra habitación doble, que puede contar con dos camas individuales o una cama matrimonial. También incluye un baño privado con ducha, brindándote la comodidad que necesitas.",
+        "price": "Standard: Consultar / Superior: Consultar"
+      },
+      {
+        "images": [
+          "/crys/TRIPLE-A.jpg",
+          "/crys/TRIPLE-B.jpg",
+          "/crys/TRIPLE-C.jpg",
+          "/crys/TRIPLE-D.jpg",
+          "/crys/TRIPLE-E.jpg"
+        ],
+        "title": "Triple",
+        "description": "Nuestra habitación triple es perfecta para grupos pequeños, con la opción de tres camas individuales o una cama matrimonial junto a una cama individual. También contarás con un baño privado y ducha, garantizando un espacio cómodo para todos.",
+        "price": " Standard: Consultar / Superior: Consultar"
+      },
+      {
+        "images": ["/crys/CUADRUPLE-A.jpg", "/crys/CUADRUPLE-B.jpg"],
+        "title": "Cuadruple",
+        "description": "Para familias o grupos más grandes, nuestra habitación cuádruple ofrece tres camas individuales o una cama matrimonial junto a una cama individual. Además, incluye un baño privado con ducha, asegurando que todos tengan su propio espacio.",
+        "price": "Standard: Consultar"
+      }
+    ],
+    "aboutCards": [
       {
         "images": ["/crys/SINGLE-A.jpg"],
         "title": "Single",

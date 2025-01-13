@@ -7,7 +7,7 @@ import { IconBrandFacebook, IconBrandWhatsapp } from "@tabler/icons-react";
 
 export default function Footer() {
   return (
-    <div className="flex flex-wrap p-8 w-full bg-[var(--color-fuente-4)] text-black">
+    <div className="flex flex-wrap p-8 w-full bg-[var(--color-fuente)] text-black">
       <section className="flex-1 shrink-0 min-w-80  flex items-center justify-center align-middle">
         <Image
           src={logo}

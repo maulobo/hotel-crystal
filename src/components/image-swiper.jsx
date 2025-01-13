@@ -79,19 +79,19 @@ export const ImageSwiper = ({ images, className }) => {
           type: "spring",
           duration: 0.2,
         }}
-        className=" flex h-full cursor-grab items-center rounded-[inherit] active:cursor-grabbing"
+        className=" flex h-full cursor-grab items-center rounded-[inherit] active:cursor-grabbing rounded-t-full "
       >
         {images.map((src, i) => {
           return (
             <motion.div
               key={i}
-              className="h-full w-full shrink-0 overflow-hidden bg-neutral-800 object-cover first:rounded-l-[inherit] last:rounded-r-[inherit]"
+              className="h-full w-full shrink-0 overflow-hidden bg-neutral-800 object-cover first:rounded-l-[inherit] last:rounded-r-[inherit] rounded-t-full "
             >
               <img
                 width={80}
                 height={80}
                 src={src}
-                className="pointer-events-none h-full w-full object-cover"
+                className="pointer-events-none h-full w-full object-cover rounded-t-full "
               />
             </motion.div>
           );
