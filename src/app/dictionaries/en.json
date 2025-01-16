@@ -3,13 +3,221 @@
     "home": "HOME",
     "about": "ABOUT US",
     "rooms": "ROOMS",
-    "lounge": "LOUGE",
-    "turism": "TURISM",
+    "turism": "TOURISM",
     "contact": "CONTACT"
   },
   "home": {
-    "h1": "HOME"
+    "h1": "HOTEL CRYSTAL",
+    "h2": "YOUR HOTEL IN THE CITY CENTER",
+    "contact": "CONTACT US"
   },
-  "title": "Hi, my name is tailwindcss",
-  "button": "clickeame"
+  "about": {
+    "title": "ABOUT US",
+    "mision": [
+      {
+        "h3": "MISSION",
+        "p": "Our mission is to create a welcoming and family-like atmosphere that invites every guest to enjoy their stay in the city center, where hospitality and personalized attention turn every visit into a unique experience."
+      },
+      {
+        "h3": "VISION",
+        "p": "Our vision is to be the city's preferred hotel, where every guest feels welcomed and valued, and together we build strong relationships to ensure a solid market presence."
+      },
+      {
+        "h3": "VALUES",
+        "p": "Our values are based on warmth and exceptional service, creating a space where every guest feels at home, supported by a team committed to offering personalized attention and fostering an environment of friendship and trust."
+      }
+    ],
+    "ourHistoryh21": "Our History",
+    "ourHistoryp1": "In 1913, barber Don Jacobo Eddi arrived in the young city of Neuquén with his wife, Julia Zerahia, after a long journey from Roshpina, Palestine. At just fourteen years old, the beautiful Julia married the handsome Jacobo, who had just turned eighteen. They decided to settle in the capital of the territory, where Jacobo opened his first store, Baratillo Eddi, on Sarmiento Street 36, in November 1918. This location had previously been Rosenblat Jewelry, one of the city's first. Today, their legacy continues on the bustling Sarmiento Street under the name Tienda Eddi, although with a different owner.",
+    "ourHistoryp2": "Jacobo and Julia raised a large family, having six children: Raquel, Fortunata, Esther, Felisa, Rafael, and Víctor. However, the crisis of the 1930s forced them to move to Buenos Aires. There, Víctor studied at Mariano Moreno School and later joined the military, where he formed a lasting friendship with Neuquén native Jorge Wilfredo Celoria.",
+    "ourHistoryp3": "In 1948, Víctor married Elena, daughter of the Darmún family, who was on her way to becoming a teacher. Their eldest sons, Roberto and Ricardo, were born in Buenos Aires. They returned to Neuquén with them, where Víctor took over the family business, the renowned Casa Darmún. In this city, their youngest daughter, Julita, was born.",
+    "ourHistoryp4": "Elena Lela Darmún worked as a teacher in several schools in Neuquén, including School No. 61, No. 2, No. 121, and No. 118, being one of the first permanent teachers. Meanwhile, Víctor led an active social and professional life, serving as president of the Independiente Club and a member of its board since 1960. He was also part of the Rotary Club, an advisory director of Banco Los Andes de Mendoza, a member of the Neuquén Hotel Association, ACIPAN, a lifetime member of the Biguá Club, and a co-founder of Canal 7 Neuquén.",
+    "ourHistoryp5": "In 1964, Víctor left the family stores and acquired a property on Olascoaga Avenue 200, where he opened 'El Rey de los Pantalones.' He later inaugurated another store at Olascoaga 219, named 'Lencería Juli,' followed by 'Ella, Medias.' Meanwhile, the Hotel Crystal was built and inaugurated on January 14, 1966, with ten rooms. Years later, a plot of land was purchased from Remigio Bosch to continue expansions.",
+    "ourHistoryp6": "Víctor's three children continued their lives in the city where their grandparents had arrived when the population was no more than two thousand: Roberto became an accountant, Ricardo an architect, and Julia a systems analyst.",
+    "ourHistoryp7": "Currently, the hotel has 45 rooms and 99 beds. These rooms are categorized as single, double, triple, and quadruple. Additionally, there is an adequate number of superior rooms. The superior rooms differ from the standard ones by offering complimentary breakfast and some extra amenities, such as a refrigerator, an electric kettle, and a larger desk. Since July 1, 2018, Mr. Rodrigo Fernández has acquired the hotel's business name and manages it with his team, continuing the tradition of hospitality and service that has characterized Hotel Crystal over the years.",
+    "ourHistoryp8": "Hotel Crystal is the culmination of this rich family history, a place that reflects a commitment to hospitality and exceptional service. Every guest is welcomed with the same warmth that characterized the Darmún/Eddi family, ensuring everyone feels at home. This story of love, effort, and unity is the essence of Hotel Crystal, where the past meets the present, and every visit contributes to the continuation of this beautiful family tradition."
+  },
+  "turism": {
+    "h2": "TOURISM",
+    "h3": "Links of Interest",
+    "activities": [
+      {
+        "title": "Instagram Subsecretary of Culture",
+        "description": "Updated information on Neuquén's cultural agenda, with schedules and addresses.",
+        "link": "https://www.instagram.com/subseculturanqn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",
+        "Ico": "Instagram"
+      },
+      {
+        "title": "Official Website of the Subsecretary of Culture",
+        "description": "Cultural agenda, calls, and featured activities in Neuquén.",
+        "link": "https://www.neuquencapital.gov.ar/cultura/?fbclid=PAZXh0bgNhZW0CMTEAAabKXFHz8YBDWJdyZDH_Esjw2_kfLypYh-AwwglJn493N_a5q94C0AtcI4M_aem_N6M6INIYNwqH-dP7d09DKQ",
+        "Ico": "Globe"
+      },
+      {
+        "title": "Instagram of Neuquén Capital Tourism",
+        "description": "Weekly updates on activities, events, and cultural proposals.",
+        "link": "https://www.instagram.com/turismo.neuquen.capital?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",
+        "Ico": "Instagram"
+      },
+      {
+        "title": "Official Website of Neuquén Tourism",
+        "description": "Cultural agenda and tourist options to explore Neuquén Capital.",
+        "link": "https://www.neuquencapital.gov.ar/turismo/?fbclid=PAZXh0bgNhZW0CMTEAAaZDudr4d8RRfPVZbtuGHAxLIjiH5AFcIsAHhBpmapdy7wuaVE8tzO4LnGk_aem_W2X3qdBsemPhw4WgcUJAVQ",
+        "Ico": "Globe"
+      },
+      {
+        "title": "COLE Bus App",
+        "description": "Plan your trips in Neuquén with information on routes, stops, and schedules.",
+        "link": "https://play.google.com/store/apps/details?id=com.visionblo.apps.onewaraway.neuquen&hl=es_AR&pli=1",
+        "Ico": "Bus"
+      }
+    ],
+    "p6": "Interactive map of the city: In this interactive tourist map of Neuquén Capital, you can explore a variety of options to enjoy the city, including trails, viewpoints, self-guided MP3 circuits, an identity self-guided circuit, information on gastronomy, transport options, accommodations, bike lanes and cycling paths, cultural activities, historical buildings, murals, monuments, and other points of interest."
+  },
+  "rooms": {
+    "titleRooms": "ROOMS",
+    "intro": "Discover the comfort and style of our rooms. We offer accommodation options ranging from single rooms to quadruple rooms, perfect for couples, families, or solo travelers.",
+    "sub1": "Standard Accommodation",
+    "sub2": "Superior Accommodation",
+    "text1": "Our standard rooms are the perfect refuge for those looking for a cozy space at the end of the day. Equipped with comfortable beds, a spacious wardrobe, and a private bathroom, their simple and functional design creates a relaxing environment to rest and recharge.",
+    "text2": "If you desire a more complete experience, our superior rooms are the ideal choice. These rooms feature comfortable beds, a wardrobe, a private bathroom, and a desk. The elegant floating floor adds a distinctive touch, while the complimentary breakfast and private refrigerator ensure that your stay is even more pleasant and convenient.",
+    "roomServices": [
+      {
+        "category": "INCLUDED",
+        "services": [
+          {
+            "name": "Breakfast",
+            "description": "Our express breakfast is served at Confitería Azúcar, located next to the hotel. Included with your rate, it is available Monday to Saturday from 7:30 AM to 10:00 AM and Sundays and holidays from 8:00 AM to 11:00 AM. Enjoy coffee and croissants in a cozy and convenient setting to start your day.",
+            "icon": "Coffee"
+          },
+          {
+            "name": "Wifi",
+            "description": "We offer wifi connectivity in various areas of the hotel.",
+            "icon": "Wifi"
+          },
+          {
+            "name": "Concierge",
+            "description": "Our concierge service is available with 24-hour assistance. Our friendly team is always ready to help with any request, answer questions, and offer personalized recommendations.",
+            "icon": "ConciergeBell"
+          },
+          {
+            "name": "Package Reception",
+            "description": "We offer a secure service for receiving packages and mail. If you need us to receive something on your behalf, our staff will ensure that your packages are safely stored during your stay.",
+            "icon": "Package"
+          },
+          {
+            "name": "Housekeeping",
+            "description": "Our housekeeping service includes daily cleaning of your room. Our staff will keep your space spotless.",
+            "icon": "Hotel"
+          },
+          {
+            "name": "Daytime Luggage Storage",
+            "description": "We provide a luggage storage service. Although we don't have lockers, our concierge will take care of your belongings once the room is vacated or before check-in.",
+            "icon": "Luggage"
+          }
+        ]
+      },
+      {
+        "category": "ADDITIONAL",
+        "services": [
+          {
+            "name": "Parking",
+            "description": "We have a parking agreement near the hotel, available on a first-come, first-served basis, subject to availability.",
+            "icon": "ParkingCircle"
+          },
+          {
+            "name": "Beverage Service",
+            "description": "At the reception, we sell various cold beverages.",
+            "icon": "Martini"
+          },
+          {
+            "name": "Late Check-Out",
+            "description": "If you want to enjoy some extra rest, we offer the option of late check-out until 6:00 PM. This option allows you to relax without hurry and make the most of your time with us.",
+            "icon": "ClockArrowDown"
+          }
+        ]
+      }
+    ],
+    "standardRooms": "Standard Accommodation: With comfortable beds, a wardrobe, and a private bathroom, our standard rooms are practical and functional.",
+    "superiorRooms": "Superior Accommodation: With additional features like complimentary breakfast, a refrigerator, and a larger desk, our superior rooms offer an extra touch of comfort.",
+    "roomsCards": [
+      {
+        "images": ["/crys/SINGLE-A.jpg"],
+        "title": "Single",
+        "description": "Relax in our single room, equipped with a standard-sized single bed. With a private bathroom and shower, it's the ideal space for those looking for a cozy retreat.",
+        "price": "Standard: Inquire / Superior: Inquire"
+      },
+      {
+        "images": [
+          "/crys/DOBLE-A.jpg",
+          "/crys/DOBLE-B.jpg",
+          "/crys/DOBLE-C.jpg",
+          "/crys/DOBLE-D.jpg"
+        ],
+        "title": "Double",
+        "description": "Enjoy our double room, which can have two single beds or a double bed. It also includes a private bathroom with a shower, providing the comfort you need.",
+        "price": "Standard: Inquire / Superior: Inquire"
+      },
+      {
+        "images": [
+          "/crys/TRIPLE-A.jpg",
+          "/crys/TRIPLE-B.jpg",
+          "/crys/TRIPLE-C.jpg",
+          "/crys/TRIPLE-D.jpg",
+          "/crys/TRIPLE-E.jpg"
+        ],
+        "title": "Triple",
+        "description": "Our triple room is perfect for small groups, with the option of three single beds or a double bed with an additional single bed. You will also have a private bathroom and shower, ensuring a comfortable space for everyone.",
+        "price": "Standard: Inquire / Superior: Inquire"
+      },
+      {
+        "images": ["/crys/CUADRUPLE-A.jpg", "/crys/CUADRUPLE-B.jpg"],
+        "title": "Quadruple",
+        "description": "For families or larger groups, our quadruple room offers three single beds or a double bed with an additional single bed. It also includes a private bathroom with a shower, ensuring everyone has their own space.",
+        "price": "Standard: Inquire"
+      }
+    ],
+    "aboutCards": [
+      {
+        "images": ["/crys/SINGLE-A.jpg"],
+        "title": "Single",
+        "description": "Relax in our single room, equipped with a standard-sized single bed. With a private bathroom and shower, it's the ideal space for those looking for a cozy retreat.",
+        "price": "Standard: Inquire / Superior: Inquire"
+      },
+      {
+        "images": [
+          "/crys/DOBLE-A.jpg",
+          "/crys/DOBLE-B.jpg",
+          "/crys/DOBLE-C.jpg",
+          "/crys/DOBLE-D.jpg"
+        ],
+        "title": "Double",
+        "description": "Enjoy our double room, which can have two single beds or a double bed. It also includes a private bathroom with a shower, providing the comfort you need.",
+        "price": "Standard: Inquire / Superior: Inquire"
+      },
+      {
+        "images": [
+          "/crys/TRIPLE-A.jpg",
+          "/crys/TRIPLE-B.jpg",
+          "/crys/TRIPLE-C.jpg",
+          "/crys/TRIPLE-D.jpg",
+          "/crys/TRIPLE-E.jpg"
+        ],
+        "title": "Triple",
+        "description": "Our triple room is perfect for small groups, with the option of three single beds or a double bed with an additional single bed. You will also have a private bathroom and shower, ensuring a comfortable space for everyone.",
+        "price": "Standard: Inquire / Superior: Inquire"
+      },
+      {
+        "images": ["/crys/CUADRUPLE-A.jpg", "/crys/CUADRUPLE-B.jpg"],
+        "title": "Quadruple",
+        "description": "For families or larger groups, our quadruple room offers three single beds or a double bed with an additional single bed. It also includes a private bathroom with a shower, ensuring everyone has their own space.",
+        "price": "Standard: Inquire"
+      }
+    ],
+    "additionalInfo": {
+      "checkInTime": "Check-in: 12:00 PM",
+      "checkOutTime": "Check-out: 10:00 AM",
+      "breakfastHours": "Breakfast: Daily from 7:00 AM to 10:00 AM"
+    }
+  }
 }

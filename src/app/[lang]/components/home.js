@@ -48,7 +48,7 @@ const HomeMain = ({ dictionary }) => {
     <>
       <VideoBackground />
       <div className="relative md:h-screen md:w-screen aspect-square "></div>
-      <div className="absolute left-3 top-40 md:top-1/3 flex flex-col items-center w-full">
+      <div className="absolute left-3 top-40 md:top-1/2 flex flex-col items-center w-full">
         <h1 className="hidden">{dictionary.home.h1}</h1>
         <Image
           src={"/logo-blanco.png"}
@@ -60,8 +60,8 @@ const HomeMain = ({ dictionary }) => {
         <Image
           src={"/logo-blanco.png"}
           className="logo-animation opacity-0 translate-x-[-100px] translate-y-[-100px] hidden md:block"
-          width={500}
-          height={500}
+          width={300}
+          height={300}
         />
       </div>
       <div

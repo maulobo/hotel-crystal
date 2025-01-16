@@ -13,8 +13,8 @@ export default function Footer() {
           src={logo}
           alt="Iberia Logo"
           className="text-white"
-          width={100}
-          height={100}
+          width={150}
+          height={150}
         />
       </section>
       <section className="flex-1 shrink-0  min-w-80 py-4 flex flex-col justify-around items-center">
