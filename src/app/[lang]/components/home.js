@@ -4,19 +4,23 @@ import Image from "next/image";
 import { gsap } from "gsap";
 import { MapPin, Phone, Mail } from "lucide-react";
 import { useGSAP } from "@gsap/react";
+import { IconBrandWhatsapp } from "@tabler/icons-react";
 
 const redes = [
   {
     text: "Av Olascoaga 268, Q8300 Neuquén Capital, Patagonia Argentina",
     icon: <MapPin />,
+    href: "",
   },
   {
     text: "299-6263856",
-    icon: <Phone />,
+    icon: <IconBrandWhatsapp />,
+    href: "https://api.whatsapp.com/send/?phone=2996263856&text&type=phone_number&app_absent=0",
   },
   {
     text: "crystalneuquen@yahoo.com.ar",
     icon: <Mail />,
+    href: "mailto:",
   },
 ];
 
@@ -76,10 +80,14 @@ const HomeMain = ({ dictionary }) => {
         <div className="grid col-span-1 md:col-span-4 md:row-span-2 grid-cols-1 md:grid-cols-3 md:grid-rows-3 row-span-3 gap-4">
           <div className="row-span-1 md:col-span-1 md:row-span-3 flex flex-col gap-4 ">
             {redes.map((red, index) => (
-              <div key={index} className="flex items-center gap-2">
-                <div>{red.icon}</div>
-                <h4>{red.text}</h4>
-              </div>
+              <a
+                key={index}
+                href={red.href}
+                className="flex items-center gap-2"
+              >
+                {red.icon}
+                <span>{red.text}</span>
+              </a>
             ))}
           </div>
           <div className="row-span-3 md:row-span-3 md:col-span-2 flex justify-center rounded-2xl border-gray-950 line-clamp-2">
