@@ -27,7 +27,7 @@ const redes = [
 export function VideoBackground() {
   return (
     <video
-      className="hidden md:absolute md:block top-0 left-0 w-full h-full object-cover -z-10"
+      className="fixed top-0 left-0 w-screen h-screen object-cover z-[-10]"
       autoPlay
       loop
       muted
