@@ -1,7 +1,7 @@
 .bg-rooms {
   background-image: url("../image/aa.jpeg");
   background-clip: border-box;
-  background-position: 0 -600px;
+  background-position: 0 -670px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -35,7 +35,7 @@
   }
 }
 
-@media screen and (min-width: 1351px) and (max-width: 1500px) {
+@media screen and (min-width: 1351px) and (max-width: 1620px) {
   .bg-rooms {
     background-position: 0 -420px;
     background-size: cover;
