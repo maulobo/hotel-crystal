@@ -1,7 +1,7 @@
 .bg-rooms {
-  background-image: url("../image/aa.jpg");
+  background-image: url("../image/aa.jpeg");
   background-clip: border-box;
-  background-position: 0 -400px;
+  background-position: 0 -500px;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -22,16 +22,15 @@
 
 /* para celulares  */
 
-@media only screen and (max-width: 700px) {
+@media screen and (max-width: 950px) {
   .bg-rooms {
-    background-position: 0;
-    background-size: cover;
+    background-position-y: 0;
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media screen and (min-width: 951px) and (max-width: 1350px) {
   .bg-rooms {
-    background-position: 0 0px;
+    background-position: 0 -220px;
     background-size: cover;
   }
 }
