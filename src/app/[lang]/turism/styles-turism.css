@@ -1,9 +1,8 @@
 .bg-turism {
-  background-image: url("../image/land.jpg");
-  background-clip: border-box;
-  background-position: 0%;
-  background-position-y: top;
+  background-image: url("../image/land.jpeg");
+  background-position-y: -400px;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .bg-turism::before {
   content: "";
@@ -18,4 +17,21 @@
 
 .bg-turism h2 {
   z-index: 2;
+}
+@media only screen and (max-width: 1600px) {
+  .bg-turism {
+    background-position: 0 -110px;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .bg-turism {
+    background-position: 0 0;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 700) {
+  .bg-turism {
+    background-size: auto;
+  }
 }
