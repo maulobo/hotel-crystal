@@ -23,11 +23,11 @@ export function Carou({ images }) {
           <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2 ">
             <div className="p-1 ">
               <Card>
-                <span className="font-semibold ">
+                <span className="font-semibold h-[700px] w-[700px]">
                   <Image
                     src={card[0]}
-                    width={500}
-                    height={500}
+                    width={700}
+                    height={700}
                     className="rounded-t-full  "
                   />
                 </span>

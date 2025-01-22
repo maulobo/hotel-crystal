@@ -26,18 +26,20 @@ const redes = [
 
 export function VideoBackground() {
   return (
-    <video
-      className="fixed top-0 left-0 w-screen h-screen object-cover z-[-10]"
-      autoPlay
-      loop
-      muted
-      playsInline
-    >
-      <source src="/vid.mp4" type="video/mp4" />
-    </video>
+    <div className="relative">
+      <video
+        className="fixed top-0 left-0 w-screen h-screen object-cover z-[-10]"
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src="/vid.mp4" type="video/mp4" />
+      </video>
+      <div className="fixed md:hidden top-0 left-0 w-screen h-screen bg-black opacity-20 z-[-5]"></div>
+    </div>
   );
 }
-
 const HomeMain = ({ dictionary }) => {
   useGSAP(() => {
     gsap.to(".logo-animation", {
@@ -51,8 +53,9 @@ const HomeMain = ({ dictionary }) => {
   return (
     <>
       <VideoBackground />
+
       <div className="relative md:h-screen md:w-screen aspect-square "></div>
-      <div className="absolute left-3 top-40 md:top-1/2 flex flex-col items-center w-full">
+      <div className="absolute top-40 md:top-1/2 flex flex-col items-center w-full">
         <h1 className="hidden">{dictionary.home.h1}</h1>
         <Image
           src={"/logo-blanco.png"}
