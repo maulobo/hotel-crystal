@@ -1,17 +1,21 @@
-import localFont from "next/font/local";
+import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "./components/nav";
 import Footer from "./components/Footer";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  weight: ["300", "400", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-fraunces",
+  display: "swap",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
 export async function generateMetadata({ params }) {
@@ -27,10 +31,11 @@ export async function generateMetadata({ params }) {
 
   const title = `Hotel Crystal — ${dictionary?.siteTitle ?? "Hotel Crystal"}`;
   const description = dictionary?.description ?? "Hotel Crystal - Descripción";
-  const url = `https://your-domain.com/${lang}`;
-  const image = `https://your-domain.com/og-image.jpg`;
+  const url = `https://www.hotelcrystalneuquen.com/${lang}`;
+  const image = `https://www.hotelcrystalneuquen.com/og-image.jpg`;
 
   return {
+    metadataBase: new URL("https://www.hotelcrystalneuquen.com"),
     title,
     description,
     openGraph: {
@@ -61,9 +66,7 @@ export default async function RootLayout({ children, params }) {
   const lang = params.lang;
   return (
     <html lang="es">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[var(--color-fuente-2-opacity)] text-[var(--color-fuente)]`}
-      >
+      <body className={`${fraunces.variable} ${inter.variable} antialiased`}>
         <Nav lang={lang} />
         {children}
         <Footer />
