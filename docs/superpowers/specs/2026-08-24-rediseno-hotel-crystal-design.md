@@ -229,10 +229,16 @@ servicios completos en dos grupos (Incluidos / Adicionales).
 Se conserva. Es contenido secundario para el huésped corporativo: baja en jerarquía de
 navegación pero mantiene su página. Links y mapa interactivo como están.
 
-### Contacto
-Se resuelve P11: o se crea `/[lang]/contact` real, o se elimina del nav y queda como ancla
-del home. **Recomendación: página propia**, con dirección, WhatsApp, mail, redes, mapa y
-horarios de check-in/out.
+### Contacto (`/[lang]/contact`)
+**Decidido: página propia.** Resuelve P11. Contiene dirección, WhatsApp, mail, redes, mapa
+y horarios de check-in/out. El nav pasa a apuntar a la ruta real en vez del ancla `#contact`.
+
+Datos reales, ya presentes en el código:
+- Av. Olascoaga 268, Q8300 Neuquén Capital
+- WhatsApp 299-6263856
+- crystalneuquen@yahoo.com.ar
+- Instagram `hotel.crystal.nqn` · Facebook `hotelcrystalnqn`
+- Embed de Google Maps (CRYSTAL SRL) — se reutiliza el de `home.js:96`
 
 ---
 
@@ -355,6 +361,6 @@ Se hace como parte del trabajo, no como refactor aparte:
 | Misión/Visión/Valores | **Condensar** a una declaración corta (§5.2) |
 | Hero del home | **El video actual**, ya optimizado a 720p (§6) |
 
-**Pendiente:**
+| Contacto | **Página propia** en `/[lang]/contact` (§6) |
 
-1. Contacto: ¿página propia o ancla del home? Recomendación: página propia (§6)
+**Pendiente:** ninguna. La spec está cerrada y lista para implementar.
