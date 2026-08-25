@@ -35,6 +35,9 @@ una pieza de nostalgia.
 | Tipografía | Fraunces (títulos) + Inter (texto y datos) |
 | Copy | Se conserva la voz y los hechos; se **condensa** el volumen (§5) |
 | `HALL.jpg` | Se elimina del sitio |
+| Hero del home | El video actual (ya optimizado a 720p sin audio) |
+| Fotografía | No hay fotos nuevas; se trabaja con el set existente (§7.3) |
+| Misión/Visión/Valores | Se condensa a una sola declaración (§5.2) |
 
 ---
 
@@ -56,8 +59,8 @@ Cada uno tiene su contrapartida en el diseño nuevo.
 | P10 | `alt="Iberia Logo"` — residuo del proyecto del que se forkeó | `Footer.js:20` |
 | P11 | No existe página de contacto; el nav apunta a un ancla del home | `menu-nav.js` |
 
-**Ya resuelto en esta sesión:** los assets pasaron de 74.8 MB a 11.6 MB (−84.5%) por
-redimensionado a 2400 px máx. y recompresión. No requirió cambios de código.
+**Ya resuelto en esta sesión:** los assets pasaron de **78.5 MB a 12.2 MB (−84.5%)** — ver
+el desglose en §7.1. Ninguna de esas optimizaciones requirió cambios de código.
 
 ---
 
@@ -181,9 +184,9 @@ las profesiones de los tres hijos. Son datos de genealogía familiar, no de hote
 ### 5.2 Misión / Visión / Valores → una declaración
 
 Los tres párrafos actuales dicen lo mismo con distintas palabras ("acogedor", "como en
-casa", "calidez", "atención personalizada" aparecen en los tres). Se condensan en **una
-sola declaración corta**, o se elimina la sección si no aporta. Decisión durante
-implementación, mostrando ambas versiones.
+casa", "calidez", "atención personalizada" aparecen en los tres). **Decidido: se condensan
+en una sola declaración corta.** No se elimina la sección; se reduce a dos o tres líneas que
+digan una cosa y la digan bien.
 
 ### 5.3 Deduplicación
 
@@ -200,15 +203,20 @@ mantener la misma estructura de claves. Una clave eliminada en uno se elimina en
 
 ### Home (`/[lang]`)
 Hoy es video + logo + mapa (P9). Pasa a:
-1. **Hero** — foto de fachada, logo blanco, título, badge "Neuquén Capital · desde 1966", dos CTA
+1. **Hero** — **el video actual** (decidido), logo blanco, título, badge "Neuquén Capital ·
+   desde 1966", dos CTA
 2. **FactStrip** — check-in, check-out, conserjería, cantidad de habitaciones
 3. **Habitaciones** — 3–4 `RoomCard` con link a la página completa
 4. **Servicios destacados** — los 4–5 más relevantes para el huésped corporativo
 5. **El hotel** — 2 párrafos + link a la historia
 6. **Contacto** — datos + mapa (se conserva el embed actual)
 
-El `vid.mp4` (3.7 MB) queda como opción para el hero; se decide contra la foto de fachada
-durante implementación, midiendo impacto en LCP.
+**Requisitos del hero con video**, para que no destruya el LCP:
+- `poster="/vid-poster.jpg"` — la primera pintura no espera al video
+- `preload="none"` en mobile; el video carga después del contenido
+- `autoplay muted loop playsInline` (ya está así en `home.js:29-34`)
+- Respetar `prefers-reduced-motion`: si está activo, se muestra solo el póster
+- Veil `--ink-900` al 70% para que el cian del sistema tenga contraste sobre el video
 
 ### Habitaciones (`/[lang]/rooms`)
 `SectionHero` + intro + grilla de `RoomCard` + bloque comparativo Estándar vs Superior +
@@ -230,17 +238,62 @@ horarios de check-in/out.
 
 ## 7. Assets
 
+### 7.1 Ya ejecutado
+
+| Acción | Resultado |
+|---|---|
+| Redimensionado a 2400 px máx. + recompresión | 74.8 MB → 11.6 MB (**−84.5%**) |
+| `public/bg.jpg` eliminado | Era **duplicado byte a byte** de `about1.jpg`; entre los dos ocupaban 24 MB de los 74.8 originales |
+| `vid.mp4` reencodeado | 1080p con audio → 720p sin audio: 3.72 MB → 1.25 MB (**−66%**) |
+| `vid-poster.jpg` generado | 72 KB, para que el LCP no dependa de que cargue el video |
+
+### 7.2 Pendiente
+
 | Acción | Detalle |
 |---|---|
-| Eliminar `HALL.jpg` | Es una cocina con dos microondas y paredes descascaradas. No es un hall |
-| Eliminar `public/bg.jpg` | No está referenciado en ningún archivo (pendiente de confirmación) |
-| Revisar el set `crys/DET-*` | Verificar cuáles sostienen la calidad que exige la dirección visual |
+| Eliminar `HALL.jpg` | Requiere quitar antes la referencia en `our-history.js:15` |
 | Migrar fondos CSS a `next/image` | `bg-about.jpg`, `land.jpeg`, `aa.jpeg` (P8) |
 
-**Riesgo abierto:** esta dirección visual apoya mucho peso en la fotografía. Varias fotos
-del set actual no la sostienen. Conseguir 5–6 fotos nuevas de buena calidad —fachada, hall
-real, una habitación Superior, el desayuno— multiplicaría el resultado. **Es el mayor
-limitante del rediseño y no se resuelve con código.**
+### 7.3 Restricción: no hay fotos nuevas
+
+**Decidido: se trabaja con el material existente.** Esto es una restricción dura, no un
+riesgo. La dirección visual elegida apoya peso en la fotografía y el set actual no lo
+sostiene de forma pareja.
+
+Triaje del set completo (27 archivos, revisados uno por uno):
+
+**Nivel A — protagonistas.** Se usan grandes.
+`DOBLE-B` (Superior: piso de madera, escritorio, ropa de cama neutra — la mejor del set) ·
+`homeBox` (detalle de lámpara y cama, poca profundidad de campo) ·
+`aa.jpeg` (bandeja de desayuno sobre la cama) ·
+`DET-B` (cartel CRYSTAL HOTEL) · `DET-E` (cuadro enmarcado, composición limpia)
+
+**Nivel B — secundarias.** Se usan chicas o con recorte cerrado.
+`TRIPLE-D` · `DOBLE-A` · `about1.jpg` (pasillo con sillón rojo) · `about2.jpg` (lobby) ·
+`DESA.jpg` (fachada real, pero con cables y un cartel de YPF: **recortar al cartel del hotel**) ·
+`land.jpeg` (letras NEUQUÉN, solo para Turismo)
+
+**Nivel C — no se usan.**
+`HALL.jpg` (cocina con microondas) · `Captura de pantalla 2024-10-31…` (es una captura, con
+gente identificable de espaldas) · `saloon-banner.jpg` (gráfico azul de stock abstracto, no
+es una foto del hotel)
+
+**Problema sin salida limpia:** `SINGLE-A` es la **única** foto de habitación single, y
+`CUADRUPLE-A/B` las únicas de cuádruple. Todas tienen acolchados estampados o naranjas y piso
+de cerámica, y se ven fechadas. No se pueden descartar porque cada tipo de habitación necesita
+su foto. Mitigación: recorte cerrado sobre la cabecera o el escritorio evitando el acolchado,
+y tamaño de tarjeta chico.
+
+**Consecuencia de diseño:** el peso visual se corre de la fotografía a la **tipografía, la
+franja de datos y la línea de tiempo**. Menos fotos y más grandes de las buenas; nunca una
+grilla pareja que exponga a las malas al mismo tamaño que a las buenas.
+
+**Hallazgo aprovechable:** las fotos prueban solas la diferencia Estándar/Superior — las
+Superiores tienen piso de madera y ropa de cama neutra, las Estándar cerámica y estampados.
+El bloque comparativo de §6 puede apoyarse en eso en vez de solo describirlo.
+
+**El video es el hall real.** Muestra recepción, sillones y piso de madera. Cubre el hueco que
+deja descartar `HALL.jpg`.
 
 ---
 
@@ -293,8 +346,15 @@ Se hace como parte del trabajo, no como refactor aparte:
 
 ## 11. Preguntas abiertas
 
-1. ¿Se borra `public/bg.jpg`? (12 MB originales, ahora 0.76 MB, sin referencias)
-2. ¿Hay posibilidad de fotografía nueva? Condiciona el techo del resultado (§7)
-3. Misión/Visión/Valores: ¿condensar a una declaración o eliminar? (§5.2)
-4. Hero del home: ¿video o foto de fachada? (§6)
-5. Contacto: ¿página propia o ancla del home? Recomendación: página propia (§6)
+**Resueltas el 2026-08-24:**
+
+| Pregunta | Respuesta |
+|---|---|
+| ¿Se borra `public/bg.jpg`? | **Sí.** Ejecutado; era duplicado exacto de `about1.jpg` (§7.1) |
+| ¿Hay fotografía nueva? | **No.** Se trabaja con el material existente (§7.3) |
+| Misión/Visión/Valores | **Condensar** a una declaración corta (§5.2) |
+| Hero del home | **El video actual**, ya optimizado a 720p (§6) |
+
+**Pendiente:**
+
+1. Contacto: ¿página propia o ancla del home? Recomendación: página propia (§6)
