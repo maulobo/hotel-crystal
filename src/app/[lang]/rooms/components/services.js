@@ -1,155 +1,168 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
-import logo from "/public/logoo.png";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import { motion } from "framer-motion";
 import {
-  ClockArrowDown,
   Coffee,
-  ConciergeBell,
-  Hotel,
-  Martini,
-  Package,
-  ParkingCircle,
   Wifi,
+  ConciergeBell,
+  Package,
+  Hotel,
   Luggage,
+  ParkingCircle,
+  Martini,
+  ClockArrowDown,
 } from "lucide-react";
-import { CarouselSize } from "./carousel";
-import { cards } from "../constants-rooms";
-import { useGSAP } from "@gsap/react";
+import SectionHero from "@/components/site/SectionHero";
+import RoomCard from "@/components/site/RoomCard";
+import ServiceItem from "@/components/site/ServiceItem";
+import Prose from "@/components/site/Prose";
 
-const iconMap = {
-  Wifi,
+const ICONS = {
   Coffee,
+  Wifi,
   ConciergeBell,
   Package,
   Hotel,
+  Luggage,
   ParkingCircle,
   Martini,
   ClockArrowDown,
-  Luggage,
 };
 
-function Services({ services, dictionary }) {
-  useGSAP(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    const tl = gsap.timeline();
-
-    tl.fromTo(
-      ".triger1",
-      { opacity: 0 },
-      {
-        opacity: 1,
-
-        duration: 1,
-        ease: "power2.out",
-      }
-    );
-    tl.fromTo(
-      ".trigger2",
-      {
-        opacity: 0,
-        y: 50,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: "power2.out",
-      }
-    );
-
-    gsap.fromTo(
-      ".service-item",
-      { opacity: 0, y: 50 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1.5,
-        ease: "power2.out",
-        stagger: 0.2, // Desfase entre los elementos
-        scrollTrigger: {
-          trigger: ".service-item",
-          start: "top 70%", // Inicia la animación cuando el top del item llega al 80% de la pantalla
-          end: "top 30%", // Termina cuando el top alcanza el 30%
-          scrub: 0.2,
-        },
-      }
-    );
-  }, []);
-
+function ServiceGroup({ category, services }) {
   return (
-    <>
-      <div className="md:py-8 md:px-20 p-8 h-[400px] bg-rooms flex justify-center items-center triger1 relative">
-        <h2>{dictionary.rooms.titleRooms}</h2>
+    <div>
+      <h3 className="mb-6 font-display text-graphite">{category}</h3>
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {services.map((s) => (
+          <ServiceItem
+            key={s.name}
+            icon={ICONS[s.icon]}
+            name={s.name}
+            description={s.description}
+          />
+        ))}
       </div>
-      <div className="flex flex-col justify-center align-middle items-center bg-[var(--color-fuente)] w-full md:p-16">
-        <Image src={logo} className="" height={200} width={200} alt="logo" />
-
-        <p className="md:w-[50%] text-center ">{dictionary.rooms.introText}</p>
-      </div>
-      <section className="flex flex-col justify-center align-middle items-center  md:px-20  trigger2 p-8">
-        {/* intro */}
-
-        <section className="text-center md:justify-center md:w-[700px] md:py-8 md:px-20">
-          {dictionary.rooms.intro}
-        </section>
-        <div className="flex p-8 md:flex-col gap-10 md:w-[80%] py-8 ">
-          <div className="flex flex-col md:flex-row items-center justify-center align-middle gap-10">
-            <div className=" items-center justify-center align-middle  flex flex-col gap-10 text-center">
-              <h3 className="">{dictionary.rooms.sub1}</h3>
-              <p>{dictionary.rooms.text1}</p>
-            </div>
-          </div>
-        </div>
-        <div className="flex p-8 md:flex-col gap-10 md:w-[80%] py-8">
-          <div className="flex flex-col md:flex-row items-center justify-center align-middle gap-10">
-            <div className=" items-center justify-center align-middle  flex flex-col gap-10 text-center">
-              <h3 className="">{dictionary.rooms.sub2}</h3>
-              <p>{dictionary.rooms.text2}</p>
-            </div>
-          </div>
-        </div>
-
-        {/* aca va lo otro */}
-
-        <section className="w-full p-8 md:flex md:items-center md:align-middle md:justify-center md:w-screen md:py-8 md:px-20">
-          <CarouselSize dictionary={dictionary} cards={cards} />
-        </section>
-      </section>
-      <div>
-        <div className="flex flex-wrap flex-col gap-8 md:py-8 md:px-20 p-8">
-          {services.map((serviceCategory, index) => (
-            <div
-              key={index}
-              className="flex flex-col w-full items-center gap-8"
-            >
-              <h3>{serviceCategory.category}</h3>
-              <div className="flex flex-wrap justify-around gap-8">
-                {serviceCategory.services.map((service, idx) => {
-                  const IconComponent = iconMap[service.icon];
-                  return (
-                    <div
-                      key={idx}
-                      className="service-item md:w-96 w-80 flex flex-col align-middle items-center gap-8"
-                    >
-                      {IconComponent && (
-                        <IconComponent strokeWidth={1} size={56} />
-                      )}
-                      <p className="text-center">{service.description}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </>
+    </div>
   );
 }
 
-export default Services;
+export default function Services({ dictionary, lang }) {
+  const rooms = dictionary.rooms.roomsCards;
+  const [included, additional] = dictionary.rooms.roomServices;
+
+  return (
+    <>
+      <SectionHero
+        image="/crys/DOBLE-B.jpg"
+        alt="Habitación Superior del Hotel Crystal"
+        eyebrow="45 habitaciones · 99 plazas"
+        title={dictionary.rooms.titleRooms}
+        priority
+      />
+
+      <section className="px-6 py-16 md:px-16 md:py-24">
+        <Prose className="mx-auto text-center">
+          <p>{dictionary.rooms.intro}</p>
+        </Prose>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="lg:col-span-1">
+            <RoomCard
+              image={rooms[0].images[0]}
+              title={rooms[0].title}
+              beds="1 cama individual"
+              tag="Standard / Superior"
+              objectPosition="center 30%"
+            />
+          </div>
+          <div className="md:col-span-1 lg:col-span-2">
+            <RoomCard
+              image={rooms[1].images[1]}
+              title={rooms[1].title}
+              beds="2 camas o 1 matrimonial"
+              tag="Standard / Superior"
+            />
+          </div>
+          <div className="md:col-span-1 lg:col-span-2">
+            <RoomCard
+              image={rooms[2].images[1]}
+              title={rooms[2].title}
+              beds="3 camas o matrimonial + individual"
+              tag="Standard / Superior"
+            />
+          </div>
+          <div className="lg:col-span-1">
+            <RoomCard
+              image={rooms[3].images[1]}
+              title={rooms[3].title}
+              beds="Hasta 4 camas"
+              tag="Standard"
+              objectPosition="center 30%"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-paper-2 bg-white px-6 py-16 md:px-16 md:py-24">
+        <span className="u-label text-brand-700">Estándar vs Superior</span>
+        <h2 className="mt-2 text-graphite">Dos categorías, una diferencia visible</h2>
+
+        <div className="mt-10 grid gap-6 lg:grid-cols-2">
+          <div className="overflow-hidden rounded-card border border-paper-2">
+            <div className="relative aspect-[4/3]">
+              <Image
+                src="/crys/TRIPLE-A.jpg"
+                alt="Habitación Estándar"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="p-5">
+              <h3 className="font-display text-graphite">Estándar</h3>
+              <ul className="mt-3 space-y-2 text-sm text-slate-600">
+                <li>Cama, guardarropa y baño privado</li>
+                <li>Piso de cerámica</li>
+                <li>Ropa de cama con estampados</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="overflow-hidden rounded-card border border-paper-2">
+            <div className="relative aspect-[4/3]">
+              <Image
+                src="/crys/DOBLE-B.jpg"
+                alt="Habitación Superior"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+            </div>
+            <div className="p-5">
+              <h3 className="font-display text-graphite">Superior</h3>
+              <ul className="mt-3 space-y-2 text-sm text-slate-600">
+                <li>Todo lo de la Estándar</li>
+                <li>Desayuno de cortesía incluido</li>
+                <li>Heladera, pava eléctrica y escritorio más amplio</li>
+                <li>Piso de madera y ropa de cama neutra</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="px-6 py-16 md:px-16 md:py-24">
+        <div className="mb-10">
+          <span className="u-label text-brand-700">Servicios</span>
+          <h2 className="mt-2 text-graphite">Todo lo que necesitás para tu viaje</h2>
+        </div>
+        <div className="space-y-14">
+          <ServiceGroup category={included.category} services={included.services} />
+          <ServiceGroup category={additional.category} services={additional.services} />
+        </div>
+      </section>
+    </>
+  );
+}
