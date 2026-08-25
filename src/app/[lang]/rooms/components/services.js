@@ -12,11 +12,13 @@ import {
   Martini,
   ClockArrowDown,
   Check,
+  ArrowUpRight,
 } from "lucide-react";
 import SectionHero from "@/components/site/SectionHero";
-import RoomCard from "@/components/site/RoomCard";
 import ServiceItem from "@/components/site/ServiceItem";
 import Prose from "@/components/site/Prose";
+import Reveal from "@/components/site/Reveal";
+import RevealStagger from "@/components/site/RevealStagger";
 
 const ICONS = {
   Coffee,
@@ -30,11 +32,42 @@ const ICONS = {
   ClockArrowDown,
 };
 
+function BentoRoom({ image, title, beds, objectPosition = "center", span = "", tall = false }) {
+  return (
+    <div
+      className={`group relative overflow-hidden rounded-card bg-ink-900 ${span} ${
+        tall ? "min-h-[320px]" : "min-h-[220px]"
+      }`}
+    >
+      <Image
+        src={image}
+        alt={title}
+        fill
+        sizes="(max-width: 768px) 100vw, 50vw"
+        className="object-cover transition-transform duration-700 group-hover:scale-[1.05]"
+        style={{ objectPosition }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-ink-900/90 via-ink-900/20 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 p-6">
+        <div className="flex items-end justify-between gap-4">
+          <div>
+            <h3 className="font-display text-xl text-paper md:text-2xl">{title}</h3>
+            <p className="mt-1 text-sm text-slate-300">{beds}</p>
+          </div>
+          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-paper/30 text-paper transition-colors group-hover:bg-cyan-300 group-hover:text-ink-900">
+            <ArrowUpRight className="h-4 w-4" />
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function ServiceGroup({ category, services }) {
   return (
     <div>
-      <span className="u-eyebrow text-brand-700">{category}</span>
-      <div className="mt-8 grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+      <h3 className="mb-8 text-2xl text-graphite md:text-3xl">{category}</h3>
+      <div className="grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((s) => (
           <ServiceItem
             key={s.name}
@@ -80,10 +113,10 @@ export default function Services({ dictionary, lang }) {
   const [included, additional] = dictionary.rooms.roomServices;
 
   const roomMeta = [
-    { beds: "1 cama individual", tag: "Standard / Superior", objectPosition: "center 30%" },
-    { beds: "2 camas o 1 matrimonial", tag: "Standard / Superior" },
-    { beds: "3 camas o matrimonial + individual", tag: "Standard / Superior" },
-    { beds: "Hasta 4 camas", tag: "Standard", objectPosition: "center 30%" },
+    { beds: "1 cama individual", objectPosition: "center 30%" },
+    { beds: "2 camas o 1 matrimonial" },
+    { beds: "3 camas o matrimonial + individual" },
+    { beds: "Hasta 4 camas", objectPosition: "center 30%" },
   ];
 
   return (
@@ -91,61 +124,54 @@ export default function Services({ dictionary, lang }) {
       <SectionHero
         image="/crys/DOBLE-B.jpg"
         alt="Habitación Superior del Hotel Crystal"
-        eyebrow="45 habitaciones · 99 plazas"
         title={dictionary.rooms.titleRooms}
         priority
       />
 
       <section className="px-6 py-20 md:px-16 md:py-28">
-        <Prose className="mx-auto text-center">
-          <p className="text-lg font-light text-graphite">{dictionary.rooms.intro}</p>
-        </Prose>
+        <Reveal>
+          <Prose className="mx-auto text-center">
+            <p className="text-lg font-light text-graphite">{dictionary.rooms.intro}</p>
+          </Prose>
+        </Reveal>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-          <div className="lg:col-span-1">
-            <RoomCard
-              image={rooms[0].images[0]}
-              title={rooms[0].title}
-              beds={roomMeta[0].beds}
-              tag={roomMeta[0].tag}
-              objectPosition={roomMeta[0].objectPosition}
-            />
-          </div>
-          <div className="md:col-span-1 lg:col-span-2">
-            <RoomCard
-              image={rooms[1].images[1]}
-              title={rooms[1].title}
-              beds={roomMeta[1].beds}
-              tag={roomMeta[1].tag}
-            />
-          </div>
-          <div className="md:col-span-1 lg:col-span-2">
-            <RoomCard
-              image={rooms[2].images[1]}
-              title={rooms[2].title}
-              beds={roomMeta[2].beds}
-              tag={roomMeta[2].tag}
-            />
-          </div>
-          <div className="lg:col-span-1">
-            <RoomCard
-              image={rooms[3].images[1]}
-              title={rooms[3].title}
-              beds={roomMeta[3].beds}
-              tag={roomMeta[3].tag}
-              objectPosition={roomMeta[3].objectPosition}
-            />
-          </div>
-        </div>
+        <RevealStagger className="mt-14 grid auto-rows-[minmax(220px,auto)] grid-cols-1 gap-4 md:grid-cols-4">
+          <BentoRoom
+            image={rooms[1].images[1]}
+            title={rooms[1].title}
+            beds={roomMeta[1].beds}
+            span="md:col-span-2 md:row-span-2"
+            tall
+          />
+          <BentoRoom
+            image={rooms[2].images[1]}
+            title={rooms[2].title}
+            beds={roomMeta[2].beds}
+            span="md:col-span-2"
+          />
+          <BentoRoom
+            image={rooms[0].images[0]}
+            title={rooms[0].title}
+            beds={roomMeta[0].beds}
+            objectPosition={roomMeta[0].objectPosition}
+          />
+          <BentoRoom
+            image={rooms[3].images[1]}
+            title={rooms[3].title}
+            beds={roomMeta[3].beds}
+            objectPosition={roomMeta[3].objectPosition}
+          />
+        </RevealStagger>
       </section>
 
       <section className="u-texture-dark border-t border-slate-300/10 bg-ink-900 px-6 py-20 md:px-16 md:py-28">
-        <div className="mb-12">
-          <span className="u-eyebrow text-brass-300">Estándar vs Superior</span>
-          <h2 className="mt-4 text-paper">Dos categorías, una diferencia visible</h2>
-        </div>
+        <Reveal>
+          <h2 className="mb-12 text-paper md:text-5xl">
+            Dos categorías, <em className="italic text-cyan-300">una diferencia visible</em>
+          </h2>
+        </Reveal>
 
-        <div className="grid gap-6 lg:grid-cols-2">
+        <RevealStagger className="grid gap-6 lg:grid-cols-2">
           <CompareCard
             image="/crys/TRIPLE-A.jpg"
             alt="Habitación Estándar"
@@ -167,14 +193,15 @@ export default function Services({ dictionary, lang }) {
               "Piso de madera y ropa de cama neutra",
             ]}
           />
-        </div>
+        </RevealStagger>
       </section>
 
       <section className="px-6 py-20 md:px-16 md:py-28">
-        <div className="mb-12">
-          <span className="u-eyebrow text-brand-700">Servicios</span>
-          <h2 className="mt-4 text-graphite">Todo lo que necesitás para tu viaje</h2>
-        </div>
+        <Reveal>
+          <h2 className="mb-12 text-graphite md:text-5xl">
+            Todo lo que necesitás <em className="italic text-brand-700">para tu viaje</em>
+          </h2>
+        </Reveal>
         <div className="space-y-16">
           <ServiceGroup category={included.category} services={included.services} />
           <ServiceGroup category={additional.category} services={additional.services} />

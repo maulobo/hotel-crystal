@@ -14,8 +14,7 @@ export default function TurismComp({ dictionary }) {
   return (
     <section className="px-6 py-20 md:px-16 md:py-28">
       <div className="mb-12">
-        <span className="u-eyebrow text-brand-700">{dictionary.turism.h3}</span>
-        <h2 className="mt-4 text-graphite">Enlaces de interés</h2>
+        <h2 className="text-graphite">Enlaces de interés</h2>
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

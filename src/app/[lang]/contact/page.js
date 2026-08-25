@@ -60,8 +60,7 @@ export default async function ContactPage({ params: { lang } }) {
       <section className="px-6 py-20 md:px-16 md:py-28">
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
-            <span className="u-eyebrow text-brand-700">Contacto</span>
-            <h2 className="mt-4 text-graphite">Hablemos</h2>
+            <h2 className="text-graphite">Hablemos</h2>
             <p className="mt-4 max-w-[52ch] text-slate-600">
               Estamos en el centro de Neuquén Capital. Escribinos por WhatsApp, llamanos o
               pasá a saludar.

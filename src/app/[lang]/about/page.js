@@ -13,7 +13,6 @@ export default async function AboutPage({ params: { lang } }) {
       <SectionHero
         image="/about/about1.jpg"
         alt="Fachada del Hotel Crystal"
-        eyebrow="Desde 1966"
         title={dictionary.about.title}
         priority
       />
@@ -21,16 +20,14 @@ export default async function AboutPage({ params: { lang } }) {
       <section className="px-6 py-20 md:px-16 md:py-28">
         <div className="grid gap-14 lg:grid-cols-2 lg:items-start">
           <div>
-            <span className="u-eyebrow text-brand-700">Quiénes somos</span>
-            <Prose className="mt-6">
+            <Prose>
               <p className="text-2xl font-light leading-snug text-graphite">
                 {dictionary.about.statement}
               </p>
             </Prose>
           </div>
           <div>
-            <span className="u-eyebrow text-brand-700">{dictionary.about.ourHistoryh21}</span>
-            <div className="mt-6 space-y-5">
+            <div className="space-y-5">
               {dictionary.about.historyIntro.map((p, i) => (
                 <Prose key={i}>
                   <p className={i === 0 ? "text-lg font-light text-graphite" : ""}>{p}</p>
@@ -44,8 +41,7 @@ export default async function AboutPage({ params: { lang } }) {
       <section className="u-texture-dark border-t border-slate-300/10 bg-ink-900 px-6 py-20 md:px-16 md:py-28">
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
-            <span className="u-eyebrow text-brass-300">Línea de tiempo</span>
-            <h2 className="mt-4 text-paper">Más de medio siglo de hospitalidad</h2>
+            <h2 className="text-paper">Más de medio siglo de hospitalidad</h2>
             <p className="mt-5 max-w-[52ch] text-slate-300">
               Los hitos que marcan la historia del hotel y de la familia que lo fundó.
             </p>

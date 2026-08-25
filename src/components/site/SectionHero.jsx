@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function SectionHero({ image, alt, title, eyebrow, priority = false }) {
+export default function SectionHero({ image, alt, title, priority = false }) {
   return (
     <section className="relative h-[clamp(300px,48vh,460px)] overflow-hidden bg-ink-900">
       <Image
@@ -20,11 +20,8 @@ export default function SectionHero({ image, alt, title, eyebrow, priority = fal
       />
       <div className="u-texture-dark absolute inset-0" />
       <div className="relative flex h-full flex-col justify-end px-6 pb-12 md:px-16 md:pb-16">
-        {eyebrow && (
-          <span className="u-eyebrow mb-4 text-brass-300">{eyebrow}</span>
-        )}
-        <h1 className="max-w-[20ch] text-paper">{title}</h1>
-        <div className="u-hairline mt-6 w-24" />
+        <h1 className="u-display text-paper">{title}</h1>
+        <div className="u-hairline mt-8 w-28" />
       </div>
     </section>
   );

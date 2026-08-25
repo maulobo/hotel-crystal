@@ -65,7 +65,7 @@
 }
 
 @layer components {
-  /* Label en mayúsculas: usado por FactStrip, eyebrows y tags */
+  /* Label en mayúsculas: usado por FactStrip y tags */
   .u-label {
     font-size: 0.6875rem;
     letter-spacing: 0.16em;
@@ -73,22 +73,22 @@
     font-weight: 600;
   }
 
-  /* Eyebrow con hairline dorada: label + línea corta */
-  .u-eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.75rem;
-    font-size: 0.6875rem;
+  /* Display editorial — headline gigante */
+  .u-display {
+    font-family: var(--font-fraunces), Georgia, serif;
+    font-weight: 300;
+    letter-spacing: -0.03em;
+    line-height: 0.98;
+    font-size: clamp(2.75rem, 8vw, 6.5rem);
+    text-wrap: balance;
+  }
+
+  /* Índice editorial sutil — numeración de secciones */
+  .u-index {
+    font-size: 0.75rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    font-weight: 600;
-  }
-  .u-eyebrow::before {
-    content: "";
-    width: 2rem;
-    height: 1px;
-    background: currentColor;
-    opacity: 0.7;
+    font-weight: 500;
   }
 
   /* Hairline dorada horizontal */
@@ -108,7 +108,7 @@
     text-transform: uppercase;
     font-weight: 600;
     padding: 0.875rem 1.75rem;
-    border-radius: var(--radius-ctl);
+    border-radius: 999px;
     background: var(--cyan-300);
     color: var(--ink-900);
     transition: background 200ms ease, transform 200ms ease;
@@ -129,7 +129,7 @@
     text-transform: uppercase;
     font-weight: 600;
     padding: 0.875rem 1.75rem;
-    border-radius: var(--radius-ctl);
+    border-radius: 999px;
     border: 1px solid rgba(224, 198, 143, 0.45);
     color: var(--paper);
     transition: border-color 200ms ease, color 200ms ease, background 200ms ease;
@@ -150,7 +150,7 @@
     text-transform: uppercase;
     font-weight: 600;
     padding: 0.875rem 1.75rem;
-    border-radius: var(--radius-ctl);
+    border-radius: 999px;
     background: var(--blue-700);
     color: var(--paper);
     transition: background 200ms ease, transform 200ms ease;
