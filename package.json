@@ -9,7 +9,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check:dict": "node scripts/check-dictionaries.mjs"
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",

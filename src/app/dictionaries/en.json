@@ -8,34 +8,27 @@
   },
   "home": {
     "h1": "HOTEL CRYSTAL",
-    "h2": "YOUR HOTEL IN THE CITY CENTER",
+    "h2": "Your hotel in the city center",
     "contact": "CONTACT US"
   },
   "about": {
     "title": "ABOUT US",
-    "mision": [
-      {
-        "h3": "MISSION",
-        "p": "Our mission is to create a welcoming and family-like atmosphere that invites every guest to enjoy their stay in the city center, where hospitality and personalized attention turn every visit into a unique experience."
-      },
-      {
-        "h3": "VISION",
-        "p": "Our vision is to be the city's preferred hotel, where every guest feels welcomed and valued, and together we build strong relationships to ensure a solid market presence."
-      },
-      {
-        "h3": "VALUES",
-        "p": "Our values are based on warmth and exceptional service, creating a space where every guest feels at home, supported by a team committed to offering personalized attention and fostering an environment of friendship and trust."
-      }
-    ],
+    "statement": "We are a family hotel in downtown Neuquén. We work so that every guest finds a comfortable place, attended by people who know the city and are available at any time.",
     "ourHistoryh21": "Our History",
-    "ourHistoryp1": "In 1913, barber Don Jacobo Eddi arrived in the young city of Neuquén with his wife, Julia Zerahia, after a long journey from Roshpina, Palestine. At just fourteen years old, the beautiful Julia married the handsome Jacobo, who had just turned eighteen. They decided to settle in the capital of the territory, where Jacobo opened his first store, Baratillo Eddi, on Sarmiento Street 36, in November 1918. This location had previously been Rosenblat Jewelry, one of the city's first. Today, their legacy continues on the bustling Sarmiento Street under the name Tienda Eddi, although with a different owner.",
-    "ourHistoryp2": "Jacobo and Julia raised a large family, having six children: Raquel, Fortunata, Esther, Felisa, Rafael, and Víctor. However, the crisis of the 1930s forced them to move to Buenos Aires. There, Víctor studied at Mariano Moreno School and later joined the military, where he formed a lasting friendship with Neuquén native Jorge Wilfredo Celoria.",
-    "ourHistoryp3": "In 1948, Víctor married Elena, daughter of the Darmún family, who was on her way to becoming a teacher. Their eldest sons, Roberto and Ricardo, were born in Buenos Aires. They returned to Neuquén with them, where Víctor took over the family business, the renowned Casa Darmún. In this city, their youngest daughter, Julita, was born.",
-    "ourHistoryp4": "Elena Lela Darmún worked as a teacher in several schools in Neuquén, including School No. 61, No. 2, No. 121, and No. 118, being one of the first permanent teachers. Meanwhile, Víctor led an active social and professional life, serving as president of the Independiente Club and a member of its board since 1960. He was also part of the Rotary Club, an advisory director of Banco Los Andes de Mendoza, a member of the Neuquén Hotel Association, ACIPAN, a lifetime member of the Biguá Club, and a co-founder of Canal 7 Neuquén.",
-    "ourHistoryp5": "In 1964, Víctor left the family stores and acquired a property on Olascoaga Avenue 200, where he opened 'El Rey de los Pantalones.' He later inaugurated another store at Olascoaga 219, named 'Lencería Juli,' followed by 'Ella, Medias.' Meanwhile, the Hotel Crystal was built and inaugurated on January 14, 1966, with ten rooms. Years later, a plot of land was purchased from Remigio Bosch to continue expansions.",
-    "ourHistoryp6": "Víctor's three children continued their lives in the city where their grandparents had arrived when the population was no more than two thousand: Roberto became an accountant, Ricardo an architect, and Julia a systems analyst.",
-    "ourHistoryp7": "Currently, the hotel has 45 rooms and 99 beds. These rooms are categorized as single, double, triple, and quadruple. Additionally, there is an adequate number of superior rooms. The superior rooms differ from the standard ones by offering complimentary breakfast and some extra amenities, such as a refrigerator, an electric kettle, and a larger desk. Since July 1, 2018, Mr. Rodrigo Fernández has acquired the hotel's business name and manages it with his team, continuing the tradition of hospitality and service that has characterized Hotel Crystal over the years.",
-    "ourHistoryp8": "Hotel Crystal is the culmination of this rich family history, a place that reflects a commitment to hospitality and exceptional service. Every guest is welcomed with the same warmth that characterized the Darmún/Eddi family, ensuring everyone feels at home. This story of love, effort, and unity is the essence of Hotel Crystal, where the past meets the present, and every visit contributes to the continuation of this beautiful family tradition."
+    "historyIntro": [
+      "In 1913, Jacobo Eddi and Julia Zerahia arrived in Neuquén from Roshpirvá, Palestine, when the city had no more than two thousand inhabitants. They opened their shop on Sarmiento Street and raised a family of six children.",
+      "Half a century later, their son Víctor built Hotel Crystal on Avenida Olascoaga. It opened on January 14, 1966, with ten rooms.",
+      "Today there are forty-five rooms and ninety-nine beds, and the same vocation for hospitality that began with that family."
+    ],
+    "timeline": [
+      { "year": "1913", "text": "Jacobo Eddi and Julia Zerahia arrive in Neuquén from Palestine" },
+      { "year": "1918", "text": "Baratillo Eddi opens at Sarmiento 36" },
+      { "year": "1948", "text": "Víctor Eddi marries Elena Darmún; they return to Neuquén" },
+      { "year": "1964", "text": "Víctor acquires the property on Avenida Olascoaga 200" },
+      { "year": "1966", "text": "On January 14, Hotel Crystal opens with ten rooms" },
+      { "year": "2018", "text": "Rodrigo Fernández takes over the hotel" },
+      { "year": "Today", "text": "Forty-five rooms and ninety-nine beds" }
+    ]
   },
   "turism": {
     "h2": "TOURISM",
@@ -141,43 +134,6 @@
     "standardRooms": "Standard Accommodation: With comfortable beds, a wardrobe, and a private bathroom, our standard rooms are practical and functional.",
     "superiorRooms": "Superior Accommodation: With additional features like complimentary breakfast, a refrigerator, and a larger desk, our superior rooms offer an extra touch of comfort.",
     "roomsCards": [
-      {
-        "images": ["/crys/SINGLE-A.jpg"],
-        "title": "Single",
-        "description": "Relax in our single room, equipped with a standard-sized single bed. With a private bathroom and shower, it's the ideal space for those looking for a cozy retreat.",
-        "price": "Standard: Inquire / Superior: Inquire"
-      },
-      {
-        "images": [
-          "/crys/DOBLE-A.jpg",
-          "/crys/DOBLE-B.jpg",
-          "/crys/DOBLE-C.jpg",
-          "/crys/DOBLE-D.jpg"
-        ],
-        "title": "Double",
-        "description": "Enjoy our double room, which can have two single beds or a double bed. It also includes a private bathroom with a shower, providing the comfort you need.",
-        "price": "Standard: Inquire / Superior: Inquire"
-      },
-      {
-        "images": [
-          "/crys/TRIPLE-A.jpg",
-          "/crys/TRIPLE-B.jpg",
-          "/crys/TRIPLE-C.jpg",
-          "/crys/TRIPLE-D.jpg",
-          "/crys/TRIPLE-E.jpg"
-        ],
-        "title": "Triple",
-        "description": "Our triple room is perfect for small groups, with the option of three single beds or a double bed with an additional single bed. You will also have a private bathroom and shower, ensuring a comfortable space for everyone.",
-        "price": "Standard: Inquire / Superior: Inquire"
-      },
-      {
-        "images": ["/crys/CUADRUPLE-A.jpg", "/crys/CUADRUPLE-B.jpg"],
-        "title": "Quadruple",
-        "description": "For families or larger groups, our quadruple room offers three single beds or a double bed with an additional single bed. It also includes a private bathroom with a shower, ensuring everyone has their own space.",
-        "price": "Standard: Inquire"
-      }
-    ],
-    "aboutCards": [
       {
         "images": ["/crys/SINGLE-A.jpg"],
         "title": "Single",
