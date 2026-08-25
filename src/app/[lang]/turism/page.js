@@ -1,16 +1,19 @@
-import React from "react";
+import SectionHero from "@/components/site/SectionHero";
 import TurismComp from "./components/turism-comp";
-import "./styles-turism.css";
 
-export default async function page({ params: { lang } }) {
+export default async function TurismPage({ params: { lang } }) {
   const dictionary = await import(`../../dictionaries/${lang}.json`).then(
     (m) => m.default
   );
+
   return (
     <>
-      <div className="md:py-8 md:px-20 p-8 h-[400px] bg-turism relative flex justify-center items-center">
-        <h2>{dictionary.turism.h2}</h2>
-      </div>
+      <SectionHero
+        image="/image/land.jpeg"
+        alt="Letras de Neuquén Capital"
+        title={dictionary.turism.h2}
+        priority
+      />
       <TurismComp dictionary={dictionary} />
     </>
   );

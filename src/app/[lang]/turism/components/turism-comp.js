@@ -1,41 +1,52 @@
-import React from "react";
-import Container from "../../components/container";
-import * as LucideIcons from "lucide-react";
 import Link from "next/link";
+import { Globe, Bus } from "lucide-react";
+import { IconBrandInstagram } from "@tabler/icons-react";
+import Prose from "@/components/site/Prose";
+
+const ICONS = {
+  Instagram: IconBrandInstagram,
+  Globe,
+  Bus,
+};
 
 export default function TurismComp({ dictionary }) {
   const activities = dictionary.turism.activities;
 
   return (
-    <Container className={"gap-14 flex flex-col"}>
-      <div className="h-[30%] flex gap-8 md:flex-row flex-col">
-        <div className="flex flex-col md:max-w-[65%] gap-10 md:h-auto md:py-8">
-          <h3>{dictionary.turism.h3}</h3>
-        </div>
-        <div className="md:w-[50%]"></div>
+    <section className="px-6 py-16 md:px-16 md:py-24">
+      <div className="mb-10">
+        <span className="u-label text-brand-700">{dictionary.turism.h3}</span>
+        <h2 className="mt-2 text-graphite">Enlaces de interés</h2>
       </div>
 
-      <div className="flex flex-col gap-8 py-8 md:py-0">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {activities.map((act) => {
-          const IconComponent = LucideIcons[act.Ico] || LucideIcons.HelpCircle; // Usa un ícono predeterminado si no existe
-
+          const Icon = ICONS[act.Ico] || Globe;
           return (
-            <div className="flex gap-10" key={act.link}>
-              <Link
-                href={act.link}
-                className="w-20 flex flex-col items-center justify-center align-middle"
-              >
-                <IconComponent className="w-6 h-6" />
-                <p className="hover:text-[#f2d5a0]">Link</p>
-              </Link>
+            <a
+              key={act.link}
+              href={act.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex gap-4 rounded-card border border-paper-2 bg-white p-5 hover:border-brand-700"
+            >
+              <Icon className="mt-1 h-5 w-5 shrink-0 text-brand-700" />
               <div>
-                <h3 className="text-xxl">{act.title}</h3>
-                <p>{act.description}</p>
+                <h3 className="font-display text-graphite group-hover:text-brand-700">
+                  {act.title}
+                </h3>
+                <p className="mt-1 text-sm text-slate-600">{act.description}</p>
               </div>
-            </div>
+            </a>
           );
         })}
       </div>
-    </Container>
+
+      <div className="mt-16">
+        <Prose>
+          <p>{dictionary.turism.p6}</p>
+        </Prose>
+      </div>
+    </section>
   );
 }
