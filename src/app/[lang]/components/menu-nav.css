@@ -11,7 +11,7 @@
 .fas {
   width: 35px;
   z-index: 1000000;
-  background-color: var(--color-fuente-4);
+  background-color: var(--paper);
   height: 4px;
   transition: transform 0.3s ease;
 }
@@ -104,7 +104,7 @@
   display: flex;
   flex-direction: column;
   padding: 1;
-  background-color: var(--color-fuente);
+  background-color: var(--paper);
   position: relative;
   top: 0;
   /* z-index: 2; */
@@ -119,7 +119,7 @@
   justify-content: space-between;
   align-items: center;
   height: 60px;
-  background-color: rgba(53, 117, 173, 0.7);
+  background-color: rgba(11, 27, 43, 0.85);
 }
 
 .line-span {
@@ -144,13 +144,13 @@
 
 .nav-link {
   text-decoration: none;
-  color: var(--color-fuente);
+  color: var(--paper);
   font-size: 1rem;
   font-weight: 400;
   transition: all 600ms ease;
 }
 .nav-item.active {
-  background-color: var(--color-fuente-3);
+  background-color: var(--brand-700);
   font-weight: 800;
 }
 
