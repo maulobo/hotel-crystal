@@ -14,7 +14,7 @@ export default function TurismComp({ dictionary }) {
   return (
     <section className="px-6 py-20 md:px-16 md:py-28">
       <div className="mb-12">
-        <h2 className="text-graphite">Enlaces de interés</h2>
+        <h2 className="text-graphite">{dictionary.ui.turismPage.linksTitle}</h2>
       </div>
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

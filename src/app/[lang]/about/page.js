@@ -2,17 +2,24 @@ import SectionHero from "@/components/site/SectionHero";
 import Prose from "@/components/site/Prose";
 import Timeline from "@/components/site/Timeline";
 import OurHistory from "./components/our-history";
+import { buildMetadata } from "@/app/lib/seo";
+
+export function generateMetadata({ params }) {
+  return buildMetadata({ lang: params?.lang, route: "about" });
+}
 
 export default async function AboutPage({ params: { lang } }) {
   const dictionary = await import(`../../dictionaries/${lang}.json`).then(
     (m) => m.default
   );
 
+  const t = dictionary.ui.aboutPage;
+
   return (
     <>
       <SectionHero
         image="/about/about1.jpg"
-        alt="Fachada del Hotel Crystal"
+        alt={dictionary.ui.alt.facade}
         title={dictionary.about.title}
         priority
       />
@@ -41,10 +48,8 @@ export default async function AboutPage({ params: { lang } }) {
       <section className="u-texture-dark border-t border-slate-300/10 bg-ink-900 px-6 py-20 md:px-16 md:py-28">
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
-            <h2 className="text-paper">Más de medio siglo de hospitalidad</h2>
-            <p className="mt-5 max-w-[52ch] text-slate-300">
-              Los hitos que marcan la historia del hotel y de la familia que lo fundó.
-            </p>
+            <h2 className="text-paper">{t.timelineTitle}</h2>
+            <p className="mt-5 max-w-[52ch] text-slate-300">{t.timelineLead}</p>
           </div>
           <div className="rounded-card border border-slate-300/10 bg-ink-800/40 p-8">
             <Timeline items={dictionary.about.timeline} dark />

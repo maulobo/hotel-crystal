@@ -94,11 +94,6 @@
             "icon": "ConciergeBell"
           },
           {
-            "name": "Recepção de Pacotes",
-            "description": "Oferecemos um serviço seguro para a recepção de pacotes e correspondência. Se precisar que recebamos algo em seu nome, nossa equipe garantirá que seus pacotes fiquem seguros durante sua estadia.",
-            "icon": "Package"
-          },
-          {
             "name": "Arrumação",
             "description": "Nosso serviço de arrumação inclui limpeza diária do seu quarto. Nossa equipe cuidará para manter o seu espaço impecável.",
             "icon": "Hotel"
@@ -136,7 +131,7 @@
     "roomsCards": [
       {
         "images": ["/crys/SINGLE-A.jpg"],
-        "title": "Single",
+        "title": "Individual",
         "description": "Relaxe em nosso quarto individual, equipado com uma cama individual de tamanho padrão. Com banheiro privativo e chuveiro, é o espaço ideal para quem busca um refúgio aconchegante.",
         "price": "Padrão: Consultar / Superior: Consultar"
       },
@@ -147,7 +142,7 @@
           "/crys/DOBLE-C.jpg",
           "/crys/DOBLE-D.jpg"
         ],
-        "title": "Doble",
+        "title": "Duplo",
         "description": "Desfrute de nosso quarto duplo, que pode ter duas camas individuais ou uma cama de casal. Também inclui banheiro privativo com chuveiro, proporcionando o conforto necessário.",
         "price": "Padrão: Consultar / Superior: Consultar"
       },
@@ -159,7 +154,7 @@
           "/crys/TRIPLE-D.jpg",
           "/crys/TRIPLE-E.jpg"
         ],
-        "title": "Triple",
+        "title": "Triplo",
         "description": "Nosso quarto triplo é perfeito para grupos pequenos, com a opção de três camas individuais ou uma cama de casal junto com uma cama individual. Também inclui banheiro privativo com chuveiro, garantindo um espaço confortável para todos.",
         "price": "Padrão: Consultar / Superior: Consultar"
       },
@@ -175,5 +170,146 @@
       "checkOutTime": "Check-out: 10:00 AM",
       "breakfastHours": "Café da manhã: Todos os dias das 7:00 AM às 10:00 AM"
     }
-  }
+  },
+    "ui": {
+      "home": {
+        "eyebrow": "Neuquén Capital · desde 1966",
+        "h1": [
+          "Uma casa ",
+          "no centro",
+          " da cidade"
+        ],
+        "lead": "Três gerações de hotelaria familiar, a cinco quadras de tudo o que você veio fazer em Neuquén.",
+        "ctaRooms": "Ver quartos",
+        "ctaContact": "Fale conosco",
+        "roomsTitle": [
+          "Quatro maneiras de ",
+          "ficar",
+          ""
+        ],
+        "roomsAll": "Ver todos",
+        "servicesTitle": [
+          "Pensado para quem viaja ",
+          "a trabalho",
+          ""
+        ],
+        "servicesIndex": "Serviços",
+        "services": [
+          {
+            "name": "Concièrge 24 h",
+            "description": "Atendimento personalizado a qualquer hora do dia."
+          },
+          {
+            "name": "Wi-Fi",
+            "description": "Conectividade em todo o hotel."
+          },
+          {
+            "name": "Café da manhã",
+            "description": "Expresso, ao lado do hotel."
+          },
+          {
+            "name": "Guarda-volumes",
+            "description": "Cuidamos das suas malas antes ou depois do check-out."
+          },
+          {
+            "name": "Late check-out",
+            "description": "Até as 18:00."
+          }
+        ],
+        "familyTitle": [
+          "Uma família, ",
+          "uma cidade",
+          ""
+        ],
+        "familyCta": "Conhecer a história",
+        "contactTitle": [
+          "Estamos ",
+          "no centro",
+          ""
+        ],
+        "contactLead": "Escreva pelo WhatsApp ou ligue para nós. Se estiver por perto, passe para dizer oi."
+      },
+      "facts": {
+        "checkIn": "Check-in",
+        "checkOut": "Check-out",
+        "concierge": "Concièrge",
+        "concierge24": "24 horas",
+        "roomsLabel": "Quartos",
+        "roomsValue": "45 · 99 leitos",
+        "breakfast": "Café da manhã",
+        "breakfastHours": "Seg–Sáb 7:30–10:00 / Dom e feriados 8:00–11:00"
+      },
+      "beds": [
+        "1 cama de solteiro",
+        "2 camas ou 1 de casal",
+        "3 camas ou casal + solteiro",
+        "Até 4 camas"
+      ],
+      "roomsPage": {
+        "compareTitle": [
+          "Duas categorias, ",
+          "uma diferença visível",
+          ""
+        ],
+        "standard": {
+          "title": "Standard",
+          "items": [
+            "Cama, guarda-roupa e banheiro privativo",
+            "Piso de cerâmica",
+            "Roupa de cama estampada"
+          ]
+        },
+        "superior": {
+          "title": "Superior",
+          "items": [
+            "Tudo o que tem no Standard",
+            "Café da manhã de cortesia incluído",
+            "Frigobar, chaleira elétrica e escrivaninha maior",
+            "Piso de madeira e roupa de cama neutra"
+          ]
+        },
+        "servicesTitle": [
+          "Tudo o que você precisa ",
+          "para a sua viagem",
+          ""
+        ]
+      },
+      "aboutPage": {
+        "timelineTitle": "Mais de meio século de hospitalidade",
+        "timelineLead": "Os marcos que contam a história do hotel e da família que o fundou.",
+        "galleryTitle": [
+          "O hotel ",
+          "em imagens",
+          ""
+        ]
+      },
+      "contactPage": {
+        "eyebrow": "Atendimento 24 horas",
+        "title": "Vamos conversar",
+        "lead": "Estamos no centro de Neuquén Capital. Escreva pelo WhatsApp, ligue ou passe para dizer oi.",
+        "labels": {
+          "address": "Endereço",
+          "whatsapp": "WhatsApp",
+          "phone": "Telefone",
+          "email": "E-mail",
+          "instagram": "Instagram",
+          "facebook": "Facebook"
+        }
+      },
+      "turismPage": {
+        "linksTitle": "Links de interesse"
+      },
+      "footer": {
+        "follow": "Siga-nos",
+        "rights": "Todos os direitos reservados."
+      },
+      "alt": {
+        "facade": "Fachada do Hotel Crystal",
+        "interior": "Interior do hotel",
+        "breakfast": "Café da manhã no hotel",
+        "superiorRoom": "Quarto Superior do Hotel Crystal",
+        "standardRoom": "Quarto Standard",
+        "landmark": "Letreiro de Neuquén Capital"
+      }
+    }
 }

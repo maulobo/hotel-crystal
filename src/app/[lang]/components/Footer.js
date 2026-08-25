@@ -3,17 +3,21 @@ import { MapPin, Mail, Phone } from "lucide-react";
 import { InstagramLogoIcon } from "@radix-ui/react-icons";
 import { IconBrandWhatsapp, IconBrandFacebook } from "@tabler/icons-react";
 
-export default function Footer() {
+export default async function Footer({ lang }) {
+  const dictionary = await import(`../../dictionaries/${lang}.json`).then(
+    (m) => m.default
+  );
+  const t = dictionary.ui.footer;
+
   return (
     <footer className="u-texture-dark border-t border-slate-300/10 bg-ink-900 px-6 pb-10 pt-16 text-paper md:px-16">
       <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
         <div className="flex flex-col items-center md:items-start">
           <Image
-            src="/logoo.png"
+            src="/isologo-blanco.png"
             alt="Hotel Crystal"
-            width={110}
-            height={110}
-            className="brightness-0 invert"
+            width={176}
+            height={127}
           />
           <p className="mt-5 max-w-[26ch] text-center text-sm text-slate-300 md:text-left">
             Av. Olascoaga 268, Q8300 Neuquén Capital
@@ -56,7 +60,7 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-col items-center gap-5 md:items-start">
-          <span className="u-label text-brass-300">Seguinos</span>
+          <span className="u-label text-brass-300">{t.follow}</span>
           <div className="flex gap-4">
             <a
               href="https://www.instagram.com/hotel.crystal.nqn"
@@ -81,7 +85,7 @@ export default function Footer() {
       </div>
 
       <div className="mt-12 border-t border-slate-600/30 pt-6 text-center text-xs text-slate-400">
-        © {new Date().getFullYear()} Hotel Crystal. Todos los derechos reservados.
+        © {new Date().getFullYear()} Hotel Crystal. {t.rights}
       </div>
     </footer>
   );

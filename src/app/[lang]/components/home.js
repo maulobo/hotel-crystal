@@ -14,7 +14,7 @@ import {
   Coffee,
   Wifi,
   ConciergeBell,
-  Package,
+  Luggage,
   ClockArrowDown,
   ArrowRight,
   ArrowUpRight,
@@ -43,28 +43,25 @@ const redes = [
   },
 ];
 
-const featuredServices = [
-  {
-    icon: ConciergeBell,
-    name: "Conserjería 24 h",
-    description: "Atención personalizada a cualquier hora del día.",
-    span: "md:col-span-2 md:row-span-2",
-  },
-  { icon: Wifi, name: "Wifi", description: "Conectividad en todo el hotel." },
-  { icon: Coffee, name: "Desayuno", description: "Express, junto al hotel." },
-  { icon: Package, name: "Paquetería", description: "Recibimos tu correo con seguridad." },
-  { icon: ClockArrowDown, name: "Late Check-Out", description: "Hasta las 18:00." },
+// Solo lo no traducible: el copy de cada servicio vive en dictionary.ui.home.services
+const SERVICE_STYLE = [
+  { icon: ConciergeBell, span: "md:col-span-2 md:row-span-2" },
+  { icon: Wifi },
+  { icon: Coffee },
+  { icon: Luggage },
+  { icon: ClockArrowDown },
 ];
 
-const roomMeta = [
-  { beds: "1 cama individual", objectPosition: "center 30%" },
-  { beds: "2 camas o 1 matrimonial" },
-  { beds: "3 camas o matrimonial + individual" },
-  { beds: "Hasta 4 camas", objectPosition: "center 30%" },
+const ROOM_FRAMING = [
+  { objectPosition: "center 30%" },
+  {},
+  {},
+  { objectPosition: "center 30%" },
 ];
 
 function Hero({ dictionary }) {
   const scope = useRef(null);
+  const t = dictionary.ui.home;
 
   useGSAP(
     () => {
@@ -109,31 +106,32 @@ function Hero({ dictionary }) {
       >
         <div data-hero className="mb-8 flex items-center gap-4">
           <Image
-            src="/logo-blanco.png"
+            src="/isologo-blanco.png"
             alt="Hotel Crystal"
-            width={64}
-            height={64}
+            width={128}
+            height={92}
             priority
           />
           <span className="h-8 w-px bg-brass-400/50" />
-          <span className="u-label text-slate-300">Neuquén Capital · desde 1966</span>
+          <span className="u-label text-slate-300">{t.eyebrow}</span>
         </div>
 
         <h1 data-hero className="u-display max-w-[16ch] text-paper">
-          Una casa <em className="font-normal italic text-cyan-300">en el centro</em> de la ciudad
+          {t.h1[0]}
+          <em className="font-normal italic text-cyan-300">{t.h1[1]}</em>
+          {t.h1[2]}
         </h1>
 
         <div data-hero className="mt-8 flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
           <p className="max-w-[44ch] text-sm font-light text-slate-300 md:text-base">
-            Tres generaciones de hotelería familiar, a cinco cuadras de todo lo que vinieras a
-            hacer a Neuquén.
+            {t.lead}
           </p>
           <div className="flex flex-wrap gap-3">
             <Link href="#habitaciones" className="u-btn-primary">
-              Ver habitaciones
+              {t.ctaRooms}
             </Link>
             <Link href="#contacto" className="u-btn-ghost">
-              Consultar
+              {t.ctaContact}
             </Link>
           </div>
         </div>
@@ -190,6 +188,9 @@ function BentoService({ icon: Icon, name, description, span = "" }) {
 
 export default function HomeMain({ dictionary, lang }) {
   const rooms = dictionary.rooms.roomsCards;
+  const t = dictionary.ui.home;
+  const { facts, beds } = dictionary.ui;
+  const services = t.services.map((s, i) => ({ ...SERVICE_STYLE[i], ...s }));
 
   return (
     <>
@@ -198,10 +199,10 @@ export default function HomeMain({ dictionary, lang }) {
       <FactStrip
         tone="dark"
         items={[
-          { k: "Check-in", v: "12:00" },
-          { k: "Check-out", v: "10:00" },
-          { k: "Conserjería", v: "24 horas" },
-          { k: "Habitaciones", v: "45 · 99 plazas" },
+          { k: facts.checkIn, v: "12:00" },
+          { k: facts.checkOut, v: "10:00" },
+          { k: facts.concierge, v: facts.concierge24 },
+          { k: facts.roomsLabel, v: facts.roomsValue },
         ]}
       />
 
@@ -209,13 +210,15 @@ export default function HomeMain({ dictionary, lang }) {
         <Reveal>
           <div className="mb-14 grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
             <h2 className="max-w-[18ch] text-graphite md:text-5xl">
-              Cuatro maneras de <em className="italic text-brand-700">quedarte</em>
+              {t.roomsTitle[0]}
+              <em className="italic text-brand-700">{t.roomsTitle[1]}</em>
+              {t.roomsTitle[2]}
             </h2>
             <Link
               href={`/${lang}/rooms`}
               className="inline-flex items-center gap-2 text-sm font-medium text-brand-700 hover:text-blue-600"
             >
-              Ver todas <ArrowRight className="h-4 w-4" />
+              {t.roomsAll} <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
         </Reveal>
@@ -224,27 +227,27 @@ export default function HomeMain({ dictionary, lang }) {
           <BentoRoom
             image={rooms[1].images[1]}
             title={rooms[1].title}
-            beds={roomMeta[1].beds}
+            beds={beds[1]}
             span="md:col-span-2 md:row-span-2"
             tall
           />
           <BentoRoom
             image={rooms[2].images[1]}
             title={rooms[2].title}
-            beds={roomMeta[2].beds}
+            beds={beds[2]}
             span="md:col-span-2"
           />
           <BentoRoom
             image={rooms[0].images[0]}
             title={rooms[0].title}
-            beds={roomMeta[0].beds}
-            objectPosition={roomMeta[0].objectPosition}
+            beds={beds[0]}
+            objectPosition={ROOM_FRAMING[0].objectPosition}
           />
           <BentoRoom
             image={rooms[3].images[1]}
             title={rooms[3].title}
-            beds={roomMeta[3].beds}
-            objectPosition={roomMeta[3].objectPosition}
+            beds={beds[3]}
+            objectPosition={ROOM_FRAMING[3].objectPosition}
           />
         </RevealStagger>
       </section>
@@ -253,14 +256,16 @@ export default function HomeMain({ dictionary, lang }) {
         <Reveal>
           <div className="mb-14 grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
             <h2 className="max-w-[20ch] text-paper md:text-5xl">
-              Pensado para el que viaja <em className="italic text-cyan-300">por trabajo</em>
+              {t.servicesTitle[0]}
+              <em className="italic text-cyan-300">{t.servicesTitle[1]}</em>
+              {t.servicesTitle[2]}
             </h2>
-            <span className="u-index text-slate-400">Servicios</span>
+            <span className="u-index text-slate-400">{t.servicesIndex}</span>
           </div>
         </Reveal>
 
         <RevealStagger className="grid auto-rows-[minmax(140px,auto)] grid-cols-1 gap-4 md:grid-cols-4">
-          {featuredServices.map((s) => (
+          {services.map((s) => (
             <BentoService key={s.name} {...s} />
           ))}
         </RevealStagger>
@@ -270,7 +275,9 @@ export default function HomeMain({ dictionary, lang }) {
         <div className="grid gap-14 lg:grid-cols-2 lg:items-start">
           <Reveal>
             <h2 className="max-w-[16ch] text-graphite md:text-5xl">
-              Una familia, <em className="italic text-brand-700">una ciudad</em>
+              {t.familyTitle[0]}
+              <em className="italic text-brand-700">{t.familyTitle[1]}</em>
+              {t.familyTitle[2]}
             </h2>
             <Prose className="mt-8">
               <p className="text-lg font-light text-graphite">
@@ -282,7 +289,7 @@ export default function HomeMain({ dictionary, lang }) {
               href={`/${lang}/about`}
               className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-brand-700 hover:text-blue-600"
             >
-              Conocer la historia <ArrowRight className="h-4 w-4" />
+              {t.familyCta} <ArrowRight className="h-4 w-4" />
             </Link>
           </Reveal>
 
@@ -304,7 +311,9 @@ export default function HomeMain({ dictionary, lang }) {
         <div className="grid gap-10 md:grid-cols-2">
           <Reveal>
             <h2 className="max-w-[16ch] text-graphite md:text-5xl">
-              Estamos <em className="italic text-brand-700">en el centro</em>
+              {t.contactTitle[0]}
+              <em className="italic text-brand-700">{t.contactTitle[1]}</em>
+              {t.contactTitle[2]}
             </h2>
             <div className="mt-8 space-y-4">
               {redes.map((red) => {
@@ -328,9 +337,7 @@ export default function HomeMain({ dictionary, lang }) {
           </Reveal>
           <Reveal delay={0.15}>
             <div className="flex flex-col items-start justify-end gap-4">
-              <p className="max-w-[40ch] text-slate-600">
-                Escribinos por WhatsApp o llamanos. Si estás cerca, pasá a saludar.
-              </p>
+              <p className="max-w-[40ch] text-slate-600">{t.contactLead}</p>
               <Link href={`/${lang}/contact`} className="u-btn-dark mt-2">
                 <Phone className="h-4 w-4" />
                 {dictionary.home.contact}

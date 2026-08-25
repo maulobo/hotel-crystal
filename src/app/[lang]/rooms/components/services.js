@@ -111,19 +111,15 @@ function CompareCard({ image, alt, title, items }) {
 export default function Services({ dictionary, lang }) {
   const rooms = dictionary.rooms.roomsCards;
   const [included, additional] = dictionary.rooms.roomServices;
-
-  const roomMeta = [
-    { beds: "1 cama individual", objectPosition: "center 30%" },
-    { beds: "2 camas o 1 matrimonial" },
-    { beds: "3 camas o matrimonial + individual" },
-    { beds: "Hasta 4 camas", objectPosition: "center 30%" },
-  ];
+  const t = dictionary.ui.roomsPage;
+  const { beds, alt } = dictionary.ui;
+  const framing = ["center 30%", undefined, undefined, "center 30%"];
 
   return (
     <>
       <SectionHero
         image="/crys/DOBLE-B.jpg"
-        alt="Habitación Superior del Hotel Crystal"
+        alt={alt.superiorRoom}
         title={dictionary.rooms.titleRooms}
         priority
       />
@@ -139,27 +135,27 @@ export default function Services({ dictionary, lang }) {
           <BentoRoom
             image={rooms[1].images[1]}
             title={rooms[1].title}
-            beds={roomMeta[1].beds}
+            beds={beds[1]}
             span="md:col-span-2 md:row-span-2"
             tall
           />
           <BentoRoom
             image={rooms[2].images[1]}
             title={rooms[2].title}
-            beds={roomMeta[2].beds}
+            beds={beds[2]}
             span="md:col-span-2"
           />
           <BentoRoom
             image={rooms[0].images[0]}
             title={rooms[0].title}
-            beds={roomMeta[0].beds}
-            objectPosition={roomMeta[0].objectPosition}
+            beds={beds[0]}
+            objectPosition={framing[0]}
           />
           <BentoRoom
             image={rooms[3].images[1]}
             title={rooms[3].title}
-            beds={roomMeta[3].beds}
-            objectPosition={roomMeta[3].objectPosition}
+            beds={beds[3]}
+            objectPosition={framing[3]}
           />
         </RevealStagger>
       </section>
@@ -167,31 +163,24 @@ export default function Services({ dictionary, lang }) {
       <section className="u-texture-dark border-t border-slate-300/10 bg-ink-900 px-6 py-20 md:px-16 md:py-28">
         <Reveal>
           <h2 className="mb-12 text-paper md:text-5xl">
-            Dos categorías, <em className="italic text-cyan-300">una diferencia visible</em>
+            {t.compareTitle[0]}
+            <em className="italic text-cyan-300">{t.compareTitle[1]}</em>
+            {t.compareTitle[2]}
           </h2>
         </Reveal>
 
         <RevealStagger className="grid gap-6 lg:grid-cols-2">
           <CompareCard
             image="/crys/TRIPLE-A.jpg"
-            alt="Habitación Estándar"
-            title="Estándar"
-            items={[
-              "Cama, guardarropa y baño privado",
-              "Piso de cerámica",
-              "Ropa de cama con estampados",
-            ]}
+            alt={alt.standardRoom}
+            title={t.standard.title}
+            items={t.standard.items}
           />
           <CompareCard
             image="/crys/DOBLE-B.jpg"
-            alt="Habitación Superior"
-            title="Superior"
-            items={[
-              "Todo lo de la Estándar",
-              "Desayuno de cortesía incluido",
-              "Heladera, pava eléctrica y escritorio más amplio",
-              "Piso de madera y ropa de cama neutra",
-            ]}
+            alt={alt.superiorRoom}
+            title={t.superior.title}
+            items={t.superior.items}
           />
         </RevealStagger>
       </section>
@@ -199,7 +188,9 @@ export default function Services({ dictionary, lang }) {
       <section className="px-6 py-20 md:px-16 md:py-28">
         <Reveal>
           <h2 className="mb-12 text-graphite md:text-5xl">
-            Todo lo que necesitás <em className="italic text-brand-700">para tu viaje</em>
+            {t.servicesTitle[0]}
+            <em className="italic text-brand-700">{t.servicesTitle[1]}</em>
+            {t.servicesTitle[2]}
           </h2>
         </Reveal>
         <div className="space-y-16">

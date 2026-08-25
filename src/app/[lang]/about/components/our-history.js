@@ -4,18 +4,21 @@ import Image from "next/image";
 import Reveal from "@/components/site/Reveal";
 import RevealStagger from "@/components/site/RevealStagger";
 
-const images = [
-  { src: "/about/about1.jpg", alt: "Fachada del Hotel Crystal" },
-  { src: "/about/about2.jpg", alt: "Interior del hotel" },
-  { src: "/about/DESA.jpg", alt: "Desayuno en el hotel" },
-];
-
 export default function OurHistory({ dictionary }) {
+  const t = dictionary.ui.aboutPage;
+  const images = [
+    { src: "/about/about1.jpg", alt: dictionary.ui.alt.facade },
+    { src: "/about/about2.jpg", alt: dictionary.ui.alt.interior },
+    { src: "/about/DESA.jpg", alt: dictionary.ui.alt.breakfast },
+  ];
+
   return (
     <section className="px-6 py-20 md:px-16 md:py-28">
       <Reveal>
         <h2 className="text-graphite md:text-5xl">
-          El hotel <em className="italic text-brand-700">en imágenes</em>
+          {t.galleryTitle[0]}
+          <em className="italic text-brand-700">{t.galleryTitle[1]}</em>
+          {t.galleryTitle[2]}
         </h2>
       </Reveal>
 

@@ -95,11 +95,6 @@
             "icon": "ConciergeBell"
           },
           {
-            "name": "Recepción de Paquetería",
-            "description": "Ofrecemos un servicio seguro para la recepción de paquetería y correo. Si necesitas que recibamos algo en tu nombre, nuestro personal se asegurará de que tus paquetes estén a buen recaudo durante tu estancia.",
-            "icon": "Package"
-          },
-          {
             "name": "Mucamas",
             "description": "Nuestro servicio de mucamas incluye limpieza diaria de tu habitación. Nuestro personal se encargará de mantener tu espacio impecable.",
             "icon": "Hotel"
@@ -166,7 +161,7 @@
       },
       {
         "images": ["/crys/CUADRUPLE-A.jpg", "/crys/CUADRUPLE-B.jpg"],
-        "title": "Cuadruple",
+        "title": "Cuádruple",
         "description": "Para familias o grupos más grandes, nuestra habitación cuádruple ofrece tres camas individuales o una cama matrimonial junto a una cama individual. Además, incluye un baño privado con ducha, asegurando que todos tengan su propio espacio.",
         "price": "Standard: Consultar"
       }
@@ -176,5 +171,146 @@
       "checkOutTime": "Check-out: 10:00 AM",
       "breakfastHours": "Desayuno: Todos los días de 7:00 AM a 10:00 AM"
     }
-  }
+  },
+    "ui": {
+      "home": {
+        "eyebrow": "Neuquén Capital · desde 1966",
+        "h1": [
+          "Una casa ",
+          "en el centro",
+          " de la ciudad"
+        ],
+        "lead": "Tres generaciones de hotelería familiar, a cinco cuadras de todo lo que vinieras a hacer a Neuquén.",
+        "ctaRooms": "Ver habitaciones",
+        "ctaContact": "Consultar",
+        "roomsTitle": [
+          "Cuatro maneras de ",
+          "quedarte",
+          ""
+        ],
+        "roomsAll": "Ver todas",
+        "servicesTitle": [
+          "Pensado para el que viaja ",
+          "por trabajo",
+          ""
+        ],
+        "servicesIndex": "Servicios",
+        "services": [
+          {
+            "name": "Conserjería 24 h",
+            "description": "Atención personalizada a cualquier hora del día."
+          },
+          {
+            "name": "Wifi",
+            "description": "Conectividad en todo el hotel."
+          },
+          {
+            "name": "Desayuno",
+            "description": "Express, junto al hotel."
+          },
+          {
+            "name": "Guarda de equipaje",
+            "description": "Custodiamos tus valijas antes o después del check-out."
+          },
+          {
+            "name": "Late Check-Out",
+            "description": "Hasta las 18:00."
+          }
+        ],
+        "familyTitle": [
+          "Una familia, ",
+          "una ciudad",
+          ""
+        ],
+        "familyCta": "Conocer la historia",
+        "contactTitle": [
+          "Estamos ",
+          "en el centro",
+          ""
+        ],
+        "contactLead": "Escribinos por WhatsApp o llamanos. Si estás cerca, pasá a saludar."
+      },
+      "facts": {
+        "checkIn": "Check-in",
+        "checkOut": "Check-out",
+        "concierge": "Conserjería",
+        "concierge24": "24 horas",
+        "roomsLabel": "Habitaciones",
+        "roomsValue": "45 · 99 plazas",
+        "breakfast": "Desayuno",
+        "breakfastHours": "Lun–Sáb 7:30–10:00 / Dom y feriados 8:00–11:00"
+      },
+      "beds": [
+        "1 cama individual",
+        "2 camas o 1 matrimonial",
+        "3 camas o matrimonial + individual",
+        "Hasta 4 camas"
+      ],
+      "roomsPage": {
+        "compareTitle": [
+          "Dos categorías, ",
+          "una diferencia visible",
+          ""
+        ],
+        "standard": {
+          "title": "Estándar",
+          "items": [
+            "Cama, guardarropa y baño privado",
+            "Piso de cerámica",
+            "Ropa de cama con estampados"
+          ]
+        },
+        "superior": {
+          "title": "Superior",
+          "items": [
+            "Todo lo de la Estándar",
+            "Desayuno de cortesía incluido",
+            "Heladera, pava eléctrica y escritorio más amplio",
+            "Piso de madera y ropa de cama neutra"
+          ]
+        },
+        "servicesTitle": [
+          "Todo lo que necesitás ",
+          "para tu viaje",
+          ""
+        ]
+      },
+      "aboutPage": {
+        "timelineTitle": "Más de medio siglo de hospitalidad",
+        "timelineLead": "Los hitos que marcan la historia del hotel y de la familia que lo fundó.",
+        "galleryTitle": [
+          "El hotel ",
+          "en imágenes",
+          ""
+        ]
+      },
+      "contactPage": {
+        "eyebrow": "Atención las 24 horas",
+        "title": "Hablemos",
+        "lead": "Estamos en el centro de Neuquén Capital. Escribinos por WhatsApp, llamanos o pasá a saludar.",
+        "labels": {
+          "address": "Dirección",
+          "whatsapp": "WhatsApp",
+          "phone": "Teléfono",
+          "email": "Email",
+          "instagram": "Instagram",
+          "facebook": "Facebook"
+        }
+      },
+      "turismPage": {
+        "linksTitle": "Enlaces de interés"
+      },
+      "footer": {
+        "follow": "Seguinos",
+        "rights": "Todos los derechos reservados."
+      },
+      "alt": {
+        "facade": "Fachada del Hotel Crystal",
+        "interior": "Interior del hotel",
+        "breakfast": "Desayuno en el hotel",
+        "superiorRoom": "Habitación Superior del Hotel Crystal",
+        "standardRoom": "Habitación Estándar",
+        "landmark": "Letras de Neuquén Capital"
+      }
+    }
 }

@@ -94,11 +94,6 @@
             "icon": "ConciergeBell"
           },
           {
-            "name": "Package Reception",
-            "description": "We offer a secure service for receiving packages and mail. If you need us to receive something on your behalf, our staff will ensure that your packages are safely stored during your stay.",
-            "icon": "Package"
-          },
-          {
             "name": "Housekeeping",
             "description": "Our housekeeping service includes daily cleaning of your room. Our staff will keep your space spotless.",
             "icon": "Hotel"
@@ -175,5 +170,146 @@
       "checkOutTime": "Check-out: 10:00 AM",
       "breakfastHours": "Breakfast: Daily from 7:00 AM to 10:00 AM"
     }
-  }
+  },
+    "ui": {
+      "home": {
+        "eyebrow": "Neuquén Capital · since 1966",
+        "h1": [
+          "A home ",
+          "in the heart",
+          " of the city"
+        ],
+        "lead": "Three generations of family-run hospitality, five blocks from everything you came to Neuquén to do.",
+        "ctaRooms": "See rooms",
+        "ctaContact": "Get in touch",
+        "roomsTitle": [
+          "Four ways to ",
+          "stay",
+          ""
+        ],
+        "roomsAll": "See all",
+        "servicesTitle": [
+          "Built for the ",
+          "business traveller",
+          ""
+        ],
+        "servicesIndex": "Services",
+        "services": [
+          {
+            "name": "24-hour concierge",
+            "description": "Personal assistance at any hour of the day."
+          },
+          {
+            "name": "Wifi",
+            "description": "Connectivity throughout the hotel."
+          },
+          {
+            "name": "Breakfast",
+            "description": "Express, right next door."
+          },
+          {
+            "name": "Luggage storage",
+            "description": "We look after your bags before or after check-out."
+          },
+          {
+            "name": "Late check-out",
+            "description": "Until 6:00 PM."
+          }
+        ],
+        "familyTitle": [
+          "One family, ",
+          "one city",
+          ""
+        ],
+        "familyCta": "Read our story",
+        "contactTitle": [
+          "We're ",
+          "downtown",
+          ""
+        ],
+        "contactLead": "Message us on WhatsApp or give us a call. If you're nearby, drop in and say hello."
+      },
+      "facts": {
+        "checkIn": "Check-in",
+        "checkOut": "Check-out",
+        "concierge": "Concierge",
+        "concierge24": "24 hours",
+        "roomsLabel": "Rooms",
+        "roomsValue": "45 · 99 beds",
+        "breakfast": "Breakfast",
+        "breakfastHours": "Mon–Sat 7:30–10:00 / Sun & holidays 8:00–11:00"
+      },
+      "beds": [
+        "1 single bed",
+        "2 beds or 1 double bed",
+        "3 beds or double + single",
+        "Up to 4 beds"
+      ],
+      "roomsPage": {
+        "compareTitle": [
+          "Two categories, ",
+          "a visible difference",
+          ""
+        ],
+        "standard": {
+          "title": "Standard",
+          "items": [
+            "Bed, wardrobe and private bathroom",
+            "Ceramic tile floor",
+            "Patterned bed linen"
+          ]
+        },
+        "superior": {
+          "title": "Superior",
+          "items": [
+            "Everything in the Standard",
+            "Complimentary breakfast included",
+            "Fridge, electric kettle and a larger desk",
+            "Wood floor and neutral bed linen"
+          ]
+        },
+        "servicesTitle": [
+          "Everything you need ",
+          "for your trip",
+          ""
+        ]
+      },
+      "aboutPage": {
+        "timelineTitle": "More than half a century of hospitality",
+        "timelineLead": "The milestones that shaped the hotel and the family that founded it.",
+        "galleryTitle": [
+          "The hotel ",
+          "in pictures",
+          ""
+        ]
+      },
+      "contactPage": {
+        "eyebrow": "Open 24 hours",
+        "title": "Let's talk",
+        "lead": "We're in the centre of Neuquén Capital. Message us on WhatsApp, call us, or drop in and say hello.",
+        "labels": {
+          "address": "Address",
+          "whatsapp": "WhatsApp",
+          "phone": "Phone",
+          "email": "Email",
+          "instagram": "Instagram",
+          "facebook": "Facebook"
+        }
+      },
+      "turismPage": {
+        "linksTitle": "Useful links"
+      },
+      "footer": {
+        "follow": "Follow us",
+        "rights": "All rights reserved."
+      },
+      "alt": {
+        "facade": "Facade of Hotel Crystal",
+        "interior": "Hotel interior",
+        "breakfast": "Breakfast at the hotel",
+        "superiorRoom": "Superior room at Hotel Crystal",
+        "standardRoom": "Standard room",
+        "landmark": "Neuquén Capital letters sign"
+      }
+    }
 }

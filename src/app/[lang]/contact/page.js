@@ -2,57 +2,67 @@ import SectionHero from "@/components/site/SectionHero";
 import FactStrip from "@/components/site/FactStrip";
 import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
 import { IconBrandWhatsapp } from "@tabler/icons-react";
+import { buildMetadata } from "@/app/lib/seo";
 
-const contactData = [
+// Los valores no se traducen; las etiquetas vienen de dictionary.ui.contactPage.labels
+const contactData = (labels) => [
   {
-    label: "Dirección",
+    label: labels.address,
     value: "Av. Olascoaga 268, Q8300 Neuquén Capital",
     href: "https://maps.google.com/?q=Av.+Olascoaga+268,+Neuquén",
     icon: MapPin,
   },
   {
-    label: "WhatsApp",
+    label: labels.whatsapp,
     value: "299-6263856",
     href: "https://api.whatsapp.com/send/?phone=2996263856&text&type=phone_number&app_absent=0",
     icon: IconBrandWhatsapp,
   },
   {
-    label: "Teléfono",
+    label: labels.phone,
     value: "299-6263856",
     href: "tel:+542996263856",
     icon: Phone,
   },
   {
-    label: "Email",
+    label: labels.email,
     value: "crystalneuquen@yahoo.com.ar",
     href: "mailto:crystalneuquen@yahoo.com.ar",
     icon: Mail,
   },
   {
-    label: "Instagram",
+    label: labels.instagram,
     value: "@hotel.crystal.nqn",
     href: "https://www.instagram.com/hotel.crystal.nqn",
     icon: Instagram,
   },
   {
-    label: "Facebook",
+    label: labels.facebook,
     value: "Hotel Crystal NQN",
     href: "https://www.facebook.com/hotelcrystalnqn/",
     icon: Facebook,
   },
 ];
 
+export function generateMetadata({ params }) {
+  return buildMetadata({ lang: params?.lang, route: "contact" });
+}
+
 export default async function ContactPage({ params: { lang } }) {
   const dictionary = await import(`../../dictionaries/${lang}.json`).then(
     (m) => m.default
   );
 
+  const t = dictionary.ui.contactPage;
+  const { facts, alt } = dictionary.ui;
+  const items = contactData(t.labels);
+
   return (
     <>
       <SectionHero
         image="/about/about1.jpg"
-        alt="Fachada del Hotel Crystal"
-        eyebrow="Atención las 24 horas"
+        alt={alt.facade}
+        eyebrow={t.eyebrow}
         title={dictionary.nav.contact}
         priority
       />
@@ -60,14 +70,11 @@ export default async function ContactPage({ params: { lang } }) {
       <section className="px-6 py-20 md:px-16 md:py-28">
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
-            <h2 className="text-graphite">Hablemos</h2>
-            <p className="mt-4 max-w-[52ch] text-slate-600">
-              Estamos en el centro de Neuquén Capital. Escribinos por WhatsApp, llamanos o
-              pasá a saludar.
-            </p>
+            <h2 className="text-graphite">{t.title}</h2>
+            <p className="mt-4 max-w-[52ch] text-slate-600">{t.lead}</p>
 
             <ul className="mt-8 space-y-3">
-              {contactData.map((item) => {
+              {items.map((item) => {
                 const Icon = item.icon;
                 const external = item.href.startsWith("http");
                 return (
@@ -107,10 +114,10 @@ export default async function ContactPage({ params: { lang } }) {
       <FactStrip
         tone="light"
         items={[
-          { k: "Check-in", v: "12:00" },
-          { k: "Check-out", v: "10:00" },
-          { k: "Desayuno", v: "Lun–Sáb 7:30–10:00 / Dom y feriados 8:00–11:00" },
-          { k: "Conserjería", v: "24 horas" },
+          { k: facts.checkIn, v: "12:00" },
+          { k: facts.checkOut, v: "10:00" },
+          { k: facts.breakfast, v: facts.breakfastHours },
+          { k: facts.concierge, v: facts.concierge24 },
         ]}
       />
     </>
