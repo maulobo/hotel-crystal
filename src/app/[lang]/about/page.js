@@ -1,26 +1,56 @@
-import React from "react";
+import SectionHero from "@/components/site/SectionHero";
+import Prose from "@/components/site/Prose";
+import Timeline from "@/components/site/Timeline";
 import OurHistory from "./components/our-history";
-import MisionVision from "./components/mision-vision";
-import "./styles-about.css";
 
-export default async function page({ params: { lang } }) {
+export default async function AboutPage({ params: { lang } }) {
   const dictionary = await import(`../../dictionaries/${lang}.json`).then(
     (m) => m.default
   );
+
   return (
     <>
-      <div className="md:py-8 md:px-20 p-8 h-[400px] bg-about flex justify-center items-center relative">
-        <h2>{dictionary.about.title}</h2>
-      </div>
-      <div className="bg-[var(--color-fuente)] text-[var(--color-fuente-2)]">
-        <div className="flex flex-col gap-10 justify-center align-middle items-center md:py-20 md:px-20 p-8 text-center ">
-          <MisionVision dictionary={dictionary} />
-        </div>
-      </div>
+      <SectionHero
+        image="/about/about1.jpg"
+        alt="Fachada del Hotel Crystal"
+        eyebrow="Desde 1966"
+        title={dictionary.about.title}
+        priority
+      />
 
-      <div className={"flex flex-col gap-20 md:py-8 md:px-20 p-8"}>
-        <OurHistory dictionary={dictionary} />
-      </div>
+      <section className="px-6 py-16 md:px-16 md:py-24">
+        <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
+          <div>
+            <Prose className="text-lg">
+              <p className="text-graphite">{dictionary.about.statement}</p>
+            </Prose>
+          </div>
+          <div>
+            <span className="u-label text-brand-700">{dictionary.about.ourHistoryh21}</span>
+            <div className="mt-6 space-y-4">
+              {dictionary.about.historyIntro.map((p, i) => (
+                <Prose key={i}>
+                  <p>{p}</p>
+                </Prose>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-paper-2 bg-white px-6 py-16 md:px-16 md:py-24">
+        <div className="grid gap-12 lg:grid-cols-2">
+          <div>
+            <h2 className="text-graphite">Línea de tiempo</h2>
+            <p className="mt-4 max-w-[52ch] text-slate-600">
+              Los hitos que marcan la historia del hotel y de la familia que lo fundó.
+            </p>
+          </div>
+          <Timeline items={dictionary.about.timeline} />
+        </div>
+      </section>
+
+      <OurHistory dictionary={dictionary} />
     </>
   );
 }
