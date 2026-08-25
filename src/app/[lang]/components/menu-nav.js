@@ -51,7 +51,7 @@ const MenuNav = ({ dictionary, clima }) => {
             {clima.current ? (
               <li className="list-none flex items-center">
                 {clima.current.temp_c}
-                <Image src={cleanUrl} height={40} width={40} />
+                <Image src={cleanUrl} height={40} width={40} alt="" />
               </li>
             ) : (
               ""

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function SectionHero({ image, alt, title, eyebrow, priority = false }) {
   return (
-    <section className="relative h-[clamp(260px,42vh,420px)] overflow-hidden bg-ink-900">
+    <section className="relative h-[clamp(300px,48vh,460px)] overflow-hidden bg-ink-900">
       <Image
         src={image}
         alt={alt}
@@ -15,12 +15,16 @@ export default function SectionHero({ image, alt, title, eyebrow, priority = fal
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(180deg, rgba(11,27,43,.62) 0%, rgba(11,27,43,.42) 45%, rgba(11,27,43,.88) 100%)",
+            "linear-gradient(180deg, rgba(11,27,43,.60) 0%, rgba(11,27,43,.32) 42%, rgba(11,27,43,.94) 100%)",
         }}
       />
-      <div className="relative flex h-full flex-col justify-end px-6 pb-10 md:px-16 md:pb-14">
-        {eyebrow && <span className="u-label mb-3 text-cyan-300">{eyebrow}</span>}
-        <h1 className="text-paper">{title}</h1>
+      <div className="u-texture-dark absolute inset-0" />
+      <div className="relative flex h-full flex-col justify-end px-6 pb-12 md:px-16 md:pb-16">
+        {eyebrow && (
+          <span className="u-eyebrow mb-4 text-brass-300">{eyebrow}</span>
+        )}
+        <h1 className="max-w-[20ch] text-paper">{title}</h1>
+        <div className="u-hairline mt-6 w-24" />
       </div>
     </section>
   );

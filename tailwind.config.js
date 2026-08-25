@@ -20,6 +20,7 @@ module.exports = {
       colors: {
         cyan:     { 300: 'var(--cyan-300)', 500: 'var(--cyan-500)' },
         brand:    { 500: 'var(--blue-500)', 600: 'var(--blue-600)', 700: 'var(--blue-700)' },
+        brass:    { 300: 'var(--brass-300)', 400: 'var(--brass-400)', 500: 'var(--brass-500)', 600: 'var(--brass-600)' },
         graphite: 'var(--graphite)',
         ink:      { 800: 'var(--ink-800)', 900: 'var(--ink-900)' },
         paper:    { DEFAULT: 'var(--paper)', 2: 'var(--paper-2)' },
