@@ -17,7 +17,7 @@ const MenuNav = ({ dictionary, clima }) => {
     { id: 2, nombre: `${dictionary.nav.about}`, deruta: "/about" },
     { id: 3, nombre: `${dictionary.nav.rooms}`, deruta: "/rooms" },
     { id: 4, nombre: `${dictionary.nav.turism}`, deruta: "/turism" },
-    { id: 5, nombre: `${dictionary.nav.contact}`, deruta: "/#contact" },
+    { id: 5, nombre: `${dictionary.nav.contact}`, deruta: "/contact" },
   ];
   const urlCondition = clima.current.condition.icon;
   const cleanUrl = urlCondition.replace("//", "https://");
