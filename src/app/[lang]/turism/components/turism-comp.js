@@ -1,41 +1,53 @@
-import React from "react";
-import Container from "../../components/container";
-import * as LucideIcons from "lucide-react";
-import Link from "next/link";
+import { Globe, Bus, ArrowUpRight } from "lucide-react";
+import { IconBrandInstagram } from "@tabler/icons-react";
+import Prose from "@/components/site/Prose";
+
+const ICONS = {
+  Instagram: IconBrandInstagram,
+  Globe,
+  Bus,
+};
 
 export default function TurismComp({ dictionary }) {
   const activities = dictionary.turism.activities;
 
   return (
-    <Container className={"gap-14 flex flex-col"}>
-      <div className="h-[30%] flex gap-8 md:flex-row flex-col">
-        <div className="flex flex-col md:max-w-[65%] gap-10 md:h-auto md:py-8">
-          <h3>{dictionary.turism.h3}</h3>
-        </div>
-        <div className="md:w-[50%]"></div>
+    <section className="px-6 py-20 md:px-16 md:py-28">
+      <div className="mb-12">
+        <h2 className="text-graphite">{dictionary.ui.turismPage.linksTitle}</h2>
       </div>
 
-      <div className="flex flex-col gap-8 py-8 md:py-0">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {activities.map((act) => {
-          const IconComponent = LucideIcons[act.Ico] || LucideIcons.HelpCircle; // Usa un ícono predeterminado si no existe
-
+          const Icon = ICONS[act.Ico] || Globe;
           return (
-            <div className="flex gap-10" key={act.link}>
-              <Link
-                href={act.link}
-                className="w-20 flex flex-col items-center justify-center align-middle"
-              >
-                <IconComponent className="w-6 h-6" />
-                <p className="hover:text-[#f2d5a0]">Link</p>
-              </Link>
-              <div>
-                <h3 className="text-xxl">{act.title}</h3>
-                <p>{act.description}</p>
+            <a
+              key={act.link}
+              href={act.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex gap-4 rounded-card border border-paper-2 bg-white p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-brand-700 hover:shadow-[0_12px_40px_-18px_rgba(11,27,43,0.35)]"
+            >
+              <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-brass-400/40 bg-paper-2/60">
+                <Icon className="h-5 w-5 text-brand-700" />
+              </span>
+              <div className="flex-1">
+                <h3 className="font-display text-graphite transition-colors group-hover:text-brand-700">
+                  {act.title}
+                </h3>
+                <p className="mt-1 text-sm text-slate-600">{act.description}</p>
               </div>
-            </div>
+              <ArrowUpRight className="mt-1 h-4 w-4 shrink-0 text-slate-400 transition-colors group-hover:text-brand-700" />
+            </a>
           );
         })}
       </div>
-    </Container>
+
+      <div className="mt-16">
+        <Prose>
+          <p>{dictionary.turism.p6}</p>
+        </Prose>
+      </div>
+    </section>
   );
 }

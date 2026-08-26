@@ -5,5 +5,5 @@ export default async function Home({ params: { lang } }) {
     (m) => m.default
   );
 
-  return <HomeMain dictionary={dictionary} />;
+  return <HomeMain dictionary={dictionary} lang={lang} />;
 }

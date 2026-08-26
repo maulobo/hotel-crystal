@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hotel Crystal — Referencia visual</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cyan-300:#5FD7E5; --cyan-500:#3CAAD1; --blue-500:#2D92C8;
+  --blue-600:#1B77BD; --blue-700:#0C5CB4; --graphite:#232227;
+  --ink-900:#0B1B2B; --ink-800:#12293F; --paper:#F5F9FB; --paper-2:#E4EDF2;
+  --slate-300:#C3D2DC; --slate-400:#7C8E9C; --slate-600:#4A5C6B;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--paper);color:var(--graphite);line-height:1.6}
+.wrap{max-width:1080px;margin:0 auto;padding:48px 24px 80px}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:300;letter-spacing:-.022em;line-height:1.04}
+h1{font-size:clamp(2.5rem,6vw,4rem)}
+h2{font-size:clamp(1.75rem,3.5vw,2.5rem);margin:56px 0 6px}
+h3{font-size:clamp(1.15rem,2vw,1.4rem);font-weight:600}
+.lead{color:var(--slate-600);max-width:65ch;margin-bottom:8px}
+.label{font-size:.6875rem;letter-spacing:.15em;text-transform:uppercase;font-weight:600;color:var(--blue-700)}
+
+.swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin-top:20px}
+.sw{border:1px solid var(--paper-2);border-radius:8px;overflow:hidden;background:#fff}
+.sw .c{height:64px}
+.sw .m{padding:9px 11px 11px}
+.sw .n{font-size:11px;font-weight:600;display:block}
+.sw .h{font-size:10px;color:var(--slate-400);display:block;margin-top:1px}
+.sw .r{font-size:10px;color:var(--slate-600);display:block;margin-top:5px;line-height:1.4}
+
+.warn{background:#FFF4F4;border:1px solid #F3C9C9;border-left:3px solid #C0392B;border-radius:6px;padding:16px 18px;margin-top:22px}
+.warn strong{color:#A5281B}
+
+table{width:100%;border-collapse:collapse;margin-top:18px;font-size:14px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--paper-2)}
+th{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--slate-400);font-weight:600}
+td code{font-size:12px;background:var(--paper-2);padding:2px 5px;border-radius:3px}
+.ok{color:#1E7A4C;font-weight:600}
+.no{color:#C0392B;font-weight:600}
+
+/* hero mockup */
+.hero{position:relative;height:440px;border-radius:10px;overflow:hidden;margin-top:22px;background:var(--ink-900)}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,27,43,.72) 0%,rgba(11,27,43,.40) 38%,rgba(11,27,43,.93) 100%)}
+.hero .in{position:relative;height:100%;display:flex;flex-direction:column;justify-content:center;padding:0 40px;color:var(--paper)}
+.hero .badge{align-self:flex-start;font-size:.6875rem;letter-spacing:.17em;text-transform:uppercase;font-weight:600;border:1px solid rgba(95,215,229,.42);color:var(--cyan-300);padding:6px 14px;border-radius:999px;margin-bottom:18px}
+.hero h1{color:var(--paper);margin-bottom:14px}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--cyan-300)}
+.hero p{color:var(--slate-300);max-width:400px;font-weight:300;font-size:14px}
+.hero .btns{display:flex;gap:10px;margin-top:24px}
+.btn{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;padding:12px 22px;border-radius:4px}
+.btn-1{background:var(--cyan-300);color:var(--ink-900)}
+.btn-2{border:1px solid rgba(195,210,220,.38);color:var(--paper)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;background:var(--ink-900);padding:20px 40px 26px;border-top:1px solid rgba(195,210,220,.2)}
+.facts .k{font-size:.6875rem;letter-spacing:.15em;text-transform:uppercase;font-weight:600;color:var(--slate-400);display:block}
+.facts .v{font-family:'Fraunces',serif;font-size:15px;color:var(--paper);display:block;margin-top:4px}
+.rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+.room{border:1px solid var(--paper-2);border-radius:8px;overflow:hidden;background:#fff}
+.room img{width:100%;height:150px;object-fit:cover;display:block}
+.room .b{padding:14px}
+.room .t{font-family:'Fraunces',serif;font-size:17px}
+.room .d{font-size:13px;color:var(--slate-600);margin-top:3px}
+.room .g{display:inline-block;font-size:.6875rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;color:var(--blue-700);background:var(--paper-2);padding:4px 8px;border-radius:3px;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<span class="label">Referencia visual · 2026-08-24</span>
+<h1 style="margin-top:8px">Sistema de diseño<br>Hotel Crystal</h1>
+<p class="lead" style="margin-top:16px">
+  Documento de referencia congelado. Acompaña a
+  <code>docs/superpowers/specs/2026-08-24-rediseno-hotel-crystal-design.md</code>.
+  Abrir este archivo en un navegador desde la raíz del repo para que carguen las imágenes.
+</p>
+
+<h2>Origen de la paleta</h2>
+<p class="lead">Los seis colores de marca se extrajeron pixel por pixel del degradado de la estrella y del wordmark en <code>public/logoo.png</code>. No hay colores inventados.</p>
+<div style="display:flex;gap:24px;align-items:center;margin-top:20px;background:#fff;border:1px solid var(--paper-2);border-radius:8px;padding:22px">
+  <img src="../../../public/logoo.png" alt="Logo Hotel Crystal" style="width:120px;height:120px">
+  <div style="flex:1">
+    <div style="height:44px;border-radius:5px;background:linear-gradient(90deg,#5FD7E5 0%,#3CAAD1 26%,#2D92C8 48%,#1B77BD 74%,#0C5CB4 100%)"></div>
+    <div style="display:flex;justify-content:space-between;font-size:10px;color:var(--slate-600);margin-top:7px">
+      <span>#5FD7E5</span><span>#3CAAD1</span><span>#2D92C8</span><span>#1B77BD</span><span>#0C5CB4</span>
+    </div>
+  </div>
+</div>
+
+<h2>Tokens</h2>
+<div class="swatches">
+  <div class="sw"><div class="c" style="background:#5FD7E5"></div><div class="m"><span class="n">cyan-300</span><span class="h">#5FD7E5</span><span class="r">Acento sobre oscuro, CTA principal</span></div></div>
+  <div class="sw"><div class="c" style="background:#3CAAD1"></div><div class="m"><span class="n">cyan-500</span><span class="h">#3CAAD1</span><span class="r">Detalles, bordes, hover</span></div></div>
+  <div class="sw"><div class="c" style="background:#2D92C8"></div><div class="m"><span class="n">blue-500</span><span class="h">#2D92C8</span><span class="r">Intermedio del degradado</span></div></div>
+  <div class="sw"><div class="c" style="background:#1B77BD"></div><div class="m"><span class="n">blue-600</span><span class="h">#1B77BD</span><span class="r">Solo títulos ≥24px sobre claro</span></div></div>
+  <div class="sw"><div class="c" style="background:#0C5CB4"></div><div class="m"><span class="n">blue-700</span><span class="h">#0C5CB4</span><span class="r">Enlaces y acento sobre claro</span></div></div>
+  <div class="sw"><div class="c" style="background:#232227"></div><div class="m"><span class="n">graphite</span><span class="h">#232227</span><span class="r">Títulos y texto principal</span></div></div>
+  <div class="sw"><div class="c" style="background:#0B1B2B"></div><div class="m"><span class="n">ink-900</span><span class="h">#0B1B2B</span><span class="r">Fondos oscuros, veils sobre foto</span></div></div>
+  <div class="sw"><div class="c" style="background:#12293F"></div><div class="m"><span class="n">ink-800</span><span class="h">#12293F</span><span class="r">Superficies oscuras elevadas</span></div></div>
+  <div class="sw"><div class="c" style="background:#F5F9FB;border-bottom:1px solid var(--paper-2)"></div><div class="m"><span class="n">paper</span><span class="h">#F5F9FB</span><span class="r">Fondo claro base</span></div></div>
+  <div class="sw"><div class="c" style="background:#E4EDF2"></div><div class="m"><span class="n">paper-2</span><span class="h">#E4EDF2</span><span class="r">Superficies, tags, separadores</span></div></div>
+  <div class="sw"><div class="c" style="background:#C3D2DC"></div><div class="m"><span class="n">slate-300</span><span class="h">#C3D2DC</span><span class="r">Texto secundario sobre oscuro</span></div></div>
+  <div class="sw"><div class="c" style="background:#7C8E9C"></div><div class="m"><span class="n">slate-400</span><span class="h">#7C8E9C</span><span class="r">Labels; solo texto grande en claro</span></div></div>
+  <div class="sw"><div class="c" style="background:#4A5C6B"></div><div class="m"><span class="n">slate-600</span><span class="h">#4A5C6B</span><span class="r">Texto secundario sobre claro</span></div></div>
+</div>
+
+<div class="warn">
+  <p><strong>Regla del sistema, no negociable.</strong> El cian sobre fondo claro da <b>2.52:1</b> y no cumple WCAG AA. Sobre <code>ink-900</code> da <b>10.23:1</b> (AAA).<br>
+  → <b>Cian solo sobre fondos oscuros. <code>blue-700</code> sobre fondos claros.</b></p>
+</div>
+
+<h2>Contrastes verificados</h2>
+<table>
+  <tr><th>Par</th><th>Ratio</th><th>Nivel</th></tr>
+  <tr><td><code>graphite</code> sobre <code>paper</code></td><td>14.91:1</td><td class="ok">AAA</td></tr>
+  <tr><td><code>paper</code> sobre <code>ink-900</code></td><td>16.44:1</td><td class="ok">AAA</td></tr>
+  <tr><td><code>cyan-300</code> sobre <code>ink-900</code></td><td>10.23:1</td><td class="ok">AAA</td></tr>
+  <tr><td><code>slate-600</code> sobre <code>paper</code></td><td>6.53:1</td><td class="ok">AA</td></tr>
+  <tr><td><code>cyan-500</code> sobre <code>ink-900</code></td><td>6.52:1</td><td class="ok">AA</td></tr>
+  <tr><td><code>blue-700</code> sobre <code>paper</code></td><td>6.18:1</td><td class="ok">AA</td></tr>
+  <tr><td><code>blue-600</code> sobre <code>paper</code></td><td>4.49:1</td><td>Solo ≥24px</td></tr>
+  <tr><td><code>slate-400</code> sobre <code>paper</code></td><td>3.19:1</td><td>Solo texto grande</td></tr>
+  <tr><td><code>cyan-500</code> sobre <code>paper</code></td><td>2.52:1</td><td class="no">NO USAR</td></tr>
+</table>
+
+<h2>Tipografía</h2>
+<p class="lead"><b>Fraunces</b> para títulos (300 display, 600 subtítulos, itálica para acentos). <b>Inter</b> para cuerpo, datos y navegación. Ambas por <code>next/font/google</code>.</p>
+<div style="background:#fff;border:1px solid var(--paper-2);border-radius:8px;padding:26px;margin-top:18px">
+  <div style="font-family:'Fraunces',serif;font-weight:300;font-size:44px;letter-spacing:-.024em;line-height:1.04">Una casa <em style="font-style:italic;font-weight:400;color:var(--blue-700)">en el centro</em> de la ciudad</div>
+  <div style="font-size:14px;color:var(--slate-600);margin-top:14px;max-width:60ch">Inter 300 para cuerpo. Tres generaciones de hotelería familiar, a cinco cuadras de todo lo que vinieras a hacer a Neuquén.</div>
+  <div class="label" style="margin-top:16px">Label · Inter 600 · 0.15em</div>
+</div>
+
+<h2>Hero — superficie oscura</h2>
+<div class="hero">
+  <img class="bg" src="../../../public/vid-poster.jpg" alt="Hall del Hotel Crystal">
+  <div class="veil"></div>
+  <div class="in">
+    <span class="badge">Neuquén Capital · desde 1966</span>
+    <h1>Una casa <em>en el centro</em><br>de la ciudad</h1>
+    <p>Tres generaciones de hotelería familiar, a cinco cuadras de todo lo que vinieras a hacer a Neuquén.</p>
+    <div class="btns"><span class="btn btn-1">Ver habitaciones</span><span class="btn btn-2">Consultar</span></div>
+  </div>
+</div>
+<div class="facts">
+  <div><span class="k">Check-in</span><span class="v">12:00</span></div>
+  <div><span class="k">Check-out</span><span class="v">10:00</span></div>
+  <div><span class="k">Conserjería</span><span class="v">24 horas</span></div>
+  <div><span class="k">Desde</span><span class="v">Enero de 1966</span></div>
+</div>
+
+<h2>Habitaciones — superficie clara</h2>
+<p class="lead">Ojo con el triaje de §7.3 de la spec: no usar grilla pareja que exponga las fotos débiles al mismo tamaño que las buenas. <code>DOBLE-B</code> es la mejor del set.</p>
+<div class="rooms">
+  <div class="room"><img src="../../../public/crys/DOBLE-B.jpg" alt="Habitación doble Superior"><div class="b"><div class="t">Doble Superior</div><div class="d">Piso de madera · escritorio · heladera</div><span class="g">Superior</span></div></div>
+  <div class="room"><img src="../../../public/crys/TRIPLE-D.jpg" alt="Habitación triple"><div class="b"><div class="t">Triple</div><div class="d">3 individuales o matrimonial + 1</div><span class="g">Estándar / Superior</span></div></div>
+  <div class="room"><img src="../../../public/crys/SINGLE-A.jpg" alt="Habitación single" style="object-position:center 30%"><div class="b"><div class="t">Single</div><div class="d">1 cama individual · baño privado</div><span class="g">Estándar / Superior</span></div></div>
+</div>
+<p class="lead" style="margin-top:14px;font-size:13px">La tercera usa <code>object-position:center 30%</code> para recortar el acolchado estampado, según la mitigación de §7.3.</p>
+
+</div>
+</body>
+</html>

@@ -18,44 +18,21 @@ module.exports = {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
+        cyan:     { 300: 'var(--cyan-300)', 500: 'var(--cyan-500)' },
+        brand:    { 500: 'var(--blue-500)', 600: 'var(--blue-600)', 700: 'var(--blue-700)' },
+        brass:    { 300: 'var(--brass-300)', 400: 'var(--brass-400)', 500: 'var(--brass-500)', 600: 'var(--brass-600)' },
+        graphite: 'var(--graphite)',
+        ink:      { 800: 'var(--ink-800)', 900: 'var(--ink-900)' },
+        paper:    { DEFAULT: 'var(--paper)', 2: 'var(--paper-2)' },
+        slate:    { 300: 'var(--slate-300)', 400: 'var(--slate-400)', 600: 'var(--slate-600)' },
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        card: 'var(--radius-card)',
+        ctl:  'var(--radius-ctl)',
+      },
+      fontFamily: {
+        display: ['var(--font-fraunces)', 'Georgia', 'serif'],
+        sans:    ['var(--font-inter)', 'system-ui', 'sans-serif'],
       },
       keyframes: {
         "accordion-down": {

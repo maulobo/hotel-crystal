@@ -8,34 +8,27 @@
   },
   "home": {
     "h1": "HOTEL CRYSTAL",
-    "h2": "SEU HOTEL NO CENTRO DA CIDADE",
+    "h2": "Seu hotel no centro da cidade",
     "contact": "FALE CONOSCO"
   },
   "about": {
     "title": "SOBRE NÓS",
-    "mision": [
-      {
-        "h3": "MISSÃO",
-        "p": "Nossa missão é criar um ambiente acolhedor e familiar que convida cada hóspede a desfrutar de sua estadia no centro da cidade, onde a hospitalidade e a atenção personalizada transformam cada visita em uma experiência única."
-      },
-      {
-        "h3": "VISÃO",
-        "p": "Nossa visão é ser o hotel preferido da cidade, onde cada hóspede se sinta bem-vindo e valorizado, e juntos construamos relações sólidas que assegurem uma forte presença no mercado."
-      },
-      {
-        "h3": "VALORES",
-        "p": "Nossos valores são baseados na cordialidade e no serviço excepcional, criando um espaço onde cada hóspede se sente em casa, apoiado por uma equipe comprometida em oferecer atenção personalizada e em construir um ambiente de amizade e confiança."
-      }
-    ],
+    "statement": "Somos um hotel familiar no centro de Neuquén. Trabalhamos para que cada hóspede encontre um lugar confortável, atendido por pessoas que conhecem a cidade e estão disponíveis a qualquer hora.",
     "ourHistoryh21": "Nossa História",
-    "ourHistoryp1": "Em 1913, o barbeiro Don Jacobo Eddi chegou à jovem cidade de Neuquén com sua esposa, Julia Zerahia, após uma longa viagem de Roshpina, Palestina. Com apenas quatorze anos, a bela Julia se casou com o jovem Jacobo, que acabara de completar dezoito anos. Eles decidiram se estabelecer na capital do território, onde Jacobo abriu sua primeira loja, Baratillo Eddi, na Rua Sarmiento 36, em novembro de 1918. Este local havia sido anteriormente a Joalheria Rosenblat, uma das primeiras da cidade. Hoje, seu legado continua na movimentada Rua Sarmiento sob o nome Tienda Eddi, embora com outro proprietário.",
-    "ourHistoryp2": "Jacobo e Julia formaram uma grande família, tendo seis filhos: Raquel, Fortunata, Esther, Felisa, Rafael e Víctor. No entanto, a crise dos anos 30 os obrigou a se mudar para Buenos Aires. Lá, Víctor estudou no Colégio Mariano Moreno e, mais tarde, ingressou no serviço militar, onde formou uma amizade duradoura com o neuquino Jorge Wilfredo Celoria.",
-    "ourHistoryp3": "Em 1948, Víctor se casou com Elena, filha da família Darmún, que estava se preparando para se tornar professora. Seus filhos mais velhos, Roberto e Ricardo, nasceram em Buenos Aires. Eles voltaram para Neuquén com os filhos, onde Víctor assumiu o comércio da família, a conhecida Casa Darmún. Nesta cidade, nasceu sua filha mais nova, Julita.",
-    "ourHistoryp4": "Elena Lela Darmún trabalhou como professora em várias escolas de Neuquén, incluindo as Escolas Nº 61, Nº 2, Nº 121 e Nº 118, sendo uma das primeiras docentes efetivas. Enquanto isso, Víctor teve uma vida social e profissional ativa, sendo presidente do Clube Independiente e membro de sua diretoria desde 1960. Ele também participou do Rotary Club, foi diretor consultivo do Banco Los Andes de Mendoza, membro da Associação de Hotéis de Neuquén, da ACIPAN, sócio vitalício do Clube Biguá e cofundador do Canal 7 Neuquén.",
-    "ourHistoryp5": "Em 1964, Víctor deixou as lojas da família e adquiriu uma propriedade na Avenida Olascoaga, 200, onde abriu 'El Rey de los Pantalones'. Posteriormente, inaugurou outra loja na Olascoaga, 219, chamada 'Lencería Juli', seguida por 'Ella, Meias'. Enquanto isso, o Hotel Crystal foi construído e inaugurado em 14 de janeiro de 1966, com dez quartos. Anos depois, um terreno foi comprado de Remigio Bosch para continuar as ampliações.",
-    "ourHistoryp6": "Os três filhos de Víctor continuaram suas vidas na cidade onde seus avós haviam chegado quando a população não ultrapassava dois mil habitantes: Roberto tornou-se contador, Ricardo arquiteto e Julia analista de sistemas.",
-    "ourHistoryp7": "Atualmente, o hotel possui 45 quartos e 99 leitos. Esses quartos são classificados como individuais, duplos, triplos e quádruplos. Além disso, há uma quantidade suficiente de quartos superiores. Os quartos superiores diferenciam-se dos padrões por oferecerem café da manhã de cortesia e algumas comodidades extras, como frigobar, chaleira elétrica e uma mesa de trabalho maior. Desde 1º de julho de 2018, o Sr. Rodrigo Fernández adquiriu a razão social do hotel e o administra com sua equipe, continuando a tradição de hospitalidade e serviço que caracterizou o Hotel Crystal ao longo dos anos.",
-    "ourHistoryp8": "O Hotel Crystal é o culminar desta rica história familiar, um lugar que reflete o compromisso com a hospitalidade e o serviço excepcional. Cada hóspede é recebido com o mesmo calor que caracterizou a família Darmún/Eddi, garantindo que todos se sintam em casa. Esta história de amor, esforço e união é a essência do Hotel Crystal, onde o passado encontra o presente e cada visita contribui para a continuidade desta bela tradição familiar."
+    "historyIntro": [
+      "Em 1913, Jacobo Eddi e Julia Zerahia chegaram a Neuquén vindo de Roshpirvá, Palestina, quando a cidade não ultrapassava dois mil habitantes. Montaram seu comércio na rua Sarmiento e formaram uma família de seis filhos.",
+      "Meio século depois, seu filho Víctor construiu o Hotel Crystal na avenida Olascoaga. Abriu em 14 de janeiro de 1966 com dez quartos.",
+      "Hoje são quarenta e cinco quartos e noventa e nove leitos, e a mesma vocação de hospitalidade que começou aquela família."
+    ],
+    "timeline": [
+      { "year": "1913", "text": "Jacobo Eddi e Julia Zerahia chegam a Neuquén vindo da Palestina" },
+      { "year": "1918", "text": "Abre o Baratillo Eddi, na rua Sarmiento 36" },
+      { "year": "1948", "text": "Víctor Eddi casa-se com Elena Darmún; voltam a Neuquén" },
+      { "year": "1964", "text": "Víctor adquire o imóvel da avenida Olascoaga 200" },
+      { "year": "1966", "text": "Em 14 de janeiro abre o Hotel Crystal, com dez quartos" },
+      { "year": "2018", "text": "Rodrigo Fernández assume a razão social do hotel" },
+      { "year": "Hoje", "text": "Quarenta e cinco quartos e noventa e nove leitos" }
+    ]
   },
   "turism": {
     "h2": "TURISMO",
@@ -72,7 +65,6 @@
         "Ico": "Bus"
       }
     ],
-
     "p6": "Mapa interativo da cidade: Neste mapa turístico interativo de Neuquén Capital, você pode explorar uma variedade de opções para aproveitar a cidade, incluindo trilhas, mirantes, circuitos autoguiados em MP3, um circuito autoguiado de identidade, informações sobre gastronomia, opções de transporte, acomodações, ciclovias e ciclofaixas, atividades culturais, edifícios históricos, murais, monumentos e outros pontos de interesse."
   },
   "rooms": {
@@ -100,11 +92,6 @@
             "name": "Concièrge",
             "description": "Nosso serviço de concièrge está disponível 24 horas. Nossa equipe amigável está sempre pronta para ajudar com qualquer solicitação, responder às suas perguntas e oferecer recomendações personalizadas.",
             "icon": "ConciergeBell"
-          },
-          {
-            "name": "Recepção de Pacotes",
-            "description": "Oferecemos um serviço seguro para a recepção de pacotes e correspondência. Se precisar que recebamos algo em seu nome, nossa equipe garantirá que seus pacotes fiquem seguros durante sua estadia.",
-            "icon": "Package"
           },
           {
             "name": "Arrumação",
@@ -144,7 +131,7 @@
     "roomsCards": [
       {
         "images": ["/crys/SINGLE-A.jpg"],
-        "title": "Single",
+        "title": "Individual",
         "description": "Relaxe em nosso quarto individual, equipado com uma cama individual de tamanho padrão. Com banheiro privativo e chuveiro, é o espaço ideal para quem busca um refúgio aconchegante.",
         "price": "Padrão: Consultar / Superior: Consultar"
       },
@@ -155,7 +142,7 @@
           "/crys/DOBLE-C.jpg",
           "/crys/DOBLE-D.jpg"
         ],
-        "title": "Doble",
+        "title": "Duplo",
         "description": "Desfrute de nosso quarto duplo, que pode ter duas camas individuais ou uma cama de casal. Também inclui banheiro privativo com chuveiro, proporcionando o conforto necessário.",
         "price": "Padrão: Consultar / Superior: Consultar"
       },
@@ -167,44 +154,7 @@
           "/crys/TRIPLE-D.jpg",
           "/crys/TRIPLE-E.jpg"
         ],
-        "title": "Triple",
-        "description": "Nosso quarto triplo é perfeito para grupos pequenos, com a opção de três camas individuais ou uma cama de casal junto com uma cama individual. Também inclui banheiro privativo com chuveiro, garantindo um espaço confortável para todos.",
-        "price": "Padrão: Consultar / Superior: Consultar"
-      },
-      {
-        "images": ["/crys/CUADRUPLE-A.jpg", "/crys/CUADRUPLE-B.jpg"],
-        "title": "Quádruplo",
-        "description": "Para famílias ou grupos maiores, nosso quarto quádruplo oferece três camas individuais ou uma cama de casal junto com uma cama individual. Além disso, inclui banheiro privativo com chuveiro, garantindo que todos tenham seu próprio espaço.",
-        "price": "Padrão: Consultar"
-      }
-    ],
-    "aboutCards": [
-      {
-        "images": ["/crys/SINGLE-A.jpg"],
-        "title": "Single",
-        "description": "Relaxe em nosso quarto individual, equipado com uma cama individual de tamanho padrão. Com banheiro privativo e chuveiro, é o espaço ideal para quem busca um refúgio aconchegante.",
-        "price": "Padrão: Consultar / Superior: Consultar"
-      },
-      {
-        "images": [
-          "/crys/DOBLE-A.jpg",
-          "/crys/DOBLE-B.jpg",
-          "/crys/DOBLE-C.jpg",
-          "/crys/DOBLE-D.jpg"
-        ],
-        "title": "Doble",
-        "description": "Desfrute de nosso quarto duplo, que pode ter duas camas individuais ou uma cama de casal. Também inclui banheiro privativo com chuveiro, proporcionando o conforto necessário.",
-        "price": "Padrão: Consultar / Superior: Consultar"
-      },
-      {
-        "images": [
-          "/crys/TRIPLE-A.jpg",
-          "/crys/TRIPLE-B.jpg",
-          "/crys/TRIPLE-C.jpg",
-          "/crys/TRIPLE-D.jpg",
-          "/crys/TRIPLE-E.jpg"
-        ],
-        "title": "Triple",
+        "title": "Triplo",
         "description": "Nosso quarto triplo é perfeito para grupos pequenos, com a opção de três camas individuais ou uma cama de casal junto com uma cama individual. Também inclui banheiro privativo com chuveiro, garantindo um espaço confortável para todos.",
         "price": "Padrão: Consultar / Superior: Consultar"
       },
@@ -220,5 +170,146 @@
       "checkOutTime": "Check-out: 10:00 AM",
       "breakfastHours": "Café da manhã: Todos os dias das 7:00 AM às 10:00 AM"
     }
-  }
+  },
+    "ui": {
+      "home": {
+        "eyebrow": "Neuquén Capital · desde 1966",
+        "h1": [
+          "Uma casa ",
+          "no centro",
+          " da cidade"
+        ],
+        "lead": "Três gerações de hotelaria familiar, a cinco quadras de tudo o que você veio fazer em Neuquén.",
+        "ctaRooms": "Ver quartos",
+        "ctaContact": "Fale conosco",
+        "roomsTitle": [
+          "Quatro maneiras de ",
+          "ficar",
+          ""
+        ],
+        "roomsAll": "Ver todos",
+        "servicesTitle": [
+          "Pensado para quem viaja ",
+          "a trabalho",
+          ""
+        ],
+        "servicesIndex": "Serviços",
+        "services": [
+          {
+            "name": "Concièrge 24 h",
+            "description": "Atendimento personalizado a qualquer hora do dia."
+          },
+          {
+            "name": "Wi-Fi",
+            "description": "Conectividade em todo o hotel."
+          },
+          {
+            "name": "Café da manhã",
+            "description": "Expresso, ao lado do hotel."
+          },
+          {
+            "name": "Guarda-volumes",
+            "description": "Cuidamos das suas malas antes ou depois do check-out."
+          },
+          {
+            "name": "Late check-out",
+            "description": "Até as 18:00."
+          }
+        ],
+        "familyTitle": [
+          "Uma família, ",
+          "uma cidade",
+          ""
+        ],
+        "familyCta": "Conhecer a história",
+        "contactTitle": [
+          "Estamos ",
+          "no centro",
+          ""
+        ],
+        "contactLead": "Escreva pelo WhatsApp ou ligue para nós. Se estiver por perto, passe para dizer oi."
+      },
+      "facts": {
+        "checkIn": "Check-in",
+        "checkOut": "Check-out",
+        "concierge": "Concièrge",
+        "concierge24": "24 horas",
+        "roomsLabel": "Quartos",
+        "roomsValue": "45 · 99 leitos",
+        "breakfast": "Café da manhã",
+        "breakfastHours": "Seg–Sáb 7:30–10:00 / Dom e feriados 8:00–11:00"
+      },
+      "beds": [
+        "1 cama de solteiro",
+        "2 camas ou 1 de casal",
+        "3 camas ou casal + solteiro",
+        "Até 4 camas"
+      ],
+      "roomsPage": {
+        "compareTitle": [
+          "Duas categorias, ",
+          "uma diferença visível",
+          ""
+        ],
+        "standard": {
+          "title": "Standard",
+          "items": [
+            "Cama, guarda-roupa e banheiro privativo",
+            "Piso de cerâmica",
+            "Roupa de cama estampada"
+          ]
+        },
+        "superior": {
+          "title": "Superior",
+          "items": [
+            "Tudo o que tem no Standard",
+            "Café da manhã de cortesia incluído",
+            "Frigobar, chaleira elétrica e escrivaninha maior",
+            "Piso de madeira e roupa de cama neutra"
+          ]
+        },
+        "servicesTitle": [
+          "Tudo o que você precisa ",
+          "para a sua viagem",
+          ""
+        ]
+      },
+      "aboutPage": {
+        "timelineTitle": "Mais de meio século de hospitalidade",
+        "timelineLead": "Os marcos que contam a história do hotel e da família que o fundou.",
+        "galleryTitle": [
+          "O hotel ",
+          "em imagens",
+          ""
+        ]
+      },
+      "contactPage": {
+        "eyebrow": "Atendimento 24 horas",
+        "title": "Vamos conversar",
+        "lead": "Estamos no centro de Neuquén Capital. Escreva pelo WhatsApp, ligue ou passe para dizer oi.",
+        "labels": {
+          "address": "Endereço",
+          "whatsapp": "WhatsApp",
+          "phone": "Telefone",
+          "email": "E-mail",
+          "instagram": "Instagram",
+          "facebook": "Facebook"
+        }
+      },
+      "turismPage": {
+        "linksTitle": "Links de interesse"
+      },
+      "footer": {
+        "follow": "Siga-nos",
+        "rights": "Todos os direitos reservados."
+      },
+      "alt": {
+        "facade": "Fachada do Hotel Crystal",
+        "interior": "Interior do hotel",
+        "breakfast": "Café da manhã no hotel",
+        "superiorRoom": "Quarto Superior do Hotel Crystal",
+        "standardRoom": "Quarto Standard",
+        "landmark": "Letreiro de Neuquén Capital"
+      }
+    }
 }

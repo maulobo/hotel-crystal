@@ -1,12 +1,14 @@
-import React from "react";
 import Services from "./components/services";
-import "./styles-rooms.css";
+import { buildMetadata } from "@/app/lib/seo";
 
-export default async function page({ params: { lang } }) {
+export function generateMetadata({ params }) {
+  return buildMetadata({ lang: params?.lang, route: "rooms" });
+}
+
+export default async function RoomsPage({ params: { lang } }) {
   const dictionary = await import(`../../dictionaries/${lang}.json`).then(
     (m) => m.default
   );
-  const services = dictionary.rooms.roomServices;
 
-  return <Services services={services} dictionary={dictionary}></Services>;
+  return <Services dictionary={dictionary} lang={lang} />;
 }

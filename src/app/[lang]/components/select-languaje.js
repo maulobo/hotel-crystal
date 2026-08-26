@@ -1,40 +1,42 @@
-"use client"; // Para usar en Next.js App Router (si es necesario)
+"use client";
 
-import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
 
-const LanguageSelector = ({ language }) => {
+const LANGS = [
+  { code: "es", flag: "🇦🇷", label: "Español" },
+  { code: "en", flag: "🇬🇧", label: "English" },
+  { code: "pt", flag: "🇧🇷", label: "Português" },
+];
+
+const LanguageSelector = ({ lang }) => {
   const router = useRouter();
-  const [currentLang, setCurrentLang] = useState("es");
+  const pathname = usePathname();
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      const detectedLang = window.location.pathname.split("/")[1];
-      setCurrentLang(detectedLang || "en"); // Si no hay idioma, usar "en" por defecto
-    }
-  }, []);
+  // El idioma sale de la URL, no de un efecto: así el server y el cliente
+  // renderizan lo mismo y no parpadea la bandera equivocada.
+  const current = LANGS.some((l) => l.code === lang)
+    ? lang
+    : pathname.split("/")[1];
 
   const handleChangeLanguage = (event) => {
-    const selectedLang = event.target.value;
-    const newPath = window.location.pathname.replace(
-      `/${currentLang}`,
-      `/${selectedLang}`
-    );
-
-    // Redirigir a la nueva ruta con el idioma seleccionado
-    router.push(newPath);
-    router.refresh(); // Forzar un refresco si es necesario
+    const next = event.target.value;
+    const segments = pathname.split("/");
+    segments[1] = next;
+    router.push(segments.join("/") || `/${next}`);
   };
 
   return (
     <select
-      value={currentLang}
+      value={current}
+      aria-label="Idioma / Language / Idioma"
       className="bg-transparent"
       onChange={handleChangeLanguage}
     >
-      <option value="en">🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
-      <option value="es">🇪🇸</option>
-      <option value="pt">🇵🇹</option>
+      {LANGS.map((l) => (
+        <option key={l.code} value={l.code} aria-label={l.label}>
+          {l.flag}
+        </option>
+      ))}
     </select>
   );
 };
