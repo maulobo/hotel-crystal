@@ -65,7 +65,7 @@
         "Ico": "Bus"
       }
     ],
-    "p6": "Mapa interativo da cidade: Neste mapa turístico interativo de Neuquén Capital, você pode explorar uma variedade de opções para aproveitar a cidade, incluindo trilhas, mirantes, circuitos autoguiados em MP3, um circuito autoguiado de identidade, informações sobre gastronomia, opções de transporte, acomodações, ciclovias e ciclofaixas, atividades culturais, edifícios históricos, murais, monumentos e outros pontos de interesse."
+    "p6": "O mapa interativo da Prefeitura reúne trilhas, mirantes, circuitos autoguiados, gastronomia, transporte, ciclovias, edifícios históricos, murais e monumentos de Neuquén Capital."
   },
   "rooms": {
     "titleRooms": "QUARTOS",
@@ -175,7 +175,7 @@
       "home": {
         "eyebrow": "Neuquén Capital · desde 1966",
         "h1": [
-          "Uma casa ",
+          "Seu hotel ",
           "no centro",
           " da cidade"
         ],
@@ -227,7 +227,7 @@
           "no centro",
           ""
         ],
-        "contactLead": "Escreva pelo WhatsApp ou ligue para nós. Se estiver por perto, passe para dizer oi."
+        "contactLead": "Escreva pelo WhatsApp ou ligue para nós. Se estiver por perto, venha até a nossa recepção."
       },
       "facts": {
         "checkIn": "Check-in",
@@ -286,7 +286,7 @@
       "contactPage": {
         "eyebrow": "Atendimento 24 horas",
         "title": "Vamos conversar",
-        "lead": "Estamos no centro de Neuquén Capital. Escreva pelo WhatsApp, ligue ou passe para dizer oi.",
+        "lead": "Estamos no centro de Neuquén Capital. Escreva pelo WhatsApp, ligue ou venha até a nossa recepção.",
         "labels": {
           "address": "Endereço",
           "whatsapp": "WhatsApp",
@@ -297,7 +297,9 @@
         }
       },
       "turismPage": {
-        "linksTitle": "Links de interesse"
+        "linksTitle": "Links de interesse",
+        "mapTitle": "Mapa turístico da cidade",
+        "mapOpen": "Abrir o mapa completo"
       },
       "footer": {
         "follow": "Siga-nos",

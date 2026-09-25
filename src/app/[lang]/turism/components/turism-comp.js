@@ -8,6 +8,9 @@ const ICONS = {
   Bus,
 };
 
+// Plano turístico interactivo de la Municipalidad de Neuquén (Google My Maps público)
+const TOURIST_MAP_ID = "17YtuYkiqixVEnVLmDQAsy6301Yr7LqAo";
+
 export default function TurismComp({ dictionary }) {
   const activities = dictionary.turism.activities;
 
@@ -43,10 +46,32 @@ export default function TurismComp({ dictionary }) {
         })}
       </div>
 
-      <div className="mt-16">
-        <Prose>
-          <p>{dictionary.turism.p6}</p>
-        </Prose>
+      <div className="mt-20">
+        <h2 className="text-graphite">{dictionary.ui.turismPage.mapTitle}</h2>
+        <div className="mt-6">
+          <Prose>
+            <p>{dictionary.turism.p6}</p>
+          </Prose>
+        </div>
+        <div className="mt-8 overflow-hidden rounded-card border border-paper-2 shadow-[0_20px_60px_-30px_rgba(11,27,43,0.4)]">
+          <iframe
+            src={`https://www.google.com/maps/d/embed?mid=${TOURIST_MAP_ID}`}
+            title={dictionary.ui.turismPage.mapTitle}
+            className="h-[420px] w-full md:h-[560px]"
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </div>
+        <a
+          href={`https://www.google.com/maps/d/viewer?mid=${TOURIST_MAP_ID}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-brand-700 hover:underline"
+        >
+          {dictionary.ui.turismPage.mapOpen}
+          <ArrowUpRight className="h-4 w-4" />
+        </a>
       </div>
     </section>
   );
