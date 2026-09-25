@@ -66,7 +66,7 @@
       }
     ],
 
-    "p6": "Mapa interactivo de la ciudad: En este mapa turístico interactivo de Neuquén Capital, puedes explorar una variedad de opciones para disfrutar de la ciudad, incluyendo senderos, miradores, circuitos autoguiados en MP3, un circuito autoguiado de identidad, información sobre gastronomía, opciones de transporte, alojamientos, bicisendas y ciclovías, actividades culturales, edificios históricos, murales, monumentos y otros sitios de interés."
+    "p6": "El plano interactivo de la Municipalidad reúne senderos, miradores, circuitos autoguiados, gastronomía, transporte, bicisendas, edificios históricos, murales y monumentos de Neuquén Capital."
   },
   "rooms": {
     "titleRooms": "HABITACIONES",
@@ -176,7 +176,7 @@
       "home": {
         "eyebrow": "Neuquén Capital · desde 1966",
         "h1": [
-          "Una casa ",
+          "Tu hotel ",
           "en el centro",
           " de la ciudad"
         ],
@@ -228,7 +228,7 @@
           "en el centro",
           ""
         ],
-        "contactLead": "Escribinos por WhatsApp o llamanos. Si estás cerca, pasá a saludar."
+        "contactLead": "Escribinos por WhatsApp o llamanos. Si estás cerca, acercate a nuestra recepción."
       },
       "facts": {
         "checkIn": "Check-in",
@@ -287,7 +287,7 @@
       "contactPage": {
         "eyebrow": "Atención las 24 horas",
         "title": "Hablemos",
-        "lead": "Estamos en el centro de Neuquén Capital. Escribinos por WhatsApp, llamanos o pasá a saludar.",
+        "lead": "Estamos en el centro de Neuquén Capital. Escribinos por WhatsApp, llamanos o acercate a nuestra recepción.",
         "labels": {
           "address": "Dirección",
           "whatsapp": "WhatsApp",
@@ -298,7 +298,9 @@
         }
       },
       "turismPage": {
-        "linksTitle": "Enlaces de interés"
+        "linksTitle": "Enlaces de interés",
+        "mapTitle": "Mapa turístico de la ciudad",
+        "mapOpen": "Abrir el mapa completo"
       },
       "footer": {
         "follow": "Seguinos",

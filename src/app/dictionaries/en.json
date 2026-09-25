@@ -65,7 +65,7 @@
         "Ico": "Bus"
       }
     ],
-    "p6": "Interactive map of the city: In this interactive tourist map of Neuquén Capital, you can explore a variety of options to enjoy the city, including trails, viewpoints, self-guided MP3 circuits, an identity self-guided circuit, information on gastronomy, transport options, accommodations, bike lanes and cycling paths, cultural activities, historical buildings, murals, monuments, and other points of interest."
+    "p6": "The city council's interactive map brings together trails, viewpoints, self-guided circuits, food, transport, bike lanes, historic buildings, murals and monuments across Neuquén Capital."
   },
   "rooms": {
     "titleRooms": "ROOMS",
@@ -175,7 +175,7 @@
       "home": {
         "eyebrow": "Neuquén Capital · since 1966",
         "h1": [
-          "A home ",
+          "Your hotel ",
           "in the heart",
           " of the city"
         ],
@@ -227,7 +227,7 @@
           "downtown",
           ""
         ],
-        "contactLead": "Message us on WhatsApp or give us a call. If you're nearby, drop in and say hello."
+        "contactLead": "Message us on WhatsApp or give us a call. If you're nearby, come by our front desk."
       },
       "facts": {
         "checkIn": "Check-in",
@@ -286,7 +286,7 @@
       "contactPage": {
         "eyebrow": "Open 24 hours",
         "title": "Let's talk",
-        "lead": "We're in the centre of Neuquén Capital. Message us on WhatsApp, call us, or drop in and say hello.",
+        "lead": "We're in the centre of Neuquén Capital. Message us on WhatsApp, call us, or come by our front desk.",
         "labels": {
           "address": "Address",
           "whatsapp": "WhatsApp",
@@ -297,7 +297,9 @@
         }
       },
       "turismPage": {
-        "linksTitle": "Useful links"
+        "linksTitle": "Useful links",
+        "mapTitle": "Tourist map of the city",
+        "mapOpen": "Open the full map"
       },
       "footer": {
         "follow": "Follow us",
